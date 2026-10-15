@@ -1,0 +1,947 @@
+[
+  {
+    "name": "customer 1440 login real session",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Каталог no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Каталог no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Заказы no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Заказы no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Оплаты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Оплаты no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Задолженность no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Задолженность no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 Адреса доставки no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 1440 Адреса доставки no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 1440 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 login real session",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Заказы no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Заказы no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Каталог и склад no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Каталог и склад no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Клиенты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Клиенты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Сотрудники no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Сотрудники no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Возвраты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Возвраты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Журнал no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Журнал no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 1440 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 1440 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 1440 login real session",
+    "pass": true
+  },
+  {
+    "name": "courier 1440 Задания no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 1440 Задания no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 1440 Сдача наличных no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 1440 Сдача наличных no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 1440 Возврат товара no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 1440 Возврат товара no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 1440 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 1440 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 1440 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 1440 login real session",
+    "pass": true
+  },
+  {
+    "name": "cashier 1440 Проверка Kaspi no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 1440 Проверка Kaspi no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 1440 Приём наличных no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 1440 Приём наличных no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 1440 Смены no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 1440 Смены no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 1440 Возврат денег no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 1440 Возврат денег no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 1440 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 1440 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 1440 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 login real session",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 Реестр операций no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 Реестр операций no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 Клиенты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 Клиенты no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 Расчётные периоды no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 Расчётные периоды no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 Платежи no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 Платежи no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 1440 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 1440 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 login real session",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Каталог no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Каталог no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Заказы no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Заказы no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Оплаты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Оплаты no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Задолженность no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Задолженность no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 Адреса доставки no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 768 Адреса доставки no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 768 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 login real session",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Заказы no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Заказы no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Каталог и склад no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Каталог и склад no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Клиенты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Клиенты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Сотрудники no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Сотрудники no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Возвраты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Возвраты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Журнал no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Журнал no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 768 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 768 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 768 login real session",
+    "pass": true
+  },
+  {
+    "name": "courier 768 Задания no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 768 Задания no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 768 Сдача наличных no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 768 Сдача наличных no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 768 Возврат товара no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 768 Возврат товара no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 768 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 768 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 768 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 768 login real session",
+    "pass": true
+  },
+  {
+    "name": "cashier 768 Проверка Kaspi no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 768 Проверка Kaspi no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 768 Приём наличных no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 768 Приём наличных no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 768 Смены no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 768 Смены no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 768 Возврат денег no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 768 Возврат денег no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 768 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 768 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 768 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 login real session",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 Реестр операций no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 Реестр операций no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 Клиенты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 Клиенты no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 Расчётные периоды no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 Расчётные периоды no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 Платежи no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 Платежи no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 768 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 768 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 login real session",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Каталог no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Каталог no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Заказы no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Заказы no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Оплаты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Оплаты no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Задолженность no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Задолженность no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 Адреса доставки no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "customer 360 Адреса доставки no overflow",
+    "pass": true
+  },
+  {
+    "name": "customer 360 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 login real session",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Заказы no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Заказы no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Каталог и склад no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Каталог и склад no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Клиенты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Клиенты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Сотрудники no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Сотрудники no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Возвраты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Возвраты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Журнал no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Журнал no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "admin 360 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "admin 360 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 360 login real session",
+    "pass": true
+  },
+  {
+    "name": "courier 360 Задания no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 360 Задания no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 360 Сдача наличных no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 360 Сдача наличных no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 360 Возврат товара no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 360 Возврат товара no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 360 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "courier 360 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "courier 360 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 360 login real session",
+    "pass": true
+  },
+  {
+    "name": "cashier 360 Проверка Kaspi no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 360 Проверка Kaspi no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 360 Приём наличных no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 360 Приём наличных no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 360 Смены no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 360 Смены no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 360 Возврат денег no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 360 Возврат денег no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 360 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "cashier 360 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "cashier 360 no page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 login real session",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 Реестр операций no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 Реестр операций no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 Клиенты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 Клиенты no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 Расчётные периоды no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 Расчётные периоды no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 Платежи no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 Платежи no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 Отчёты no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 Отчёты no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 Уведомления no error",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "accountant 360 Уведомления no overflow",
+    "pass": true
+  },
+  {
+    "name": "accountant 360 no page errors",
+    "pass": true,
+    "detail": []
+  }
+]

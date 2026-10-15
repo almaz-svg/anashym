@@ -1,0 +1,5012 @@
+{
+  "clients": 50,
+  "duration_seconds": 35.14,
+  "requests": 1000,
+  "errors": 109,
+  "p95_read_ms": 2891.0,
+  "mean_read_ms": 1550.011,
+  "dataset_note": "Existing local demo dataset; not 100000 orders/500000 items",
+  "notification_polling": "1 second per visible cabinet",
+  "samples": [
+    {
+      "path": "/notifications",
+      "milliseconds": 78.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 406.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 765.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1407.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 734.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1953.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3390.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2532.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2046.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2891.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2797.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1078.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 94.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 468.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 328.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1312.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1329.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1796.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2266.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3187.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1438.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1578.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 703.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 125.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 453.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1625.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2204.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2015.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 640.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2532.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1015.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1282.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2765.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 110.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 563.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2312.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3079.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 718.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1813.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1625.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1157.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1968.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1563.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 687.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1516.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 157.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1157.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2375.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1610.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 765.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2391.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1593.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 172.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 407.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1516.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 687.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3000.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 844.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1843.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1938.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 875.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1844.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1171.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 204.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 718.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2922.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 875.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 578.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 703.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1437.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 906.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3953.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1641.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1047.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1297.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 188.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1063.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1437.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2110.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1953.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1031.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1078.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 219.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1781.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1218.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 984.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2110.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2062.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 516.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 735.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1437.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2188.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1047.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2594.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2046.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3282.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2093.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2156.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 890.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1438.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1390.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 735.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2188.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1312.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 500.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 454.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1859.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1031.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1610.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1235.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1484.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1094.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 844.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2390.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 266.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 360.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 796.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3000.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1063.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1031.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2140.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 313.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 641.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1282.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1671.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 813.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2281.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2891.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2562.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3438.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1031.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 485.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1968.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 907.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2000.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1953.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2468.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 735.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1078.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1563.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1796.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1188.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1296.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1625.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 860.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 937.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3156.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1906.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1516.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1516.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2046.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3641.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1234.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1454.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 890.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 516.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1140.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1297.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 844.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1937.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2813.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2141.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3031.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2422.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 609.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1891.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 563.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2562.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1078.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1860.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 922.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1781.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1782.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1984.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1797.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1296.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2031.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1046.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1891.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 859.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2297.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1718.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1922.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1781.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1313.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2234.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1641.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2000.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2484.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 891.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1359.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2422.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 859.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2062.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2704.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1734.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2328.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1625.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1187.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1625.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 985.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1343.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1000.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 922.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1484.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2594.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1312.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 875.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1687.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1282.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2156.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1766.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1016.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2438.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 875.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1625.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1171.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3313.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2188.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1094.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1562.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1579.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 922.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 734.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 843.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2094.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2796.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1297.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2266.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2156.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 718.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 735.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 593.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2735.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2703.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2437.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 547.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1765.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1047.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2516.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1312.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2828.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1016.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 718.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2297.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1703.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2297.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1718.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1156.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1016.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 922.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2766.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2843.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1235.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1156.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2843.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 985.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2187.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 968.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 454.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1079.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 593.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1984.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1984.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 703.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2953.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 843.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 609.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1313.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 609.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1156.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2172.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1172.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1109.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2204.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1922.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 531.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1859.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1172.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1531.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1766.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 641.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1687.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2844.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2266.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1390.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3156.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 891.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1813.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 703.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 578.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1406.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 859.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2422.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1156.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2218.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2547.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1766.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 516.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 594.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1813.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1640.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1000.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3235.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 843.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2297.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1938.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1468.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2532.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1140.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1000.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1063.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 546.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 985.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1671.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2062.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2406.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1609.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2313.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2390.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1282.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1140.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 813.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1937.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1000.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 781.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1907.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2297.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2187.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1641.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1687.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2906.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 797.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2390.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 579.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1109.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2360.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 734.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 579.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1640.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1781.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1781.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1563.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1421.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2079.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1609.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2172.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1609.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2297.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1406.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1110.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1906.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 687.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1297.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1860.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1546.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1812.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 594.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1531.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2484.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1828.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1875.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1110.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 640.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1188.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2468.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 672.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1360.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1734.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1484.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2890.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2766.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3312.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 563.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1765.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 563.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1812.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1829.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2265.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1407.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1562.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1844.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 859.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2844.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2016.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 765.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1563.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2016.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 734.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1157.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1843.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1391.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1734.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 594.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 922.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1828.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2203.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2813.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2640.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1188.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 640.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1532.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2390.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1000.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2110.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1828.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 640.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 985.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1860.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 859.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2000.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1422.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1406.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1094.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1406.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 828.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 875.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1437.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 500.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1031.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 516.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2891.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2531.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 563.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3421.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 735.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2172.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2046.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1438.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3422.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 687.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 3125.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 625.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 593.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 172.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 157.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2485.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2312.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3360.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2640.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2078.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2797.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1438.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1406.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1375.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1640.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1016.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2766.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1687.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 938.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1109.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 500.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1828.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1594.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1375.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1797.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1687.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 844.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1671.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1969.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 922.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1031.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 547.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1047.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2328.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 860.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2437.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 610.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2015.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2875.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2063.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1984.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 703.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3094.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 578.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1469.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 750.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1062.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 3578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1140.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3204.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2547.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2531.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1234.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1125.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2438.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1532.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1562.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 734.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2032.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1968.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2703.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1672.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1235.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1781.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 641.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1687.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1016.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2125.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1265.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2172.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1188.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 578.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1562.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1266.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 640.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1859.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 563.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 609.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1328.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 891.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2312.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 766.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 3203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 593.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 969.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1047.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1719.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2234.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1297.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2390.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1391.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1187.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1141.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1594.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1859.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1203.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 578.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2219.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 656.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1344.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 688.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1843.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 657.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1062.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1156.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1375.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2312.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1360.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 812.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1766.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2015.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2203.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1500.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 782.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 719.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1281.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2391.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1109.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1094.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1593.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1250.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2015.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2047.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2844.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1750.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 2688.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1453.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2015.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1313.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1937.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2016.0,
+      "status": 0
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 2031.0,
+      "status": 0
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 2282.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1109.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 609.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 1578.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 1375.0,
+      "status": 200
+    },
+    {
+      "path": "/orders?limit=20",
+      "milliseconds": 1235.0,
+      "status": 200
+    },
+    {
+      "path": "/notifications",
+      "milliseconds": 937.0,
+      "status": 200
+    },
+    {
+      "path": "/catalog?delivery_date=2026-10-14",
+      "milliseconds": 953.0,
+      "status": 200
+    }
+  ]
+}

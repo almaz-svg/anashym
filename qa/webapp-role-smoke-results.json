@@ -1,0 +1,4970 @@
+{
+  "startedAt": "2026-10-14T19:39:04.419Z",
+  "finishedAt": "2026-10-14T19:41:02.322Z",
+  "results": [
+    {
+      "name": "customer 360 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "customer 360 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "customer"
+      }
+    },
+    {
+      "name": "customer 360 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #profile no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #profile fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #profile footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #profile profile API ready",
+      "pass": true
+    },
+    {
+      "name": "Общая задолженность agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Аванс agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Ожидает подтверждения agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "522.00"
+      }
+    },
+    {
+      "name": "Осталось оплатить по поставкам периода agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "customer 360 #profile reversed dates blocked",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #catalog fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #catalog footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #catalog no leading zero during typing",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #catalog quantity can be cleared",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #payments payment amount and status are not duplicated",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #payments profile API ready",
+      "pass": true
+    },
+    {
+      "name": "Общая задолженность agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Аванс agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Ожидает подтверждения agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "522.00"
+      }
+    },
+    {
+      "name": "customer 360 #debt no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #debt fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #debt footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #points no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #points fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #points footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "customer 360 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "customer 360 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "customer 360 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "customer 1440 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "customer"
+      }
+    },
+    {
+      "name": "customer 1440 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #profile no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #profile fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #profile footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #profile profile API ready",
+      "pass": true
+    },
+    {
+      "name": "Общая задолженность agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Аванс agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Ожидает подтверждения agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "522.00"
+      }
+    },
+    {
+      "name": "Осталось оплатить по поставкам периода agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "customer 1440 #profile reversed dates blocked",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #catalog fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #catalog footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #catalog no leading zero during typing",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #catalog quantity can be cleared",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #payments payment amount and status are not duplicated",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #payments profile API ready",
+      "pass": true
+    },
+    {
+      "name": "Общая задолженность agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Аванс agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Ожидает подтверждения agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "522.00"
+      }
+    },
+    {
+      "name": "customer 1440 #debt no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #debt fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #debt footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 #points no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #points fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #points footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "admin 360 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "admin 360 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "admin"
+      }
+    },
+    {
+      "name": "admin 360 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #catalog fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #catalog footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #clients no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #clients fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #clients footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #staff no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #staff fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #staff footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #returns no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #returns fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #returns footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #audit no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #audit fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #audit footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 360 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 360 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "admin 360 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "admin 360 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "admin 360 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "admin 1440 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "admin"
+      }
+    },
+    {
+      "name": "admin 1440 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #catalog fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #catalog footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #clients no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #clients fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #clients footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #staff no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #staff fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #staff footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #returns no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #returns fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #returns footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #audit no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #audit fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #audit footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "admin 1440 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "courier 360 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "courier 360 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "courier"
+      }
+    },
+    {
+      "name": "courier 360 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "courier 360 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 360 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "courier 360 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 360 #handovers no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 360 #handovers fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "courier 360 #handovers footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 360 #returns no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 360 #returns fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "courier 360 #returns footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 360 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "courier 360 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 360 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "courier 360 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "courier 360 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "courier 360 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "courier 1440 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "courier"
+      }
+    },
+    {
+      "name": "courier 1440 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 1440 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "courier 1440 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 #handovers no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 1440 #handovers fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "courier 1440 #handovers footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 #returns no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 1440 #returns fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "courier 1440 #returns footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "courier 1440 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "courier 1440 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "cashier 360 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "cashier"
+      }
+    },
+    {
+      "name": "cashier 360 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 360 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "cashier 360 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 #payments payment amount and status are not duplicated",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 360 #handovers no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 360 #handovers fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "cashier 360 #handovers footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 #shifts no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 360 #shifts fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "cashier 360 #shifts footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 #refunds no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 360 #refunds fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "cashier 360 #refunds footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 360 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "cashier 360 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "failed logout reports failure and retains session",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "cashier 1440 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "cashier"
+      }
+    },
+    {
+      "name": "cashier 1440 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 1440 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "cashier 1440 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 #payments payment amount and status are not duplicated",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 1440 #handovers no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 1440 #handovers fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "cashier 1440 #handovers footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 #shifts no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 1440 #shifts fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "cashier 1440 #shifts footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 #refunds no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 1440 #refunds fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "cashier 1440 #refunds footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cashier 1440 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "cashier 1440 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "accountant 360 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "accountant"
+      }
+    },
+    {
+      "name": "accountant 360 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #ledger no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #ledger fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #ledger footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #clients no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #clients fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #clients footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #periods no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #periods fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #periods footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #payments payment amount and status are not duplicated",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #refunds no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #refunds fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #refunds footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #cash no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #cash fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #cash footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 360 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    },
+    {
+      "name": "accountant 1440 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "accountant"
+      }
+    },
+    {
+      "name": "accountant 1440 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #ledger no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #ledger fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #ledger footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #clients no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #clients fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #clients footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #periods no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #periods fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #periods footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #payments payment amount and status are not duplicated",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #refunds no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #refunds fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #refunds footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #cash no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #cash fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #cash footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "accountant 1440 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 no unexpected browser or HTTP errors",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "badResponses": []
+      }
+    }
+  ],
+  "pages": [
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#profile",
+      "title": "Мой профиль"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#catalog",
+      "title": "Каталог"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#orders",
+      "title": "Заказы"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#payments",
+      "title": "Оплаты"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#debt",
+      "title": "Задолженность"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#points",
+      "title": "Адреса доставки"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#profile",
+      "title": "Мой профиль"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#catalog",
+      "title": "Каталог"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#orders",
+      "title": "Заказы"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#payments",
+      "title": "Оплаты"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#debt",
+      "title": "Задолженность"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "route": "#points",
+      "title": "Адреса доставки"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#orders",
+      "title": "Заказы"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#catalog",
+      "title": "Каталог и склад"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#clients",
+      "title": "Клиенты"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#staff",
+      "title": "Сотрудники"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#returns",
+      "title": "Возвраты"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#audit",
+      "title": "Журнал"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#orders",
+      "title": "Заказы"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#catalog",
+      "title": "Каталог и склад"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#clients",
+      "title": "Клиенты"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#staff",
+      "title": "Сотрудники"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#returns",
+      "title": "Возвраты"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#audit",
+      "title": "Журнал"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "route": "#orders",
+      "title": "Задания"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "route": "#handovers",
+      "title": "Сдача наличных"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "route": "#returns",
+      "title": "Возврат товара"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "route": "#orders",
+      "title": "Задания"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "route": "#handovers",
+      "title": "Сдача наличных"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "route": "#returns",
+      "title": "Возврат товара"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "route": "#payments",
+      "title": "Проверка Kaspi"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "route": "#handovers",
+      "title": "Приём наличных"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "route": "#shifts",
+      "title": "Смены"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "route": "#refunds",
+      "title": "Возврат денег"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "route": "#payments",
+      "title": "Проверка Kaspi"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "route": "#handovers",
+      "title": "Приём наличных"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "route": "#shifts",
+      "title": "Смены"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "route": "#refunds",
+      "title": "Возврат денег"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#ledger",
+      "title": "Реестр операций"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#clients",
+      "title": "Клиенты"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#periods",
+      "title": "Расчётные периоды"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#payments",
+      "title": "Платежи"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#refunds",
+      "title": "Возврат денег"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#cash",
+      "title": "Касса"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#ledger",
+      "title": "Реестр операций"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#clients",
+      "title": "Клиенты"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#periods",
+      "title": "Расчётные периоды"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#payments",
+      "title": "Платежи"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#refunds",
+      "title": "Возврат денег"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#cash",
+      "title": "Касса"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "route": "#notifications",
+      "title": "Уведомления"
+    }
+  ],
+  "network": [
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15&limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15&limit=20",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#orders"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#orders"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#orders"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "#debt",
+      "finished": "#debt"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#points",
+      "finished": "#points"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#points",
+      "finished": "#points"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15&limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15&limit=20",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#orders"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#orders"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#orders"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "#debt",
+      "finished": "#debt"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#points",
+      "finished": "#points"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#points",
+      "finished": "#points"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/stock-movements",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/quotas",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/stock-movements",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/quotas",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/audit",
+      "status": 200,
+      "started": "#audit",
+      "finished": "#audit"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/audit",
+      "status": 200,
+      "started": "#audit",
+      "finished": "#audit"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/quotas",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/stock-movements",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/quotas",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/stock-movements",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/products",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/batches",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#catalog"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#staff",
+      "finished": "#staff"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/audit",
+      "status": 200,
+      "started": "#audit",
+      "finished": "#audit"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/audit",
+      "status": 200,
+      "started": "#audit",
+      "finished": "#audit"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#returns",
+      "finished": "#returns"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "courier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/shifts",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/shifts",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 503,
+      "started": "injected logout failure",
+      "finished": "injected logout failure"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/handovers",
+      "status": 200,
+      "started": "#handovers",
+      "finished": "#handovers"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/shifts",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/staff",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/shifts",
+      "status": 200,
+      "started": "#shifts",
+      "finished": "#shifts"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/ledger",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/ledger",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/periods",
+      "status": 200,
+      "started": "#periods",
+      "finished": "#periods"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/periods",
+      "status": 200,
+      "started": "#periods",
+      "finished": "#periods"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/cash-movements",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/cash-movements",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/ledger",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/ledger",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#clients",
+      "finished": "#clients"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/periods",
+      "status": 200,
+      "started": "#periods",
+      "finished": "#periods"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/periods",
+      "status": 200,
+      "started": "#periods",
+      "finished": "#periods"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "#reports"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/clients",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/refunds",
+      "status": 200,
+      "started": "#refunds",
+      "finished": "#refunds"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/cash-movements",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/cash",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/cash-movements",
+      "status": 200,
+      "started": "#cash",
+      "finished": "#cash"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "#notifications"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "accountant",
+      "width": 1440,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "name": "customer orders permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer payments permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer returns permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer notifications permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer cash permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer ledger permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer clients permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer audit permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin orders permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin payments permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin returns permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin notifications permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin cash permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin ledger permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin clients permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin audit permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier orders permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier payments permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier returns permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier notifications permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier cash permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier ledger permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier clients permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier audit permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier orders permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier payments permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier returns permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier notifications permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier cash permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier ledger permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier clients permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier audit permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant orders permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant payments permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant returns permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant notifications permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant cash permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant ledger permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant clients permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant audit permission",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer create product denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier create product denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier create product denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant create product denied",
+    "pass_": true,
+    "detail": null
+  }
+]

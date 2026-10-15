@@ -1,0 +1,166 @@
+[
+  {
+    "name": "login customer",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "login admin",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "login courier",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "login cashier",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "login accountant",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "order idempotent replay",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "missing photo delivery rolls back debt",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "delivery charge 15000",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cash immediately reduces debt to 5000",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "handover does not double post payment",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "approval alone creates no return credit",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "received return reduces debt to 3500",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "Kaspi remains pending",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "confirmed Kaspi settles debt",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer orders envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer payments envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer notifications envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin orders envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin payments envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin notifications envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier orders envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier payments envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier notifications envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier orders envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier payments envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier notifications envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant orders envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant payments envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant notifications envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "report contains independent totals",
+    "pass_": true,
+    "detail": {
+      "delivered_amount": "93600.00",
+      "turnover_amount": "84600.00",
+      "debt_amount": "63198.00",
+      "advance_amount": "2.00",
+      "paid_amount": "81604.00",
+      "return_credit_amount": "9000.00",
+      "refund_amount": "200.00",
+      "net_amount": "3196.00"
+    }
+  },
+  {
+    "name": "CSV has source traceability",
+    "pass_": true,
+    "detail": null
+  }
+]

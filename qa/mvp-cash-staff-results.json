@@ -1,0 +1,72 @@
+[
+  {
+    "name": "courier invitation one-time activation and login",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier invitation one-time activation and login",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "one open shift invariant",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier wallet receives float10000",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "pending handover reserves7000 available3000",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cannot oversubscribe handover available wallet",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "handover discrepancy requires reason",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "only actual6500 leaves courier wallet",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "float and handover do not change client debt",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "rejection releases reservation",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "shift discrepancy requires reason",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "shift stores expected6500 actual6400 discrepancy-100",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "isolated float cleanup returns wallet to zero",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "changing own QA staff role revokes old session",
+    "pass_": true,
+    "detail": null
+  }
+]

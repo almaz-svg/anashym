@@ -1,0 +1,132 @@
+[
+  {
+    "name": "cash shortage rolls back money/order/stock",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cash full delivery net zero debt and idempotent",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "completed courier photo denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier delivery evidence denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "partial delivered charges only three portions",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "partial frees full credit reserve",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "delivery never consumes warehouse twice",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "physical leftovers never become saleable",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "duplicate goods receipt denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "failed delivery no charge",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "retry dispatch not double warehouse deduction",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "retry successful one charge",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "preorder ready blocked before actual fulfillment",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "proposal does not change committed date",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "reject retains date",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer confirmation commits new date",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "incomplete fulfill atomically restores batches and quotas",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "complete actualbatch fulfillment enables ready",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "excess payment becomes advance100",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "refund bound and idempotent confirm",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "exchange independent replacement uses new price",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "CSV exact source IDs equal JSON",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "CSV exact Decimal net matches JSON",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "reports separate turnover payments debt",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "ISO weekly groups reconcile",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "client report filter cannot expose foreign ledger",
+    "pass_": true,
+    "detail": null
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "name": "admin staff orders load next page append old rows",
+    "pass": true,
+    "detail": {
+      "first": 20,
+      "after": 40
+    }
+  },
+  {
+    "name": "customer order history loads next page appends old rows",
+    "pass": true,
+    "detail": {
+      "before": 20,
+      "after": 22
+    }
+  },
+  {
+    "name": "optional order selector loads older order pages",
+    "pass": true,
+    "detail": {
+      "before": 21,
+      "after": 23
+    }
+  },
+  {
+    "name": "independent session creates own QA pending notification event",
+    "pass": true
+  },
+  {
+    "name": "single open cabinet notification sample within2000ms",
+    "pass": true,
+    "detail": {
+      "milliseconds": 925,
+      "samples": 1,
+      "not_p95": true
+    }
+  },
+  {
+    "name": "pending QA payment rejected without money posting",
+    "pass": true
+  }
+]

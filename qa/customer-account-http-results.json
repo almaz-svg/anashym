@@ -1,0 +1,178 @@
+[
+  {
+    "name": "pending customer can read only own profile identity and zero summary",
+    "pass_": true,
+    "detail": {
+      "profile": {
+        "name": "QA Customer Account 437d6c24",
+        "contact_name": "QA Customer Account 437d6c24",
+        "phone": "+77819296598",
+        "category": "coffee_shop",
+        "category_other": "",
+        "description": "Isolated customer account UI acceptance",
+        "approval_status": "pending",
+        "preferred_payment_mode": "deferred",
+        "expected_order_quantity": 10,
+        "expected_order_frequency": "Раз в неделю",
+        "period_days": 14,
+        "credit_limit_amount": "0.00"
+      },
+      "from": "2026-10-12",
+      "to": "2026-10-18",
+      "generated_at": "2026-10-14T18:08:59.229565+00:00",
+      "currency": "KZT",
+      "balance": {
+        "debt_amount": "0.00",
+        "advance_amount": "0.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "0.00"
+      },
+      "period": {
+        "delivered_amount": "0.00",
+        "return_credit_amount": "0.00",
+        "turnover_amount": "0.00",
+        "paid_amount": "0.00",
+        "refund_amount": "0.00",
+        "outstanding_amount": "0.00"
+      }
+    }
+  },
+  {
+    "name": "pending customer server logout works",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "zero customer accurate profile identity",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "zero customer does not invent money",
+    "pass_": true,
+    "detail": {
+      "profile": {
+        "name": "QA Customer Account 437d6c24",
+        "contact_name": "QA Customer Account 437d6c24",
+        "phone": "+77819296598",
+        "category": "coffee_shop",
+        "category_other": "",
+        "description": "Isolated customer account UI acceptance",
+        "approval_status": "active",
+        "preferred_payment_mode": "deferred",
+        "expected_order_quantity": 10,
+        "expected_order_frequency": "Раз в неделю",
+        "period_days": 14,
+        "credit_limit_amount": "10000.00"
+      },
+      "from": "2026-10-12",
+      "to": "2026-10-18",
+      "generated_at": "2026-10-14T18:09:00.571420+00:00",
+      "currency": "KZT",
+      "balance": {
+        "debt_amount": "0.00",
+        "advance_amount": "0.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "0.00"
+      },
+      "period": {
+        "delivered_amount": "0.00",
+        "return_credit_amount": "0.00",
+        "turnover_amount": "0.00",
+        "paid_amount": "0.00",
+        "refund_amount": "0.00",
+        "outstanding_amount": "0.00"
+      }
+    }
+  },
+  {
+    "name": "profile debt equals balance API",
+    "pass_": true,
+    "detail": {
+      "debt_amount": "512.50",
+      "advance_amount": "0.00",
+      "overdue_amount": "0.00",
+      "unconfirmed_payment_amount": "123.25"
+    }
+  },
+  {
+    "name": "profile advance equals balance API",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "profile pending sums actual payment records without netting debt",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "profile week contains actual delivered amount and zero confirmed payment",
+    "pass_": true,
+    "detail": {
+      "delivered_amount": "512.50",
+      "return_credit_amount": "0.00",
+      "turnover_amount": "512.50",
+      "paid_amount": "0.00",
+      "refund_amount": "0.00",
+      "outstanding_amount": "512.50"
+    }
+  },
+  {
+    "name": "profile default business week exact dates",
+    "pass_": true,
+    "detail": [
+      "2026-10-12",
+      "2026-10-18"
+    ]
+  },
+  {
+    "name": "profile custom period exact date and amounts",
+    "pass_": true,
+    "detail": {
+      "delivered_amount": "512.50",
+      "return_credit_amount": "0.00",
+      "turnover_amount": "512.50",
+      "paid_amount": "0.00",
+      "refund_amount": "0.00",
+      "outstanding_amount": "512.50"
+    }
+  },
+  {
+    "name": "empty selected period preserves overall debt and pending",
+    "pass_": true,
+    "detail": {
+      "profile": {
+        "name": "QA Account Money 825929faed",
+        "contact_name": "QA Account Money 825929faed",
+        "phone": "+77810489248",
+        "category": "coffee_shop",
+        "category_other": "",
+        "description": "Isolated browser finance acceptance",
+        "approval_status": "active",
+        "preferred_payment_mode": "deferred",
+        "expected_order_quantity": 1,
+        "expected_order_frequency": "Раз в неделю",
+        "period_days": 14,
+        "credit_limit_amount": "10000.00"
+      },
+      "from": "2026-10-13",
+      "to": "2026-10-13",
+      "generated_at": "2026-10-14T18:09:01.972593+00:00",
+      "currency": "KZT",
+      "balance": {
+        "debt_amount": "512.50",
+        "advance_amount": "0.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "123.25"
+      },
+      "period": {
+        "delivered_amount": "0.00",
+        "return_credit_amount": "0.00",
+        "turnover_amount": "0.00",
+        "paid_amount": "0.00",
+        "refund_amount": "0.00",
+        "outstanding_amount": "0.00"
+      }
+    }
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "check": "preorder accepted",
+    "passed": true,
+    "detail": [
+      201,
+      {
+        "id": "8d470928-53be-4814-91ed-9eeb94cba3d7",
+        "client_id": "429dc099-52aa-4e54-a759-f76fd3bb5ce3",
+        "kind": "preorder",
+        "status": "submitted",
+        "payment_mode": "deferred",
+        "currency": "KZT",
+        "total_amount": "15000.00",
+        "created_at": "2026-10-14T15:48:58.891507+00:00",
+        "requested_delivery_at": "2026-10-15T12:00:00+05:00",
+        "reservation_expires_at": "2026-10-14T16:48:58.884509+00:00",
+        "delivery_point_id": "ffa26c9e-15d0-4303-81af-ef380a93d874",
+        "items": [
+          {
+            "product_id": "6585c5f9-e294-4265-ae5d-c69dd08f4fe8",
+            "name": "QA b5cd6884",
+            "unit": "portion",
+            "quantity": 10,
+            "unit_price_amount": "1500.00",
+            "line_total_amount": "15000.00"
+          }
+        ],
+        "version": 1
+      }
+    ]
+  },
+  {
+    "check": "preorder reserves quota only",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "expiry releases quota and credit",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "expiry second run no double release",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "quota cutoff enforced",
+    "passed": true,
+    "detail": [
+      409,
+      {
+        "code": "STOCK_UNAVAILABLE",
+        "message": "Недостаточно порций",
+        "field_errors": {},
+        "details": {
+          "product_id": "6585c5f9-e294-4265-ae5d-c69dd08f4fe8",
+          "available_qty": 0
+        },
+        "request_id": "1c18a4f6-2fcf-44d9-bded-88ddfb3982a3"
+      }
+    ]
+  }
+]

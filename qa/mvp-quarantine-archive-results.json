@@ -1,0 +1,27 @@
+[
+  {
+    "name": "customer cannot resolve quarantine",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "only explicit fitness decision restores stock",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "quarantine duplicate resolution cannot double stock",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "weekly archive uses same frozen report arithmetic",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "weekly archive customer ledger scope",
+    "pass_": true,
+    "detail": null
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "admin address selector scoped to chosen QA client",
+    "pass": true,
+    "detail": 2
+  },
+  {
+    "name": "admin creates order for exact client address quantity and mode",
+    "pass": true,
+    "detail": 201
+  },
+  {
+    "name": "QA admin order reservation cancelled via ordinary API",
+    "pass": true
+  },
+  {
+    "name": "cashier UI opens shift with exact opening1000",
+    "pass": true,
+    "detail": {
+      "status": 200,
+      "body": {
+        "id": 8,
+        "cashier_id": "85310ce6-4c86-4d8e-a4d4-915bd4c098b1",
+        "opened_at": "2026-10-14T17:37:24.467392+00:00",
+        "closed_at": null,
+        "expected_amount": 0,
+        "counted_amount": null,
+        "discrepancy": 0,
+        "reason": "",
+        "opening_amount": "1000"
+      },
+      "request": {
+        "opening_amount": 1000,
+        "action": "open"
+      }
+    }
+  },
+  {
+    "name": "cashier UI issues float300",
+    "pass": true,
+    "detail": 201
+  },
+  {
+    "name": "cashier UI returns exact float300",
+    "pass": true,
+    "detail": 201
+  },
+  {
+    "name": "cashier UI discrepancy without reason rejected422",
+    "pass": true
+  },
+  {
+    "name": "cashier UI closes shift expected1000 counted999 discrepancy-1",
+    "pass": true,
+    "detail": {
+      "id": 8,
+      "cashier_id": "85310ce6-4c86-4d8e-a4d4-915bd4c098b1",
+      "opened_at": "2026-10-14T17:37:24.467392+00:00",
+      "closed_at": "2026-10-14T17:37:24.964164+00:00",
+      "expected_amount": "1000.00",
+      "counted_amount": "999",
+      "discrepancy": "-1.00",
+      "reason": "QA counted one tenge short",
+      "opening_amount": "1000.00"
+    }
+  },
+  {
+    "name": "QA courier float final zero",
+    "pass": true,
+    "detail": {
+      "cash_amount": "0.00",
+      "balance_amount": "0.00",
+      "available_amount": "0.00",
+      "pending_handover_amount": "0.00",
+      "reserved_amount": "0.00"
+    }
+  },
+  {
+    "name": "accountant new cash and refunds menus present",
+    "pass": true,
+    "detail": [
+      "Реестр операций",
+      "Клиенты",
+      "Расчётные периоды",
+      "Платежи",
+      "Отчёты",
+      "Возврат денег",
+      "Касса",
+      "Уведомления"
+    ]
+  },
+  {
+    "name": "accountant Возврат денег renders without errors",
+    "pass": true
+  },
+  {
+    "name": "accountant Касса read-only no forms",
+    "pass": true
+  },
+  {
+    "name": "accountant Касса renders without errors",
+    "pass": true
+  },
+  {
+    "name": "registration category required placeholder",
+    "pass": true
+  },
+  {
+    "name": "new actual UI workflows no pageerrors",
+    "pass": true,
+    "detail": []
+  }
+]

@@ -1,0 +1,5 @@
+Django==5.2.7
+djangorestframework==3.16.1
+psycopg[binary]==3.2.12
+Pillow==11.3.0
+waitress==3.0.2

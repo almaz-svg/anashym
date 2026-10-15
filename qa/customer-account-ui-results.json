@@ -1,0 +1,4853 @@
+{
+  "results": [
+    {
+      "name": "customer 360 logout is in header",
+      "pass": true
+    },
+    {
+      "name": "customer 360 logout text readable and wholly visible",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 184,
+        "y": 279,
+        "width": 160,
+        "height": 44,
+        "bottom": 323,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 231.140625,
+            "y": 292,
+            "width": 18,
+            "height": 18,
+            "bottom": 310
+          },
+          {
+            "x": 257.140625,
+            "y": 292,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 310
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "customer 360 profile link in header",
+      "pass": true
+    },
+    {
+      "name": "customer 360 profile link visible",
+      "pass": true,
+      "detail": {
+        "text": "Профиль",
+        "x": 16,
+        "y": 279,
+        "width": 160,
+        "height": 44,
+        "bottom": 323,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 54.265625,
+            "y": 292,
+            "width": 18,
+            "height": 18,
+            "bottom": 310
+          },
+          {
+            "x": 80.265625,
+            "y": 292,
+            "width": 57.46875,
+            "height": 18,
+            "bottom": 310
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "customer 360 #profile no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #catalog no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #orders no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #debt no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #reports no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #notifications no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #points no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #points no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 delivery addresses actually render",
+      "pass": true
+    },
+    {
+      "name": "customer-360 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "customer-360 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "customer-360 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-360 Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-360 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "customer-360 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "522.00",
+        "text": "Ожидает подтверждения\n\n522,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "customer-360 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "customer-360 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "customer-360 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "customer-360 Осталось оплатить по поставкам периода neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-360 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "customer-360 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "customer-360 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "customer-360 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "customer-360 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-360 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer-360 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "customer-360 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-360 Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-360 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "customer-360 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "522.00",
+        "text": "Ожидает подтверждения\n\n522,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "customer-360 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "customer-360 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 664.578125,
+        "formY": 1405.515625,
+        "historyY": 1949.796875
+      }
+    },
+    {
+      "name": "customer-360 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer-360 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n0,00 ₸",
+        "server": "0.00"
+      }
+    },
+    {
+      "name": "customer-360 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "customer-360 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 one footer",
+      "pass": true
+    },
+    {
+      "name": "customer 360 footer has About section",
+      "pass": true
+    },
+    {
+      "name": "customer 360 footer real contact email",
+      "pass": true
+    },
+    {
+      "name": "customer 360 footer no invented telephone",
+      "pass": true
+    },
+    {
+      "name": "customer 360 footer reaches page bottom",
+      "pass": true,
+      "detail": {
+        "bottom": 2119.375,
+        "height": 630.9375,
+        "pageHeight": 2119,
+        "viewport": 720
+      }
+    },
+    {
+      "name": "customer 360 Footer no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 logout invalidates server session",
+      "pass": true
+    },
+    {
+      "name": "customer 360 reload cannot regain access",
+      "pass": true
+    },
+    {
+      "name": "customer 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "customer 768 logout is in header",
+      "pass": true
+    },
+    {
+      "name": "customer 768 logout text readable and wholly visible",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 648.28125,
+        "y": 169,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 213,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 663.28125,
+            "y": 182,
+            "width": 18,
+            "height": 18,
+            "bottom": 200
+          },
+          {
+            "x": 689.28125,
+            "y": 182,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 200
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "customer 768 profile link in header",
+      "pass": true
+    },
+    {
+      "name": "customer 768 profile link visible",
+      "pass": true,
+      "detail": {
+        "text": "Профиль",
+        "x": 526.8125,
+        "y": 169,
+        "width": 113.46875,
+        "height": 44,
+        "bottom": 213,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 541.8125,
+            "y": 182,
+            "width": 18,
+            "height": 18,
+            "bottom": 200
+          },
+          {
+            "x": 567.8125,
+            "y": 182,
+            "width": 57.46875,
+            "height": 18,
+            "bottom": 200
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "customer 768 #profile no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #catalog no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #orders no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #debt no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #reports no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #notifications no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 #points no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 768 #points no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 delivery addresses actually render",
+      "pass": true
+    },
+    {
+      "name": "customer-768 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "customer-768 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "customer-768 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-768 Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-768 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "customer-768 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "522.00",
+        "text": "Ожидает подтверждения\n\n522,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "customer-768 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "customer-768 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "customer-768 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "customer-768 Осталось оплатить по поставкам периода neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-768 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "customer-768 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "customer-768 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "customer-768 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "customer-768 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-768 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer-768 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "customer-768 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-768 Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-768 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "customer-768 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "522.00",
+        "text": "Ожидает подтверждения\n\n522,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "customer-768 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "customer-768 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 493.890625,
+        "formY": 898.859375,
+        "historyY": 1322.953125
+      }
+    },
+    {
+      "name": "customer-768 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer-768 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n0,00 ₸",
+        "server": "0.00"
+      }
+    },
+    {
+      "name": "customer-768 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "customer-768 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 one footer",
+      "pass": true
+    },
+    {
+      "name": "customer 768 footer has About section",
+      "pass": true
+    },
+    {
+      "name": "customer 768 footer real contact email",
+      "pass": true
+    },
+    {
+      "name": "customer 768 footer no invented telephone",
+      "pass": true
+    },
+    {
+      "name": "customer 768 footer reaches page bottom",
+      "pass": true,
+      "detail": {
+        "bottom": 1646.953125,
+        "height": 488.875,
+        "pageHeight": 1647,
+        "viewport": 720
+      }
+    },
+    {
+      "name": "customer 768 Footer no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "customer 768 logout invalidates server session",
+      "pass": true
+    },
+    {
+      "name": "customer 768 reload cannot regain access",
+      "pass": true
+    },
+    {
+      "name": "customer 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "customer 1440 logout is in header",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 logout text readable and wholly visible",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 1288.28125,
+        "y": 40,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 84,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1303.28125,
+            "y": 53,
+            "width": 18,
+            "height": 18,
+            "bottom": 71
+          },
+          {
+            "x": 1329.28125,
+            "y": 53,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 71
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "customer 1440 profile link in header",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 profile link visible",
+      "pass": true,
+      "detail": {
+        "text": "Профиль",
+        "x": 1166.8125,
+        "y": 40,
+        "width": 113.46875,
+        "height": 44,
+        "bottom": 84,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1181.8125,
+            "y": 53,
+            "width": 18,
+            "height": 18,
+            "bottom": 71
+          },
+          {
+            "x": 1207.8125,
+            "y": 53,
+            "width": 57.46875,
+            "height": 18,
+            "bottom": 71
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "customer 1440 #profile no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #catalog no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #orders no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #debt no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #reports no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #notifications no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 #points no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 1440 #points no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 delivery addresses actually render",
+      "pass": true
+    },
+    {
+      "name": "customer-1440 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "customer-1440 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "customer-1440 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-1440 Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-1440 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "customer-1440 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "522.00",
+        "text": "Ожидает подтверждения\n\n522,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "customer-1440 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "customer-1440 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "customer-1440 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "customer-1440 Осталось оплатить по поставкам периода neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-1440 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "customer-1440 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "customer-1440 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "customer-1440 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "customer-1440 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-1440 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer-1440 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "customer-1440 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "customer-1440 Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "customer-1440 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "customer-1440 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "522.00",
+        "text": "Ожидает подтверждения\n\n522,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "customer-1440 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "customer-1440 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 364.890625,
+        "formY": 787.859375,
+        "historyY": 1211.953125
+      }
+    },
+    {
+      "name": "customer-1440 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer-1440 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n0,00 ₸",
+        "server": "0.00"
+      }
+    },
+    {
+      "name": "customer-1440 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "customer-1440 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 one footer",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 footer has About section",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 footer real contact email",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 footer no invented telephone",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 footer reaches page bottom",
+      "pass": true,
+      "detail": {
+        "bottom": 1354.765625,
+        "height": 317.6875,
+        "pageHeight": 1355,
+        "viewport": 720
+      }
+    },
+    {
+      "name": "customer 1440 Footer no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "customer 1440 logout invalidates server session",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 reload cannot regain access",
+      "pass": true
+    },
+    {
+      "name": "customer 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "pending 360 approval screen",
+      "pass": true
+    },
+    {
+      "name": "pending 360 logout is in header",
+      "pass": true
+    },
+    {
+      "name": "pending 360 logout text readable and wholly visible",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 184,
+        "y": 279,
+        "width": 160,
+        "height": 44,
+        "bottom": 323,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 231.140625,
+            "y": 292,
+            "width": 18,
+            "height": 18,
+            "bottom": 310
+          },
+          {
+            "x": 257.140625,
+            "y": 292,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 310
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "pending 360 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "pending 360 logout invalidates server session",
+      "pass": true
+    },
+    {
+      "name": "pending 360 reload cannot regain access",
+      "pass": true
+    },
+    {
+      "name": "pending 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "pending 768 approval screen",
+      "pass": true
+    },
+    {
+      "name": "pending 768 logout is in header",
+      "pass": true
+    },
+    {
+      "name": "pending 768 logout text readable and wholly visible",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 648.28125,
+        "y": 225,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 269,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 663.28125,
+            "y": 238,
+            "width": 18,
+            "height": 18,
+            "bottom": 256
+          },
+          {
+            "x": 689.28125,
+            "y": 238,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 256
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "pending 768 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "pending 768 logout invalidates server session",
+      "pass": true
+    },
+    {
+      "name": "pending 768 reload cannot regain access",
+      "pass": true
+    },
+    {
+      "name": "pending 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "pending 1440 approval screen",
+      "pass": true
+    },
+    {
+      "name": "pending 1440 logout is in header",
+      "pass": true
+    },
+    {
+      "name": "pending 1440 logout text readable and wholly visible",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 1288.28125,
+        "y": 40,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 84,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1303.28125,
+            "y": 53,
+            "width": 18,
+            "height": 18,
+            "bottom": 71
+          },
+          {
+            "x": 1329.28125,
+            "y": 53,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 71
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "pending 1440 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "pending 1440 logout invalidates server session",
+      "pass": true
+    },
+    {
+      "name": "pending 1440 reload cannot regain access",
+      "pass": true
+    },
+    {
+      "name": "pending 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "qa-zero profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-zero profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-zero Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-zero Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-zero Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Ожидает подтверждения\n\n0,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-zero Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-zero Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-zero Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-zero Осталось оплатить по поставкам периода neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-zero selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-zero selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-zero selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-zero selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-zero Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-zero profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-zero Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-zero Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-zero Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Ожидает подтверждения\n\n0,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-zero Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-zero balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 664.578125,
+        "formY": 1405.515625,
+        "historyY": 1949.796875
+      }
+    },
+    {
+      "name": "qa-zero Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-zero debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n0,00 ₸",
+        "server": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-zero-dark profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-zero-dark profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-zero-dark Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-zero-dark Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(237, 245, 239)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero-dark Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-zero-dark Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Ожидает подтверждения\n\n0,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-zero-dark Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-zero-dark Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-zero-dark Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-zero-dark Осталось оплатить по поставкам периода neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(237, 245, 239)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero-dark selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-zero-dark selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-zero-dark selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-zero-dark selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-zero-dark selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-zero-dark Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-zero-dark profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-zero-dark Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-zero-dark Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(237, 245, 239)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero-dark Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-zero-dark Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Ожидает подтверждения\n\n0,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-zero-dark Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-zero-dark balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 664.578125,
+        "formY": 1405.515625,
+        "historyY": 1949.796875
+      }
+    },
+    {
+      "name": "qa-zero-dark Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-zero-dark debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n0,00 ₸",
+        "server": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero-dark debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(237, 245, 239)",
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "qa-zero-dark Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-zero no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "qa-debt-360 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-360 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-debt-360 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-360 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-360 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-360 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-360 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Передано за период\n\n512,50 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-360 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-360 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Осталось оплатить по поставкам периода\n\n512,50 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-360 Осталось оплатить по поставкам периода red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-360 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-debt-360 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-360 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-360 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-360 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-360 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-debt-360 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-debt 360 debt unaffected by pending payment",
+      "pass": true,
+      "detail": {
+        "debt_amount": "512.50",
+        "advance_amount": "0.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "123.25"
+      }
+    },
+    {
+      "name": "qa-debt-360 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-360 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-360 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-360 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-360 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-debt-360 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 664.578125,
+        "formY": 1405.515625,
+        "historyY": 1949.796875
+      }
+    },
+    {
+      "name": "qa-debt-360 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-debt-360 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n512,50 ₸",
+        "server": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-360 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "amount": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-360 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-dark-360 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Передано за период\n\n512,50 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Осталось оплатить по поставкам периода\n\n512,50 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Осталось оплатить по поставкам периода red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-dark-360 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 664.578125,
+        "formY": 1405.515625,
+        "historyY": 1949.796875
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n512,50 ₸",
+        "server": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "amount": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-360 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-debt 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "qa-debt-768 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-768 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-debt-768 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-768 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-768 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-768 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-768 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Передано за период\n\n512,50 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-768 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-768 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Осталось оплатить по поставкам периода\n\n512,50 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-768 Осталось оплатить по поставкам периода red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-768 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-debt-768 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-768 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-768 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-768 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-768 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "qa-debt-768 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-debt 768 debt unaffected by pending payment",
+      "pass": true,
+      "detail": {
+        "debt_amount": "512.50",
+        "advance_amount": "0.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "123.25"
+      }
+    },
+    {
+      "name": "qa-debt-768 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-768 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-768 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-768 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-768 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-debt-768 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 549.890625,
+        "formY": 954.859375,
+        "historyY": 1378.953125
+      }
+    },
+    {
+      "name": "qa-debt-768 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "qa-debt-768 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n512,50 ₸",
+        "server": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-768 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "amount": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-768 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-dark-768 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Передано за период\n\n512,50 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Осталось оплатить по поставкам периода\n\n512,50 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Осталось оплатить по поставкам периода red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-dark-768 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 549.890625,
+        "formY": 954.859375,
+        "historyY": 1378.953125
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n512,50 ₸",
+        "server": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "amount": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-768 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "qa-debt 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "qa-debt-1440 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-1440 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Передано за период\n\n512,50 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Осталось оплатить по поставкам периода\n\n512,50 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Осталось оплатить по поставкам периода red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-1440 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-debt-1440 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-1440 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-1440 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-1440 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "qa-debt-1440 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-debt 1440 debt unaffected by pending payment",
+      "pass": true,
+      "detail": {
+        "debt_amount": "512.50",
+        "advance_amount": "0.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "123.25"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-debt-1440 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 364.890625,
+        "formY": 787.859375,
+        "historyY": 1211.953125
+      }
+    },
+    {
+      "name": "qa-debt-1440 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "qa-debt-1440 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n512,50 ₸",
+        "server": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-1440 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(182, 65, 60)",
+        "amount": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-1440 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-dark-1440 profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Передано за период\n\n512,50 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Осталось оплатить по поставкам периода\n\n512,50 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Осталось оплатить по поставкам периода red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "qa-debt-dark-1440 Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "512.50",
+        "text": "Общая задолженность\n\n512,50 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Общая задолженность red",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "value": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Аванс\n\n0,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "123.25",
+        "text": "Ожидает подтверждения\n\n123,25 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты за неделю\n\n0,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 364.890625,
+        "formY": 787.859375,
+        "historyY": 1211.953125
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 debt page exact amount",
+      "pass": true,
+      "detail": {
+        "text": "Текущая задолженность\n\n512,50 ₸",
+        "server": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 debt page red only for positive debt",
+      "pass": true,
+      "detail": {
+        "color": "rgb(255, 170, 163)",
+        "amount": "512.50"
+      }
+    },
+    {
+      "name": "qa-debt-dark-1440 Debt no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "qa-debt 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "qa-existing-advance profile identity from server",
+      "pass": true
+    },
+    {
+      "name": "qa-existing-advance profile exact server week",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-18"
+      }
+    },
+    {
+      "name": "qa-existing-advance Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-existing-advance Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-existing-advance Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "2.00",
+        "text": "Аванс\n\n2,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-existing-advance Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "1.00",
+        "text": "Ожидает подтверждения\n\n1,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-existing-advance Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "60000.00",
+        "text": "Передано за период\n\n60 000,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-existing-advance Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "54002.00",
+        "text": "Подтверждённые оплаты\n\n54 002,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-existing-advance Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-existing-advance Осталось оплатить по поставкам периода neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-existing-advance selected day matches server date inputs",
+      "pass": true,
+      "detail": {
+        "from": "2026-10-12",
+        "to": "2026-10-12"
+      }
+    },
+    {
+      "name": "qa-existing-advance selected day Передано за период equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Передано за период\n\n0,00 ₸\nСтоимость фактически переданных товаров"
+      }
+    },
+    {
+      "name": "qa-existing-advance selected day Подтверждённые оплаты equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Подтверждённые оплаты\n\n0,00 ₸\nПо дате подтверждения оплаты"
+      }
+    },
+    {
+      "name": "qa-existing-advance selected day Осталось оплатить по поставкам периода equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Осталось оплатить по поставкам периода\n\n0,00 ₸\nС учётом оплат и зачтённых возвратов"
+      }
+    },
+    {
+      "name": "qa-existing-advance selected day preserves full debt Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-existing-advance Profile no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-existing-advance profile also opens from navigation",
+      "pass": true
+    },
+    {
+      "name": "existing QA advance fixture has positive advance and zero debt",
+      "pass": true,
+      "detail": {
+        "debt_amount": "0.00",
+        "advance_amount": "2.00",
+        "overdue_amount": "0.00",
+        "unconfirmed_payment_amount": "1.00"
+      }
+    },
+    {
+      "name": "qa-existing-advance Общая задолженность equals server",
+      "pass": true,
+      "detail": {
+        "server": "0.00",
+        "text": "Общая задолженность\n\n0,00 ₸\nЗа все поставки на текущий момент"
+      }
+    },
+    {
+      "name": "qa-existing-advance Общая задолженность neutral",
+      "pass": true,
+      "detail": {
+        "color": "rgb(28, 41, 34)",
+        "value": "0.00"
+      }
+    },
+    {
+      "name": "qa-existing-advance Аванс equals server",
+      "pass": true,
+      "detail": {
+        "server": "2.00",
+        "text": "Аванс\n\n2,00 ₸\nДоступен для следующих поставок"
+      }
+    },
+    {
+      "name": "qa-existing-advance Ожидает подтверждения equals server",
+      "pass": true,
+      "detail": {
+        "server": "1.00",
+        "text": "Ожидает подтверждения\n\n1,00 ₸\nПока не уменьшает задолженность"
+      }
+    },
+    {
+      "name": "qa-existing-advance Подтверждённые оплаты за неделю equals server",
+      "pass": true,
+      "detail": {
+        "server": "54002.00",
+        "text": "Подтверждённые оплаты за неделю\n\n54 002,00 ₸\n12.10.2026 — 18.10.2026"
+      }
+    },
+    {
+      "name": "qa-existing-advance balances precede payment form and history",
+      "pass": true,
+      "detail": {
+        "summaryY": 664.578125,
+        "formY": 1405.515625,
+        "historyY": 1949.796875
+      }
+    },
+    {
+      "name": "qa-existing-advance Payments no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "qa-existing-advance no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "admin 360 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "admin 360 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 16,
+        "y": 278,
+        "width": 328,
+        "height": 44,
+        "bottom": 322,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 147.140625,
+            "y": 291,
+            "width": 18,
+            "height": 18,
+            "bottom": 309
+          },
+          {
+            "x": 173.140625,
+            "y": 291,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 309
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "admin 360 navigation present",
+      "pass": true
+    },
+    {
+      "name": "admin 360 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 264.59375,
+        "y": 365,
+        "width": 79.40625,
+        "height": 44,
+        "bottom": 409,
+        "fontSize": 12,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 275.59375,
+            "y": 378.5,
+            "width": 57.40625,
+            "height": 17,
+            "bottom": 395.5
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "admin 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "admin 768 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "admin 768 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 648.28125,
+        "y": 168,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 212,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 663.28125,
+            "y": 181,
+            "width": 18,
+            "height": 18,
+            "bottom": 199
+          },
+          {
+            "x": 689.28125,
+            "y": 181,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 199
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "admin 768 navigation present",
+      "pass": true
+    },
+    {
+      "name": "admin 768 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 633.46875,
+        "y": 280,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 324,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 650.46875,
+            "y": 291,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 313
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "admin 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "admin 1440 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "admin 1440 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 1288.28125,
+        "y": 40,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 84,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1303.28125,
+            "y": 53,
+            "width": 18,
+            "height": 18,
+            "bottom": 71
+          },
+          {
+            "x": 1329.28125,
+            "y": 53,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 71
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "admin 1440 navigation present",
+      "pass": true
+    },
+    {
+      "name": "admin 1440 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 1273.46875,
+        "y": 152,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 196,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1290.46875,
+            "y": 163,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 185
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "admin 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "courier 360 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "courier 360 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 16,
+        "y": 278,
+        "width": 328,
+        "height": 44,
+        "bottom": 322,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 147.140625,
+            "y": 291,
+            "width": 18,
+            "height": 18,
+            "bottom": 309
+          },
+          {
+            "x": 173.140625,
+            "y": 291,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 309
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "courier 360 navigation present",
+      "pass": true
+    },
+    {
+      "name": "courier 360 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 264.59375,
+        "y": 365,
+        "width": 79.40625,
+        "height": 44,
+        "bottom": 409,
+        "fontSize": 12,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 275.59375,
+            "y": 378.5,
+            "width": 57.40625,
+            "height": 17,
+            "bottom": 395.5
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "courier 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "courier 768 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "courier 768 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 648.28125,
+        "y": 168,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 212,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 663.28125,
+            "y": 181,
+            "width": 18,
+            "height": 18,
+            "bottom": 199
+          },
+          {
+            "x": 689.28125,
+            "y": 181,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 199
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "courier 768 navigation present",
+      "pass": true
+    },
+    {
+      "name": "courier 768 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 633.46875,
+        "y": 280,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 324,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 650.46875,
+            "y": 291,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 313
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "courier 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "courier 1440 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "courier 1440 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 1288.28125,
+        "y": 40,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 84,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1303.28125,
+            "y": 53,
+            "width": 18,
+            "height": 18,
+            "bottom": 71
+          },
+          {
+            "x": 1329.28125,
+            "y": 53,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 71
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "courier 1440 navigation present",
+      "pass": true
+    },
+    {
+      "name": "courier 1440 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 1273.46875,
+        "y": 152,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 196,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1290.46875,
+            "y": 163,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 185
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "courier 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "cashier 360 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "cashier 360 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 16,
+        "y": 278,
+        "width": 328,
+        "height": 44,
+        "bottom": 322,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 147.140625,
+            "y": 291,
+            "width": 18,
+            "height": 18,
+            "bottom": 309
+          },
+          {
+            "x": 173.140625,
+            "y": 291,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 309
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "cashier 360 navigation present",
+      "pass": true
+    },
+    {
+      "name": "cashier 360 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 264.59375,
+        "y": 365,
+        "width": 79.40625,
+        "height": 44,
+        "bottom": 409,
+        "fontSize": 12,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 275.59375,
+            "y": 378.5,
+            "width": 57.40625,
+            "height": 17,
+            "bottom": 395.5
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "cashier 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "cashier 768 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "cashier 768 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 648.28125,
+        "y": 168,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 212,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 663.28125,
+            "y": 181,
+            "width": 18,
+            "height": 18,
+            "bottom": 199
+          },
+          {
+            "x": 689.28125,
+            "y": 181,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 199
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "cashier 768 navigation present",
+      "pass": true
+    },
+    {
+      "name": "cashier 768 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 633.46875,
+        "y": 280,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 324,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 650.46875,
+            "y": 291,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 313
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "cashier 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "cashier 1440 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "cashier 1440 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 1288.28125,
+        "y": 41.171875,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 85.171875,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1303.28125,
+            "y": 54.171875,
+            "width": 18,
+            "height": 18,
+            "bottom": 72.171875
+          },
+          {
+            "x": 1329.28125,
+            "y": 54.171875,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 72.171875
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "cashier 1440 navigation present",
+      "pass": true
+    },
+    {
+      "name": "cashier 1440 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 1273.46875,
+        "y": 153.171875,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 197.171875,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1290.46875,
+            "y": 164.171875,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 186.171875
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "cashier 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "accountant 360 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "accountant 360 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 16,
+        "y": 278,
+        "width": 328,
+        "height": 44,
+        "bottom": 322,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 147.140625,
+            "y": 291,
+            "width": 18,
+            "height": 18,
+            "bottom": 309
+          },
+          {
+            "x": 173.140625,
+            "y": 291,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 309
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "accountant 360 navigation present",
+      "pass": true
+    },
+    {
+      "name": "accountant 360 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 264.59375,
+        "y": 365,
+        "width": 79.40625,
+        "height": 44,
+        "bottom": 409,
+        "fontSize": 12,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 275.59375,
+            "y": 378.5,
+            "width": 57.40625,
+            "height": 17,
+            "bottom": 395.5
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "accountant 360 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "accountant 768 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "accountant 768 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 648.28125,
+        "y": 168,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 212,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 663.28125,
+            "y": 181,
+            "width": 18,
+            "height": 18,
+            "bottom": 199
+          },
+          {
+            "x": 689.28125,
+            "y": 181,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 199
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "accountant 768 navigation present",
+      "pass": true
+    },
+    {
+      "name": "accountant 768 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 633.46875,
+        "y": 280,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 324,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 650.46875,
+            "y": 291,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 313
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "accountant 768 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "accountant 1440 no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "accountant 1440 readable accessible logout",
+      "pass": true,
+      "detail": {
+        "text": "Выйти",
+        "x": 1288.28125,
+        "y": 40,
+        "width": 95.71875,
+        "height": 44,
+        "bottom": 84,
+        "fontSize": 13,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1303.28125,
+            "y": 53,
+            "width": 18,
+            "height": 18,
+            "bottom": 71
+          },
+          {
+            "x": 1329.28125,
+            "y": 53,
+            "width": 39.71875,
+            "height": 18,
+            "bottom": 71
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "accountant 1440 navigation present",
+      "pass": true
+    },
+    {
+      "name": "accountant 1440 refresh has visible text",
+      "pass": true,
+      "detail": {
+        "text": "Обновить",
+        "x": 1273.46875,
+        "y": 152,
+        "width": 110.53125,
+        "height": 44,
+        "bottom": 196,
+        "fontSize": 16,
+        "color": "rgb(28, 41, 34)",
+        "visibility": "visible",
+        "display": "flex",
+        "textRects": [
+          {
+            "x": 1290.46875,
+            "y": 163,
+            "width": 76.53125,
+            "height": 22,
+            "bottom": 185
+          }
+        ],
+        "withinViewport": true
+      }
+    },
+    {
+      "name": "accountant 1440 no browser errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "label": "customer-360",
+      "profile": {
+        "profile": {
+          "name": "Кофейня «Зелёный двор»",
+          "contact_name": "Алмаз",
+          "phone": "+77010000001",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "",
+          "period_days": 14,
+          "credit_limit_amount": "50000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:18:27.711026+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "0.00",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "522.00"
+        },
+        "period": {
+          "delivered_amount": "0.00",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "0.00",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "0.00"
+        }
+      }
+    },
+    {
+      "label": "customer-768",
+      "profile": {
+        "profile": {
+          "name": "Кофейня «Зелёный двор»",
+          "contact_name": "Алмаз",
+          "phone": "+77010000001",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "",
+          "period_days": 14,
+          "credit_limit_amount": "50000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:18:35.007053+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "0.00",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "522.00"
+        },
+        "period": {
+          "delivered_amount": "0.00",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "0.00",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "0.00"
+        }
+      }
+    },
+    {
+      "label": "customer-1440",
+      "profile": {
+        "profile": {
+          "name": "Кофейня «Зелёный двор»",
+          "contact_name": "Алмаз",
+          "phone": "+77010000001",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "",
+          "period_days": 14,
+          "credit_limit_amount": "50000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:18:43.223837+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "0.00",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "522.00"
+        },
+        "period": {
+          "delivered_amount": "0.00",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "0.00",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "0.00"
+        }
+      }
+    },
+    {
+      "label": "qa-zero",
+      "profile": {
+        "profile": {
+          "name": "QA Customer Account 437d6c24",
+          "contact_name": "QA Customer Account 437d6c24",
+          "phone": "+77819296598",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated customer account UI acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 10,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:18:59.111309+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "0.00",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "0.00"
+        },
+        "period": {
+          "delivered_amount": "0.00",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "0.00",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "0.00"
+        }
+      }
+    },
+    {
+      "label": "qa-zero-dark",
+      "profile": {
+        "profile": {
+          "name": "QA Customer Account 437d6c24",
+          "contact_name": "QA Customer Account 437d6c24",
+          "phone": "+77819296598",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated customer account UI acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 10,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:00.745181+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "0.00",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "0.00"
+        },
+        "period": {
+          "delivered_amount": "0.00",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "0.00",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "0.00"
+        }
+      }
+    },
+    {
+      "label": "qa-debt-360",
+      "profile": {
+        "profile": {
+          "name": "QA Account Money 825929faed",
+          "contact_name": "QA Account Money 825929faed",
+          "phone": "+77810489248",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated browser finance acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:05.186570+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "512.50",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "123.25"
+        },
+        "period": {
+          "delivered_amount": "512.50",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "512.50",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "512.50"
+        }
+      }
+    },
+    {
+      "label": "qa-debt-dark-360",
+      "profile": {
+        "profile": {
+          "name": "QA Account Money 825929faed",
+          "contact_name": "QA Account Money 825929faed",
+          "phone": "+77810489248",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated browser finance acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:06.549666+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "512.50",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "123.25"
+        },
+        "period": {
+          "delivered_amount": "512.50",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "512.50",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "512.50"
+        }
+      }
+    },
+    {
+      "label": "qa-debt-768",
+      "profile": {
+        "profile": {
+          "name": "QA Account Money 825929faed",
+          "contact_name": "QA Account Money 825929faed",
+          "phone": "+77810489248",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated browser finance acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:09.918716+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "512.50",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "123.25"
+        },
+        "period": {
+          "delivered_amount": "512.50",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "512.50",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "512.50"
+        }
+      }
+    },
+    {
+      "label": "qa-debt-dark-768",
+      "profile": {
+        "profile": {
+          "name": "QA Account Money 825929faed",
+          "contact_name": "QA Account Money 825929faed",
+          "phone": "+77810489248",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated browser finance acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:11.479281+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "512.50",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "123.25"
+        },
+        "period": {
+          "delivered_amount": "512.50",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "512.50",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "512.50"
+        }
+      }
+    },
+    {
+      "label": "qa-debt-1440",
+      "profile": {
+        "profile": {
+          "name": "QA Account Money 825929faed",
+          "contact_name": "QA Account Money 825929faed",
+          "phone": "+77810489248",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated browser finance acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:15.615310+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "512.50",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "123.25"
+        },
+        "period": {
+          "delivered_amount": "512.50",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "512.50",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "512.50"
+        }
+      }
+    },
+    {
+      "label": "qa-debt-dark-1440",
+      "profile": {
+        "profile": {
+          "name": "QA Account Money 825929faed",
+          "contact_name": "QA Account Money 825929faed",
+          "phone": "+77810489248",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "Isolated browser finance acceptance",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "Раз в неделю",
+          "period_days": 14,
+          "credit_limit_amount": "10000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:18.672844+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "512.50",
+          "advance_amount": "0.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "123.25"
+        },
+        "period": {
+          "delivered_amount": "512.50",
+          "return_credit_amount": "0.00",
+          "turnover_amount": "512.50",
+          "paid_amount": "0.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "512.50"
+        }
+      }
+    },
+    {
+      "label": "qa-existing-advance",
+      "profile": {
+        "profile": {
+          "name": "QA HTTP c73bce8143",
+          "contact_name": "",
+          "phone": "+77918929464",
+          "category": "coffee_shop",
+          "category_other": "",
+          "description": "",
+          "approval_status": "active",
+          "preferred_payment_mode": "deferred",
+          "expected_order_quantity": 1,
+          "expected_order_frequency": "",
+          "period_days": 7,
+          "credit_limit_amount": "1000000.00"
+        },
+        "from": "2026-10-12",
+        "to": "2026-10-18",
+        "generated_at": "2026-10-14T18:19:25.263415+00:00",
+        "currency": "KZT",
+        "balance": {
+          "debt_amount": "0.00",
+          "advance_amount": "2.00",
+          "overdue_amount": "0.00",
+          "unconfirmed_payment_amount": "1.00"
+        },
+        "period": {
+          "delivered_amount": "60000.00",
+          "return_credit_amount": "6000.00",
+          "turnover_amount": "54000.00",
+          "paid_amount": "54002.00",
+          "refund_amount": "0.00",
+          "outstanding_amount": "0.00"
+        }
+      }
+    }
+  ]
+}

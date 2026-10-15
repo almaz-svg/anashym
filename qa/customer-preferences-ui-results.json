@@ -1,0 +1,4920 @@
+[
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "auth-360-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-360-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Қош келдіңіз"
+    }
+  },
+  {
+    "name": "auth-360-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-360-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Қош келдіңіз"
+    }
+  },
+  {
+    "name": "auth-360-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-360-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Welcome back"
+    }
+  },
+  {
+    "name": "auth-360-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-360-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Welcome back"
+    }
+  },
+  {
+    "name": "auth-360-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-360-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Рады вас видеть"
+    }
+  },
+  {
+    "name": "auth-360-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-360-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Рады вас видеть"
+    }
+  },
+  {
+    "name": "auth-360-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "auth-360-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-360-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "auth-360 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-360 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "customer-360-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-360-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Төлемдер"
+    }
+  },
+  {
+    "name": "customer-360-kk-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-360-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Төлемдер"
+    }
+  },
+  {
+    "name": "customer-360-kk-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-360-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Payments"
+    }
+  },
+  {
+    "name": "customer-360-en-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-360-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Payments"
+    }
+  },
+  {
+    "name": "customer-360-en-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-360-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Оплаты"
+    }
+  },
+  {
+    "name": "customer-360-ru-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-360-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Оплаты"
+    }
+  },
+  {
+    "name": "customer-360-ru-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "customer-360-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-kk reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-en reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-360-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "customer-360-ru reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 184,
+      "y": 279,
+      "right": 344,
+      "bottom": 323,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-360 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-360 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "staff editable real form available",
+    "pass": true,
+    "detail": [
+      {
+        "name": "opening_amount",
+        "type": "number",
+        "value": "0"
+      },
+      {
+        "name": "counted_amount",
+        "type": "number",
+        "value": ""
+      },
+      {
+        "name": "reason",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "value": ""
+      },
+      {
+        "name": "reason",
+        "type": "text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "staff-360-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-360-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Ауысымдар"
+    }
+  },
+  {
+    "name": "staff-360-kk-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-360-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Ауысымдар"
+    }
+  },
+  {
+    "name": "staff-360-kk-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-360-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Shifts"
+    }
+  },
+  {
+    "name": "staff-360-en-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-360-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Shifts"
+    }
+  },
+  {
+    "name": "staff-360-en-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-360-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Смены"
+    }
+  },
+  {
+    "name": "staff-360-ru-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-360-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Смены"
+    }
+  },
+  {
+    "name": "staff-360-ru-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "staff-360-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-kk reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-en reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-360-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 360,
+      "scrollWidth": 360
+    }
+  },
+  {
+    "name": "staff-360-ru reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 16,
+      "y": 278,
+      "right": 344,
+      "bottom": 322,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-360 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-360 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "auth-768-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-768-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Қош келдіңіз"
+    }
+  },
+  {
+    "name": "auth-768-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-768-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Қош келдіңіз"
+    }
+  },
+  {
+    "name": "auth-768-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-768-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Welcome back"
+    }
+  },
+  {
+    "name": "auth-768-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-768-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Welcome back"
+    }
+  },
+  {
+    "name": "auth-768-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-768-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Рады вас видеть"
+    }
+  },
+  {
+    "name": "auth-768-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-768-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Рады вас видеть"
+    }
+  },
+  {
+    "name": "auth-768-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "auth-768-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-768-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "auth-768 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-768 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "customer-768-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-768-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Төлемдер"
+    }
+  },
+  {
+    "name": "customer-768-kk-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 654,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-768-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Төлемдер"
+    }
+  },
+  {
+    "name": "customer-768-kk-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 654,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-768-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Payments"
+    }
+  },
+  {
+    "name": "customer-768-en-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 636.28125,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-768-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Payments"
+    }
+  },
+  {
+    "name": "customer-768-en-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 636.28125,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-768-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Оплаты"
+    }
+  },
+  {
+    "name": "customer-768-ru-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 648.28125,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-768-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Оплаты"
+    }
+  },
+  {
+    "name": "customer-768-ru-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 648.28125,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "customer-768-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-kk reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 654,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-en reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 636.28125,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-768-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "customer-768-ru reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 648.28125,
+      "y": 169,
+      "right": 744,
+      "bottom": 213,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-768 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-768 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "staff editable real form available",
+    "pass": true,
+    "detail": [
+      {
+        "name": "opening_amount",
+        "type": "number",
+        "value": "0"
+      },
+      {
+        "name": "counted_amount",
+        "type": "number",
+        "value": ""
+      },
+      {
+        "name": "reason",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "name": "courier_id",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "value": ""
+      },
+      {
+        "name": "reason",
+        "type": "text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "staff-768-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-768-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Ауысымдар"
+    }
+  },
+  {
+    "name": "staff-768-kk-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 654,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-768-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Ауысымдар"
+    }
+  },
+  {
+    "name": "staff-768-kk-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 654,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-768-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Shifts"
+    }
+  },
+  {
+    "name": "staff-768-en-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 636.28125,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-768-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Shifts"
+    }
+  },
+  {
+    "name": "staff-768-en-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 636.28125,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-768-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Смены"
+    }
+  },
+  {
+    "name": "staff-768-ru-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 648.28125,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-768-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Смены"
+    }
+  },
+  {
+    "name": "staff-768-ru-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 648.28125,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "staff-768-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-kk reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 654,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-en reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 636.28125,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-768-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 768,
+      "scrollWidth": 768
+    }
+  },
+  {
+    "name": "staff-768-ru reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 648.28125,
+      "y": 168,
+      "right": 744,
+      "bottom": 212,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-768 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-768 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "auth-1440-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-1440-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Қош келдіңіз"
+    }
+  },
+  {
+    "name": "auth-1440-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-1440-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Қош келдіңіз"
+    }
+  },
+  {
+    "name": "auth-1440-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-1440-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Welcome back"
+    }
+  },
+  {
+    "name": "auth-1440-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-1440-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Welcome back"
+    }
+  },
+  {
+    "name": "auth-1440-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-1440-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Рады вас видеть"
+    }
+  },
+  {
+    "name": "auth-1440-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "auth-1440-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Рады вас видеть",
+      "actual": "Рады вас видеть"
+    }
+  },
+  {
+    "name": "auth-1440-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "auth-1440-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "auth-1440-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "auth-1440 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "auth-1440 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "customer-1440-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-1440-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Төлемдер"
+    }
+  },
+  {
+    "name": "customer-1440-kk-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 1294,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-1440-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Төлемдер"
+    }
+  },
+  {
+    "name": "customer-1440-kk-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 1294,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-1440-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Payments"
+    }
+  },
+  {
+    "name": "customer-1440-en-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 1276.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-1440-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Payments"
+    }
+  },
+  {
+    "name": "customer-1440-en-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 1276.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-1440-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Оплаты"
+    }
+  },
+  {
+    "name": "customer-1440-ru-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 1288.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "customer-1440-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Оплаты",
+      "actual": "Оплаты"
+    }
+  },
+  {
+    "name": "customer-1440-ru-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 1288.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "customer-1440-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-kk reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 1294,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-en reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 1276.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "customer-1440-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "customer-1440-ru reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 1288.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "customer-1440 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "customer-1440 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  },
+  {
+    "name": "preferences real controls available",
+    "pass": true,
+    "detail": [
+      {
+        "label": "Тема",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "label": "Язык",
+        "values": [
+          "kk",
+          "ru",
+          "en"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "staff editable real form available",
+    "pass": true,
+    "detail": [
+      {
+        "name": "opening_amount",
+        "type": "number",
+        "value": "0"
+      },
+      {
+        "name": "counted_amount",
+        "type": "number",
+        "value": ""
+      },
+      {
+        "name": "reason",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "name": "courier_id",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "value": ""
+      },
+      {
+        "name": "reason",
+        "type": "text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "staff-1440-kk-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440-kk-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "kk",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440-kk-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-1440-kk-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Ауысымдар"
+    }
+  },
+  {
+    "name": "staff-1440-kk-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 1294,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-kk-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-kk-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-kk-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-kk-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-1440-kk-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Ауысымдар"
+    }
+  },
+  {
+    "name": "staff-1440-kk-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 1294,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-kk-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-en-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440-en-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "en",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440-en-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-1440-en-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Shifts"
+    }
+  },
+  {
+    "name": "staff-1440-en-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 1276.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-en-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-en-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-en-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-en-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-1440-en-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Shifts"
+    }
+  },
+  {
+    "name": "staff-1440-en-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 1276.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-en-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-ru-light selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440-ru-light selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440-ru-light filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-1440-ru-light page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Смены"
+    }
+  },
+  {
+    "name": "staff-1440-ru-light logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 1288.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-ru-light no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-ru-dark selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-ru-dark selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-ru-dark filled form preserved",
+    "pass": true
+  },
+  {
+    "name": "staff-1440-ru-dark page heading translated",
+    "pass": true,
+    "detail": {
+      "baseline": "Смены",
+      "actual": "Смены"
+    }
+  },
+  {
+    "name": "staff-1440-ru-dark logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 1288.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-ru-dark no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440 theme changes actual background",
+    "pass": true,
+    "detail": {
+      "light": {
+        "language": "ru",
+        "theme": "light",
+        "colorScheme": "light",
+        "storedLanguage": "ru",
+        "storedTheme": "light",
+        "background": "rgb(246, 250, 247)",
+        "color": "rgb(28, 41, 34)"
+      },
+      "dark": {
+        "language": "ru",
+        "theme": "dark",
+        "colorScheme": "dark",
+        "storedLanguage": "ru",
+        "storedTheme": "dark",
+        "background": "rgb(17, 26, 22)",
+        "color": "rgb(237, 245, 239)"
+      }
+    }
+  },
+  {
+    "name": "staff-1440-kk reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-kk reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "kk",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "kk",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-kk reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-kk reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Шығу",
+      "fontSize": 13,
+      "x": 1294,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-en reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-en reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "en",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "en",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-en reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-en reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Sign out",
+      "fontSize": 13,
+      "x": 1276.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440-ru reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-ru reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "dark",
+      "colorScheme": "dark",
+      "storedLanguage": "ru",
+      "storedTheme": "dark",
+      "background": "rgb(17, 26, 22)",
+      "color": "rgb(237, 245, 239)"
+    }
+  },
+  {
+    "name": "staff-1440-ru reload no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "staff-1440-ru reload logout remains readable and visible",
+    "pass": true,
+    "detail": {
+      "text": "Выйти",
+      "fontSize": 13,
+      "x": 1288.28125,
+      "y": 40,
+      "right": 1384,
+      "bottom": 84,
+      "visible": true
+    }
+  },
+  {
+    "name": "staff-1440 light reload selected locale and theme applied",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440 light reload selections stored",
+    "pass": true,
+    "detail": {
+      "language": "ru",
+      "theme": "light",
+      "colorScheme": "light",
+      "storedLanguage": "ru",
+      "storedTheme": "light",
+      "background": "rgb(246, 250, 247)",
+      "color": "rgb(28, 41, 34)"
+    }
+  },
+  {
+    "name": "staff-1440 no browser errors",
+    "pass": true,
+    "detail": {
+      "errors": [],
+      "consoleErrors": []
+    }
+  }
+]

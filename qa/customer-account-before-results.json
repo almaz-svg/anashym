@@ -1,0 +1,431 @@
+[
+  {
+    "width": 360,
+    "initial": [
+      {
+        "tag": "BUTTON",
+        "text": "Приглашение",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Вход",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Регистрация",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "type": "tel",
+        "name": "phone"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "type": "password",
+        "name": "password"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Войти",
+        "type": "submit",
+        "name": ""
+      }
+    ],
+    "state": {
+      "buttons": [
+        {
+          "tag": "BUTTON",
+          "class": "logout",
+          "text": "Выйти",
+          "rect": {
+            "x": 294,
+            "y": 12,
+            "width": 50,
+            "height": 44,
+            "bottom": 56
+          },
+          "fontSize": "0px",
+          "display": "flex",
+          "overflow": "visible",
+          "height": "44px",
+          "position": "absolute",
+          "color": "rgb(86, 104, 92)"
+        }
+      ],
+      "aside": {
+        "tag": "ASIDE",
+        "class": "",
+        "text": "Кондитерская\nКаталог\nЗаказы\nОплаты\nЗадолженность\nОтчёты\nУведомления\nАдреса доставки\nВыйти",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 129,
+          "bottom": 129
+        },
+        "fontSize": "16px",
+        "display": "block",
+        "overflow": "visible",
+        "height": "129px",
+        "position": "static",
+        "color": "rgb(28, 41, 34)"
+      },
+      "nav": {
+        "tag": "NAV",
+        "class": "",
+        "text": "Каталог\nЗаказы\nОплаты\nЗадолженность\nОтчёты\nУведомления\nАдреса доставки",
+        "rect": {
+          "x": 16,
+          "y": 64,
+          "width": 328,
+          "height": 44,
+          "bottom": 108
+        },
+        "fontSize": "16px",
+        "display": "flex",
+        "overflow": "auto",
+        "height": "44px",
+        "position": "static",
+        "color": "rgb(28, 41, 34)"
+      },
+      "header": {
+        "tag": "HEADER",
+        "class": "",
+        "text": "К\nКофейня «Зелёный двор»",
+        "rect": {
+          "x": 16,
+          "y": 129,
+          "width": 328,
+          "height": 64,
+          "bottom": 193
+        },
+        "fontSize": "12px",
+        "display": "flex",
+        "overflow": "visible",
+        "height": "64px",
+        "position": "static",
+        "color": "rgb(86, 104, 92)"
+      },
+      "footer": {
+        "tag": "FOOTER",
+        "class": "",
+        "text": "Кондитерская · Суммы в KZT · Время поставки: Алматы (UTC+5)",
+        "rect": {
+          "x": 16,
+          "y": 3766.34375,
+          "width": 328,
+          "height": 94,
+          "bottom": 3860.34375
+        },
+        "fontSize": "11px",
+        "display": "block",
+        "overflow": "visible",
+        "height": "94px",
+        "position": "static",
+        "color": "rgb(86, 104, 92)"
+      },
+      "viewport": {
+        "width": 360,
+        "height": 720
+      },
+      "scroll": {
+        "width": 360,
+        "height": 3860
+      }
+    }
+  },
+  {
+    "width": 768,
+    "initial": [
+      {
+        "tag": "BUTTON",
+        "text": "Приглашение",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Вход",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Регистрация",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "type": "tel",
+        "name": "phone"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "type": "password",
+        "name": "password"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Войти",
+        "type": "submit",
+        "name": ""
+      }
+    ],
+    "state": {
+      "buttons": [
+        {
+          "tag": "BUTTON",
+          "class": "logout",
+          "text": "Выйти",
+          "rect": {
+            "x": 639.125,
+            "y": 12,
+            "width": 108.875,
+            "height": 44,
+            "bottom": 56
+          },
+          "fontSize": "16px",
+          "display": "flex",
+          "overflow": "visible",
+          "height": "44px",
+          "position": "absolute",
+          "color": "rgb(86, 104, 92)"
+        }
+      ],
+      "aside": {
+        "tag": "ASIDE",
+        "class": "",
+        "text": "Кондитерская\nКаталог\nЗаказы\nОплаты\nЗадолженность\nОтчёты\nУведомления\nАдреса доставки\nВыйти",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 129,
+          "bottom": 129
+        },
+        "fontSize": "16px",
+        "display": "block",
+        "overflow": "visible",
+        "height": "129px",
+        "position": "static",
+        "color": "rgb(28, 41, 34)"
+      },
+      "nav": {
+        "tag": "NAV",
+        "class": "",
+        "text": "Каталог\nЗаказы\nОплаты\nЗадолженность\nОтчёты\nУведомления\nАдреса доставки",
+        "rect": {
+          "x": 24,
+          "y": 64,
+          "width": 720,
+          "height": 44,
+          "bottom": 108
+        },
+        "fontSize": "16px",
+        "display": "flex",
+        "overflow": "auto",
+        "height": "44px",
+        "position": "static",
+        "color": "rgb(28, 41, 34)"
+      },
+      "header": {
+        "tag": "HEADER",
+        "class": "",
+        "text": "Кондитерская / Каталог\nК\nКофейня «Зелёный двор»",
+        "rect": {
+          "x": 24,
+          "y": 129,
+          "width": 720,
+          "height": 72,
+          "bottom": 201
+        },
+        "fontSize": "12px",
+        "display": "flex",
+        "overflow": "visible",
+        "height": "72px",
+        "position": "static",
+        "color": "rgb(86, 104, 92)"
+      },
+      "footer": {
+        "tag": "FOOTER",
+        "class": "",
+        "text": "Кондитерская · Суммы в KZT · Время поставки: Алматы (UTC+5)",
+        "rect": {
+          "x": 24,
+          "y": 2614.015625,
+          "width": 720,
+          "height": 79,
+          "bottom": 2693.015625
+        },
+        "fontSize": "11px",
+        "display": "block",
+        "overflow": "visible",
+        "height": "79px",
+        "position": "static",
+        "color": "rgb(86, 104, 92)"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 720
+      },
+      "scroll": {
+        "width": 768,
+        "height": 2693
+      }
+    }
+  },
+  {
+    "width": 1440,
+    "initial": [
+      {
+        "tag": "BUTTON",
+        "text": "Приглашение",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Вход",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Регистрация",
+        "type": "submit",
+        "name": ""
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "type": "tel",
+        "name": "phone"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "type": "password",
+        "name": "password"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Войти",
+        "type": "submit",
+        "name": ""
+      }
+    ],
+    "state": {
+      "buttons": [
+        {
+          "tag": "BUTTON",
+          "class": "logout",
+          "text": "Выйти",
+          "rect": {
+            "x": 24,
+            "y": 699.0625,
+            "width": 199,
+            "height": 44,
+            "bottom": 743.0625
+          },
+          "fontSize": "16px",
+          "display": "flex",
+          "overflow": "visible",
+          "height": "44px",
+          "position": "static",
+          "color": "rgb(86, 104, 92)"
+        }
+      ],
+      "aside": {
+        "tag": "ASIDE",
+        "class": "",
+        "text": "Кондитерская\nЛИЧНЫЙ КАБИНЕТ\nКаталог\nЗаказы\nОплаты\nЗадолженность\nОтчёты\nУведомления\nАдреса доставки\nВсегда на связи\n\nПо вопросам поставки обращайтесь к вашему менеджеру.\n\nВыйти",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 248,
+          "height": 720,
+          "bottom": 720
+        },
+        "fontSize": "16px",
+        "display": "flex",
+        "overflow": "visible",
+        "height": "720px",
+        "position": "sticky",
+        "color": "rgb(28, 41, 34)"
+      },
+      "nav": {
+        "tag": "NAV",
+        "class": "",
+        "text": "Каталог\nЗаказы\nОплаты\nЗадолженность\nОтчёты\nУведомления\nАдреса доставки",
+        "rect": {
+          "x": 24,
+          "y": 138,
+          "width": 199,
+          "height": 384,
+          "bottom": 522
+        },
+        "fontSize": "16px",
+        "display": "grid",
+        "overflow": "visible",
+        "height": "384px",
+        "position": "static",
+        "color": "rgb(28, 41, 34)"
+      },
+      "header": {
+        "tag": "HEADER",
+        "class": "",
+        "text": "Кондитерская / Каталог\nК\nКофейня «Зелёный двор»",
+        "rect": {
+          "x": 304,
+          "y": 0,
+          "width": 1080,
+          "height": 98,
+          "bottom": 98
+        },
+        "fontSize": "12px",
+        "display": "flex",
+        "overflow": "visible",
+        "height": "98px",
+        "position": "static",
+        "color": "rgb(86, 104, 92)"
+      },
+      "footer": {
+        "tag": "FOOTER",
+        "class": "",
+        "text": "Кондитерская · Суммы в KZT · Время поставки: Алматы (UTC+5)",
+        "rect": {
+          "x": 304,
+          "y": 2029.140625,
+          "width": 1080,
+          "height": 79,
+          "bottom": 2108.140625
+        },
+        "fontSize": "11px",
+        "display": "block",
+        "overflow": "visible",
+        "height": "79px",
+        "position": "static",
+        "color": "rgb(86, 104, 92)"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 720
+      },
+      "scroll": {
+        "width": 1440,
+        "height": 2108
+      }
+    }
+  }
+]

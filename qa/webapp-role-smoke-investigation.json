@@ -1,0 +1,619 @@
+{
+  "startedAt": "2026-10-14T19:13:37.187Z",
+  "finishedAt": "2026-10-14T19:13:46.531Z",
+  "results": [
+    {
+      "name": "customer 360 login fields rendered",
+      "pass": true
+    },
+    {
+      "name": "customer 360 correct real account",
+      "pass": true,
+      "detail": {
+        "role": "customer"
+      }
+    },
+    {
+      "name": "customer 360 has workspace navigation",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #profile no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #profile fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #profile footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #profile profile API ready",
+      "pass": true
+    },
+    {
+      "name": "Общая задолженность agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Аванс agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Ожидает подтверждения agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "522.00"
+      }
+    },
+    {
+      "name": "Осталось оплатить по поставкам периода agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "customer 360 #profile reversed dates blocked",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #catalog no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #catalog fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #catalog footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #orders no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #orders fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #orders footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #payments no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #payments fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #payments footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #payments profile API ready",
+      "pass": true
+    },
+    {
+      "name": "Общая задолженность agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Аванс agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "0.00"
+      }
+    },
+    {
+      "name": "Ожидает подтверждения agrees with live API",
+      "pass": true,
+      "detail": {
+        "amount": "522.00"
+      }
+    },
+    {
+      "name": "customer 360 #debt no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #debt fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #debt footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #reports no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #reports fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #reports footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #notifications no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #notifications fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #notifications footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 #points no visible error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "customer 360 #points fits screen",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "customer 360 #points footer contact available",
+      "pass": true
+    },
+    {
+      "name": "customer 360 single visible logout",
+      "pass": true
+    },
+    {
+      "name": "customer 360 logout ends server session",
+      "pass": true
+    },
+    {
+      "name": "customer 360 reload remains signed out",
+      "pass": true
+    },
+    {
+      "name": "customer 360 no unexpected browser or HTTP errors",
+      "pass": false,
+      "detail": {
+        "errors": [],
+        "badResponses": [
+          {
+            "url": "http://localhost:5173/api/v1/weekly-reports",
+            "status": 401,
+            "started": "#reports",
+            "finished": "logout"
+          },
+          {
+            "url": "http://localhost:5173/api/v1/notifications",
+            "status": 401,
+            "started": "#notifications",
+            "finished": "logout"
+          },
+          {
+            "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+            "status": 401,
+            "started": "#reports",
+            "finished": "logout"
+          },
+          {
+            "url": "http://localhost:5173/api/v1/delivery-points",
+            "status": 401,
+            "started": "#points",
+            "finished": "logout"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#profile",
+      "title": "Мой профиль"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#catalog",
+      "title": "Каталог"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#orders",
+      "title": "Заказы"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#payments",
+      "title": "Оплаты"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#debt",
+      "title": "Задолженность"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#reports",
+      "title": "Отчёты"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#notifications",
+      "title": "Уведомления"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "route": "#points",
+      "title": "Адреса доставки"
+    }
+  ],
+  "network": [
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "initial",
+      "finished": "initial"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/login",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15&limit=20",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "login",
+      "finished": "login"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "login",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#profile",
+      "finished": "#profile"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/catalog?delivery_date=2026-10-15&limit=20",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#catalog",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/returns",
+      "status": 200,
+      "started": "#orders",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/profile",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/payments",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#payments"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/orders?limit=20",
+      "status": 200,
+      "started": "#payments",
+      "finished": "#debt"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/balance",
+      "status": 200,
+      "started": "#debt",
+      "finished": "#reports"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 200,
+      "started": "#reports",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 200,
+      "started": "#notifications",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 200,
+      "started": "#reports",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 200,
+      "started": "#points",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/logout",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/weekly-reports",
+      "status": 401,
+      "started": "#reports",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/notifications",
+      "status": 401,
+      "started": "#notifications",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/reports?from=2026-10-15&to=2026-10-15",
+      "status": 401,
+      "started": "#reports",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/delivery-points",
+      "status": 401,
+      "started": "#points",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/csrf",
+      "status": 204,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    },
+    {
+      "role": "customer",
+      "width": 360,
+      "url": "http://localhost:5173/api/v1/auth/me",
+      "status": 401,
+      "started": "logout",
+      "finished": "logout"
+    }
+  ]
+}

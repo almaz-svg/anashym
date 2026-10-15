@@ -1,0 +1,363 @@
+[
+  {
+    "check": "unauthenticated balance",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "login session/me",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "CSRF required",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "create order 10 x 1500",
+    "passed": true,
+    "detail": [
+      201,
+      {
+        "id": "fa9710f6-41ae-4e0f-95ef-c4c5b392bef5",
+        "client_id": "0289d38f-f453-4bb3-9374-fdb2b726ff68",
+        "kind": "regular",
+        "status": "submitted",
+        "payment_mode": "deferred",
+        "currency": "KZT",
+        "total_amount": "15000.00",
+        "created_at": "2026-10-14T15:47:48.078302+00:00",
+        "requested_delivery_at": "2026-10-14T15:49:47.053907+00:00",
+        "reservation_expires_at": "2026-10-14T16:47:48.069994+00:00",
+        "delivery_point_id": "0aca09c6-50bf-47db-855a-f6f47e19c093",
+        "items": [
+          {
+            "product_id": "e6adf830-44d8-491a-8434-900b0d02bb1e",
+            "name": "QA de8f8018",
+            "unit": "portion",
+            "quantity": 10,
+            "unit_price_amount": "1500.00",
+            "line_total_amount": "15000.00"
+          }
+        ],
+        "version": 1
+      }
+    ]
+  },
+  {
+    "check": "idempotent replay same response",
+    "passed": true,
+    "detail": [
+      201,
+      {
+        "id": "fa9710f6-41ae-4e0f-95ef-c4c5b392bef5",
+        "kind": "regular",
+        "items": [
+          {
+            "name": "QA de8f8018",
+            "unit": "portion",
+            "quantity": 10,
+            "product_id": "e6adf830-44d8-491a-8434-900b0d02bb1e",
+            "line_total_amount": "15000.00",
+            "unit_price_amount": "1500.00"
+          }
+        ],
+        "status": "submitted",
+        "version": 1,
+        "currency": "KZT",
+        "client_id": "0289d38f-f453-4bb3-9374-fdb2b726ff68",
+        "created_at": "2026-10-14T15:47:48.078302+00:00",
+        "payment_mode": "deferred",
+        "total_amount": "15000.00",
+        "delivery_point_id": "0aca09c6-50bf-47db-855a-f6f47e19c093",
+        "requested_delivery_at": "2026-10-14T15:49:47.053907+00:00",
+        "reservation_expires_at": "2026-10-14T16:47:48.069994+00:00"
+      }
+    ]
+  },
+  {
+    "check": "idempotency changed body 409",
+    "passed": true,
+    "detail": [
+      409,
+      {
+        "code": "IDEMPOTENCY_CONFLICT",
+        "message": "Ключ уже использован с другим запросом",
+        "field_errors": {},
+        "details": null,
+        "request_id": "7676eca4-a92e-40aa-9081-563198cd4363"
+      }
+    ]
+  },
+  {
+    "check": "reserve credit without creating debt",
+    "passed": true,
+    "detail": {
+      "currency": "KZT",
+      "balance_amount": "0.00",
+      "debt_amount": "0.00",
+      "advance_amount": "0.00",
+      "overdue_amount": "0.00",
+      "reserved_credit_amount": "15000.00",
+      "credit_limit_amount": "50000.00",
+      "available_credit_amount": "35000.00",
+      "period_days": 14,
+      "period_start": "2026-10-13",
+      "period_end_exclusive": "2026-10-27"
+    }
+  },
+  {
+    "check": "stock reservation exactly once",
+    "passed": true,
+    "detail": 10
+  },
+  {
+    "check": "foreign order hidden",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "foreign delivery point rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "price mismatch",
+    "passed": true,
+    "detail": [
+      409,
+      {
+        "code": "PRICE_CHANGED",
+        "message": "Цена товара изменилась",
+        "field_errors": {},
+        "details": null,
+        "request_id": "837086a8-315b-4a20-8f54-7a1878086c01"
+      }
+    ]
+  },
+  {
+    "check": "price mismatch leaves stock unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "unknown field rejected",
+    "passed": true,
+    "detail": [
+      422,
+      {
+        "code": "VALIDATION_ERROR",
+        "message": "Проверьте поля",
+        "field_errors": {
+          "unexpected": [
+            "Неизвестное поле"
+          ]
+        },
+        "details": null,
+        "request_id": "913c6200-dafd-40d9-b245-58052fb456c9"
+      }
+    ]
+  },
+  {
+    "check": "registration category required",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "registration other explanation required",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "valid registration accepted",
+    "passed": true,
+    "detail": [
+      201,
+      {
+        "user_id": "dad1e8a1-f68a-4e9b-bea6-bb76e6336cea",
+        "role": "customer",
+        "client_id": "d2703afe-a9a4-4acb-a792-6f88563fba98",
+        "approval_status": "pending",
+        "name": "QA pending",
+        "phone": "+77290804691",
+        "client_name": "QA pending"
+      }
+    ]
+  },
+  {
+    "check": "pending cannot access catalog",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "check": "stock race one success one conflict",
+    "passed": true,
+    "detail": [
+      [
+        409,
+        {
+          "code": "STOCK_UNAVAILABLE",
+          "message": "Недостаточно порций",
+          "field_errors": {},
+          "details": {
+            "product_id": "14b9fda7-d3d4-4378-b6af-f02734c736a7",
+            "available_qty": 3
+          },
+          "request_id": "8a187070-0db9-4c2a-9779-1232f42edcce"
+        }
+      ],
+      [
+        201,
+        {
+          "id": "89adf6f7-979c-4386-bda1-244313d367c8",
+          "client_id": "72aa7d52-2263-44b5-8c27-93bfa5da9221",
+          "kind": "regular",
+          "status": "submitted",
+          "payment_mode": "deferred",
+          "currency": "KZT",
+          "total_amount": "10500.00",
+          "created_at": "2026-10-14T15:47:53.139708+00:00",
+          "requested_delivery_at": "2026-10-14T15:49:51.553220+00:00",
+          "reservation_expires_at": "2026-10-14T16:47:53.133868+00:00",
+          "delivery_point_id": "deae305c-2f3b-41ea-9607-85ad452c7c94",
+          "items": [
+            {
+              "product_id": "14b9fda7-d3d4-4378-b6af-f02734c736a7",
+              "name": "QA de851ee7",
+              "unit": "portion",
+              "quantity": 7,
+              "unit_price_amount": "1500.00",
+              "line_total_amount": "10500.00"
+            }
+          ],
+          "version": 1
+        }
+      ]
+    ]
+  },
+  {
+    "check": "stock race DB invariants",
+    "passed": true,
+    "detail": {
+      "stock_reserved": 7,
+      "credit_reserved": "10500.00"
+    }
+  },
+  {
+    "check": "credit race one success one conflict",
+    "passed": true,
+    "detail": [
+      [
+        201,
+        {
+          "id": "ee6d1389-ad98-450a-aeb6-077dae98fc49",
+          "client_id": "fa03edba-9732-4ccd-bb3d-d2d9214cfb52",
+          "kind": "regular",
+          "status": "submitted",
+          "payment_mode": "deferred",
+          "currency": "KZT",
+          "total_amount": "15000.00",
+          "created_at": "2026-10-14T15:47:55.441117+00:00",
+          "requested_delivery_at": "2026-10-14T15:49:53.667922+00:00",
+          "reservation_expires_at": "2026-10-14T16:47:55.436117+00:00",
+          "delivery_point_id": "ef2e0c34-26d9-4bff-8b24-74ad7b19e961",
+          "items": [
+            {
+              "product_id": "9471c26e-8937-4206-b850-2214e09723a2",
+              "name": "QA 9d57688e",
+              "unit": "portion",
+              "quantity": 10,
+              "unit_price_amount": "1500.00",
+              "line_total_amount": "15000.00"
+            }
+          ],
+          "version": 1
+        }
+      ],
+      [
+        409,
+        {
+          "code": "CREDIT_LIMIT_EXCEEDED",
+          "message": "Недостаточно свободного лимита",
+          "field_errors": {},
+          "details": null,
+          "request_id": "239b2537-cb7b-4227-a0a8-456c7b8c411c"
+        }
+      ]
+    ]
+  },
+  {
+    "check": "credit race DB invariants",
+    "passed": true,
+    "detail": {
+      "stock_reserved": 10,
+      "credit_reserved": "15000.00"
+    }
+  },
+  {
+    "check": "concurrent same idempotency key",
+    "passed": true,
+    "detail": [
+      [
+        201,
+        {
+          "id": "d5735d0f-7938-487f-be6e-0b1da9ae4aff",
+          "kind": "regular",
+          "items": [
+            {
+              "name": "QA 878f37b2",
+              "unit": "portion",
+              "quantity": 10,
+              "product_id": "0e61ba70-c6a3-4868-91e8-6370c8f94c88",
+              "line_total_amount": "15000.00",
+              "unit_price_amount": "1500.00"
+            }
+          ],
+          "status": "submitted",
+          "version": 1,
+          "currency": "KZT",
+          "client_id": "7d3d13e5-d557-4d5b-8222-976baf6d5300",
+          "created_at": "2026-10-14T15:47:58.134648+00:00",
+          "payment_mode": "deferred",
+          "total_amount": "15000.00",
+          "delivery_point_id": "f94c26ee-d5ed-4182-813c-100ba70a5459",
+          "requested_delivery_at": "2026-10-14T15:49:56.164831+00:00",
+          "reservation_expires_at": "2026-10-14T16:47:58.127648+00:00"
+        }
+      ],
+      [
+        201,
+        {
+          "id": "d5735d0f-7938-487f-be6e-0b1da9ae4aff",
+          "client_id": "7d3d13e5-d557-4d5b-8222-976baf6d5300",
+          "kind": "regular",
+          "status": "submitted",
+          "payment_mode": "deferred",
+          "currency": "KZT",
+          "total_amount": "15000.00",
+          "created_at": "2026-10-14T15:47:58.134648+00:00",
+          "requested_delivery_at": "2026-10-14T15:49:56.164831+00:00",
+          "reservation_expires_at": "2026-10-14T16:47:58.127648+00:00",
+          "delivery_point_id": "f94c26ee-d5ed-4182-813c-100ba70a5459",
+          "items": [
+            {
+              "product_id": "0e61ba70-c6a3-4868-91e8-6370c8f94c88",
+              "name": "QA 878f37b2",
+              "unit": "portion",
+              "quantity": 10,
+              "unit_price_amount": "1500.00",
+              "line_total_amount": "15000.00"
+            }
+          ],
+          "version": 1
+        }
+      ]
+    ]
+  },
+  {
+    "check": "concurrent duplicate creates one order",
+    "passed": true,
+    "detail": null
+  }
+]

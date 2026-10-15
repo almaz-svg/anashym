@@ -1,0 +1,57 @@
+[
+  {
+    "name": "courier actual multipart photo upload d19c67be",
+    "pass": true
+  },
+  {
+    "name": "courier authenticated photo preview d19c67be",
+    "pass": true
+  },
+  {
+    "name": "courier actual partial zero-row delivery",
+    "pass": true,
+    "detail": "1600.00"
+  },
+  {
+    "name": "courier actual multipart photo upload 1f775fb7",
+    "pass": true
+  },
+  {
+    "name": "courier authenticated photo preview 1f775fb7",
+    "pass": true
+  },
+  {
+    "name": "courier cash shortage visibly blocked",
+    "pass": true
+  },
+  {
+    "name": "photo draft survives failed cash delivery",
+    "pass": true
+  },
+  {
+    "name": "courier corrects cash and delivers via form",
+    "pass": true
+  },
+  {
+    "name": "UI operations produce exact debt delta1600",
+    "pass": true,
+    "detail": "1600.00"
+  },
+  {
+    "name": "accountant actual weekly CSV download",
+    "pass": true
+  },
+  {
+    "name": "download has event traceability and rows",
+    "pass": true
+  },
+  {
+    "name": "accountant mobile report has no overflow",
+    "pass": true
+  },
+  {
+    "name": "actual courier accountant flows no page errors",
+    "pass": true,
+    "detail": []
+  }
+]

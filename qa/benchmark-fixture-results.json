@@ -1,0 +1,11 @@
+{
+  "database": "verify_c606cee1d3d64881",
+  "synthetic": true,
+  "orders_added": 100000,
+  "items_added": 500000,
+  "total_orders": 100018,
+  "total_items": 500018,
+  "seconds": 94.437,
+  "customer_phone": "+77019999999",
+  "customer_password": "CapacityLocalOnly2026!"
+}

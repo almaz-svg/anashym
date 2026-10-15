@@ -1,0 +1,27 @@
+[
+  {
+    "name": "customer actual Kaspi form creates pending",
+    "pass": true,
+    "detail": {
+      "id": "cbf8a04b-513d-49b8-b0d2-fcb93ca95aba",
+      "client_id": "58253670-3f0c-4942-9169-0e547dec87b0",
+      "order_id": null,
+      "method": "kaspi",
+      "amount": "1",
+      "amount_amount": "1",
+      "status": "pending",
+      "reference": "QA-BROWSER-1791994934187",
+      "created_at": "2026-10-14T16:22:16.128538+00:00",
+      "allocations": []
+    }
+  },
+  {
+    "name": "cashier actual form confirms Kaspi",
+    "pass": true
+  },
+  {
+    "name": "admin actual product form persists",
+    "pass": true,
+    "detail": "b26d7490-f742-4574-8789-ff7aed458144"
+  }
+]

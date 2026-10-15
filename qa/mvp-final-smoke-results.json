@@ -1,0 +1,102 @@
+[
+  {
+    "name": "customer login role preserved after restart",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer orders?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer payments?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "customer notifications actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin login role preserved after restart",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin orders?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin payments?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "admin notifications actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier login role preserved after restart",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier orders?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier payments?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "courier notifications actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier login role preserved after restart",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier orders?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier payments?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier notifications actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant login role preserved after restart",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant orders?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant payments?limit=1 actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "accountant notifications actual HTTP envelope",
+    "pass_": true,
+    "detail": null
+  }
+]

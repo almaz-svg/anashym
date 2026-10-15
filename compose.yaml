@@ -1,0 +1,64 @@
+name: confectionery
+services:
+  db:
+    image: postgres:16.6-alpine
+    environment:
+      POSTGRES_DB: confectionery
+      POSTGRES_USER: confectionery
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U confectionery -d confectionery]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  backend:
+    build: ./backend
+    environment:
+      DB_ENGINE: postgresql
+      DB_HOST: db
+      DB_NAME: confectionery
+      DB_USER: confectionery
+      DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
+      SECRET_KEY: ${DJANGO_SECRET_KEY:?Set DJANGO_SECRET_KEY in .env}
+      DEBUG: '1'
+    command: sh -c "python manage.py migrate && python manage.py seed_demo && python -m config.serve --host 0.0.0.0 --port 8000"
+    ports:
+      - '8000:8000'
+    volumes:
+      - private_media:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+  frontend:
+    image: node:22.14.0-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - frontend_modules:/app/node_modules
+    environment:
+      API_PROXY_TARGET: http://backend:8000
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    ports:
+      - '5173:5173'
+    depends_on:
+      - backend
+  worker:
+    build: ./backend
+    environment:
+      DB_ENGINE: postgresql
+      DB_HOST: db
+      DB_NAME: confectionery
+      DB_USER: confectionery
+      DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
+      SECRET_KEY: ${DJANGO_SECRET_KEY:?Set DJANGO_SECRET_KEY in .env}
+      DEBUG: '1'
+    command: sh -c "while true; do python manage.py expire_reservations; python manage.py close_periods; python manage.py generate_weekly_reports; sleep 30; done"
+    depends_on:
+      backend:
+        condition: service_started
+volumes:
+  postgres_data:
+  frontend_modules:
+  private_media:

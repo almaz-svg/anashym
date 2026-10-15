@@ -1,0 +1,19 @@
+[
+  {
+    "name": "accountant actual UI confirms pending cash refund10",
+    "pass": true,
+    "detail": {
+      "id": "53e7d58f-a89d-4b2c-84c7-5b63c307d9fe",
+      "client_id": "0c79b086-fc96-49ee-94eb-7636adbf1d7c",
+      "amount": "10.00",
+      "method": "cash",
+      "reason": "QA accountant UI confirmation",
+      "status": "confirmed",
+      "created_at": "2026-10-14T17:37:12.330456+00:00"
+    }
+  },
+  {
+    "name": "category required placeholder without default acceptance",
+    "pass": true
+  }
+]

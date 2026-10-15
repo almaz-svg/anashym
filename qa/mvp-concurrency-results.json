@@ -1,0 +1,137 @@
+[
+  {
+    "name": "PostgreSQL concurrent stock bounded successful orders",
+    "pass_": true,
+    "detail": [
+      {
+        "status": 201,
+        "code": null
+      },
+      {
+        "status": 409,
+        "code": "STOCK_UNAVAILABLE"
+      },
+      {
+        "status": 201,
+        "code": null
+      },
+      {
+        "status": 409,
+        "code": "STOCK_UNAVAILABLE"
+      },
+      {
+        "status": 409,
+        "code": "STOCK_UNAVAILABLE"
+      },
+      {
+        "status": 201,
+        "code": null
+      }
+    ]
+  },
+  {
+    "name": "PostgreSQL stock exact reserved credit",
+    "pass_": true,
+    "detail": "9000.00"
+  },
+  {
+    "name": "stock cleanup releases reserve",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "PostgreSQL concurrent quota bounded successful orders",
+    "pass_": true,
+    "detail": [
+      {
+        "status": 201,
+        "code": null
+      },
+      {
+        "status": 409,
+        "code": "STOCK_UNAVAILABLE"
+      },
+      {
+        "status": 409,
+        "code": "STOCK_UNAVAILABLE"
+      },
+      {
+        "status": 201,
+        "code": null
+      },
+      {
+        "status": 409,
+        "code": "STOCK_UNAVAILABLE"
+      },
+      {
+        "status": 201,
+        "code": null
+      }
+    ]
+  },
+  {
+    "name": "PostgreSQL quota exact reserved credit",
+    "pass_": true,
+    "detail": "9000.00"
+  },
+  {
+    "name": "quota cleanup releases reserve",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "PostgreSQL concurrent credit bounded successful orders",
+    "pass_": true,
+    "detail": [
+      {
+        "status": 409,
+        "code": "CREDIT_LIMIT_EXCEEDED"
+      },
+      {
+        "status": 201,
+        "code": null
+      },
+      {
+        "status": 409,
+        "code": "CREDIT_LIMIT_EXCEEDED"
+      },
+      {
+        "status": 201,
+        "code": null
+      },
+      {
+        "status": 409,
+        "code": "CREDIT_LIMIT_EXCEEDED"
+      },
+      {
+        "status": 409,
+        "code": "CREDIT_LIMIT_EXCEEDED"
+      }
+    ]
+  },
+  {
+    "name": "PostgreSQL credit exact reserved credit",
+    "pass_": true,
+    "detail": "6000.00"
+  },
+  {
+    "name": "credit cleanup releases reserve",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "PostgreSQL concurrent handover only one7000 reservation",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "PostgreSQL handover available wallet3000",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "parallel courier wallet cleanupzero",
+    "pass_": true,
+    "detail": null
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "cashier unreviewed Kaspi visible for reconciliation",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "confirming cashier retains own confirmed payment",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "another cashier cannot see foreign confirmed settlement",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier report own settlement scope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "cashier report foreign settlement scope",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "invalid image bytes return structured422",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "broken PNG checksum returns422 rather than500",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "upload six photos returns structured validation",
+    "pass_": true,
+    "detail": {
+      "status": 422,
+      "json": true
+    }
+  },
+  {
+    "name": "private content removes EXIF",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "private stream forbids shared caching",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "anonymous signed link denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "foreign customer signed link denied",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "signed URL bound to requesting user",
+    "pass_": true,
+    "detail": null
+  },
+  {
+    "name": "tampered signature denied",
+    "pass_": true,
+    "detail": null
+  }
+]

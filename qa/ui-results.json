@@ -1,0 +1,80 @@
+[
+  {
+    "name": "login 1440 no overflow",
+    "pass": true
+  },
+  {
+    "name": "catalog 1440 three products",
+    "pass": true
+  },
+  {
+    "name": "catalog 1440 no overflow",
+    "pass": true
+  },
+  {
+    "name": "order server confirmation",
+    "pass": true
+  },
+  {
+    "name": "debt 1440 no overflow",
+    "pass": true
+  },
+  {
+    "name": "debt 1440 separate payments",
+    "pass": true
+  },
+  {
+    "name": "registration 1440 other required",
+    "pass": true
+  },
+  {
+    "name": "registration 1440 pending screen",
+    "pass": true
+  },
+  {
+    "name": "pending 1440 no overflow",
+    "pass": true
+  },
+  {
+    "name": "browser 1440 no unexpected console/page errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "login 360 no overflow",
+    "pass": true
+  },
+  {
+    "name": "catalog 360 three products",
+    "pass": true
+  },
+  {
+    "name": "catalog 360 no overflow",
+    "pass": true
+  },
+  {
+    "name": "debt 360 no overflow",
+    "pass": true
+  },
+  {
+    "name": "debt 360 separate payments",
+    "pass": true
+  },
+  {
+    "name": "registration 360 other required",
+    "pass": true
+  },
+  {
+    "name": "registration 360 pending screen",
+    "pass": true
+  },
+  {
+    "name": "pending 360 no overflow",
+    "pass": true
+  },
+  {
+    "name": "browser 360 no unexpected console/page errors",
+    "pass": true,
+    "detail": []
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "real login controls available",
+    "pass": true
+  },
+  {
+    "name": "delayed order response originates from actual server",
+    "pass": true
+  },
+  {
+    "name": "logout succeeds while old detail response is in flight",
+    "pass": true
+  },
+  {
+    "name": "real login controls available",
+    "pass": true
+  },
+  {
+    "name": "new session belongs to a different actual QA client",
+    "pass": true
+  },
+  {
+    "name": "late old order detail never appears in new client DOM",
+    "pass": true
+  },
+  {
+    "name": "real login controls available",
+    "pass": true
+  },
+  {
+    "name": "staff failed logout visibly reports error",
+    "pass": true
+  },
+  {
+    "name": "staff failed logout keeps actual session active",
+    "pass": true
+  },
+  {
+    "name": "staff logout retry remains enabled",
+    "pass": true
+  },
+  {
+    "name": "staff retry logs out against actual server",
+    "pass": true
+  },
+  {
+    "name": "real login controls available",
+    "pass": true
+  },
+  {
+    "name": "pending failed logout visibly reports error",
+    "pass": true
+  },
+  {
+    "name": "pending failed logout keeps actual session active",
+    "pass": true
+  },
+  {
+    "name": "pending logout retry remains enabled",
+    "pass": true
+  },
+  {
+    "name": "pending retry logs out against actual server",
+    "pass": true
+  }
+]
