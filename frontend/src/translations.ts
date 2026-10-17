@@ -726,6 +726,35 @@ const errors = {
     'Укажите from и to в формате YYYY-MM-DD, период до 366 дней': pair('Enter both dates in YYYY-MM-DD format, with a period of no more than 366 days', 'Екі күнді де YYYY-MM-DD форматында көрсетіңіз, кезең 366 күннен аспауы керек'),
 };
 
+const aiOrders = {
+    'Заказ из сообщения': pair('Order from a message', 'Хабарламадан тапсырыс'),
+    'Создать заказ из сообщения': pair('Create order from a message', 'Хабарламадан тапсырыс жасау'),
+    'Сначала проверьте черновик. Товар резервируется только при создании заказа.': pair('Review the draft first. Stock is reserved only when you create the order.', 'Алдымен нобайды тексеріңіз. Өнім тек тапсырыс жасалғанда резервтеледі.'),
+    'Заказ создан.': pair('Order created.', 'Тапсырыс жасалды.'),
+    'Закрыть черновик': pair('Close draft', 'Нобайды жабу'),
+    '1. Сообщение': pair('1. Message', '1. Хабарлама'),
+    '2. Проверка заказа': pair('2. Review order', '2. Тапсырысты тексеру'),
+    'Сообщение клиента': pair('Customer message', 'Клиент хабарламасы'),
+    'Текст хранится только в открытой форме и удаляется после создания заказа или закрытия.': pair('Text stays only in this open form and is cleared when the order is created or the form closes.', 'Мәтін тек ашық нысанда сақталады, тапсырыс жасалғанда немесе нысан жабылғанда өшіріледі.'),
+    'ИИ пока не подключён. Заполните черновик вручную.': pair('AI is not connected yet. Fill in the draft manually.', 'ЖИ әзірге қосылмаған. Нобайды қолмен толтырыңыз.'),
+    'Разобрать сообщение': pair('Parse message', 'Хабарламаны талдау'),
+    'Разбираем сообщение…': pair('Parsing message…', 'Хабарлама талдануда…'),
+    'Новый разбор заменит исправленные позиции и дату. Продолжить?': pair('Parsing again will replace the edited items and date. Continue?', 'Қайта талдау түзетілген өнімдер мен күнді ауыстырады. Жалғастыру керек пе?'),
+    'Заменить черновик': pair('Replace draft', 'Нобайды ауыстыру'),
+    'Требуют уточнения': pair('Needs clarification', 'Нақтылау қажет'),
+    'Здесь появятся позиции. Их также можно добавить вручную.': pair('Items will appear here. You can also add them manually.', 'Өнімдер осында көрсетіледі. Оларды қолмен де қосуға болады.'),
+    'Позиция': pair('Item', 'Өнім'),
+    'Выберите товар': pair('Select a product', 'Өнімді таңдаңыз'),
+    'Удалить позицию': pair('Remove item', 'Өнімді алып тастау'),
+    'Добавить позицию': pair('Add item', 'Өнім қосу'),
+    'Время доставки': pair('Delivery time', 'Жеткізу уақыты'),
+    'Выберите способ оплаты': pair('Select payment method', 'Төлем әдісін таңдаңыз'),
+    'Проверил товары, количество, дату, адрес и условия оплаты': pair('I checked the products, quantities, date, address and payment terms', 'Өнімдерді, санын, күнін, мекенжайын және төлем шарттарын тексердім'),
+    'Создаём заказ…': pair('Creating order…', 'Тапсырыс жасалуда…'),
+    'Не удалось разобрать сообщение. Исправьте черновик вручную.': pair('The message could not be parsed. Edit the draft manually.', 'Хабарламаны талдау мүмкін болмады. Нобайды қолмен түзетіңіз.'),
+    'ИИ пока не подключён. Используйте ручное оформление заказа.': pair('AI is not connected yet. Create the order manually.', 'ЖИ әзірге қосылмаған. Тапсырысты қолмен жасаңыз.'),
+};
+
 export const translations: Record<string, { en: string; kk: string }> = {
     'Ожидает возврата': pair('Pending refund', 'Қайтаруды күтуде'),
     'Зарезервировано для возврата денег': pair('Reserved for a refund', 'Ақша қайтаруға резервтелген'),
@@ -793,4 +822,5 @@ export const translations: Record<string, { en: string; kk: string }> = {
     ...staff,
     ...orderOperations,
     ...errors,
+    ...aiOrders,
 };

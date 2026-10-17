@@ -84,21 +84,24 @@ def listing(request,items):
     selected=items[offset:offset+limit]
     return {'items':selected,'next_cursor':signing.dumps(offset+limit,salt=request.path) if len(items)>offset+limit else None}
 
-def place_order(user,data):
+def place_order(user,data,*,client=None,ai_used=False):
     validate(data,['kind','delivery_point_id','requested_delivery_at','payment_mode','items'],['exchange_id'])
+    # Keep the actual actor separate from the customer whose stock/credit is reserved.
+    if client is not None and user.role!='admin': fail('FORBIDDEN','Оформление для другого клиента недоступно',403)
+    target_client_id=client.pk if client is not None else user.client_id
     if data['kind'] not in ['regular','preorder'] or data['payment_mode'] not in ['deferred','cash','kaspi']: fail('VALIDATION_ERROR','Недопустимый вид заказа или оплаты')
     requested=parse_datetime(str(data['requested_delivery_at']))
     if requested is None or timezone.is_naive(requested): fail('VALIDATION_ERROR','Укажите дату со смещением часового пояса')
     local=timezone.localtime(requested); today=timezone.localdate(); now=timezone.now()
     if (data['kind']=='regular' and local.date()!=today) or (data['kind']=='preorder' and not today<local.date()<=today+timedelta(days=90)): fail('VALIDATION_ERROR','Недопустимая дата доставки')
-    try: point=DeliveryPoint.objects.get(id=data['delivery_point_id'],client=user.client,confirmed=True)
+    try: point=DeliveryPoint.objects.get(id=data['delivery_point_id'],client_id=target_client_id,confirmed=True)
     except (DeliveryPoint.DoesNotExist,ValueError): fail('NOT_FOUND','Точка доставки не найдена',404)
     if not point.window_start<=local.time().replace(tzinfo=None)<=point.window_end: fail('VALIDATION_ERROR','Время вне окна доставки')
     rows=data['items']
     if not isinstance(rows,list) or not 1<=len(rows)<=100: fail('VALIDATION_ERROR','Нужно от 1 до 100 позиций')
     products=[]; seen=set(); total=Decimal('0')
     # Every order locks its organization before stock; deterministic product order prevents deadlocks.
-    client=Client.objects.select_for_update().get(id=user.client_id)
+    client=Client.objects.select_for_update().get(id=target_client_id)
     if client.archived or client.approval_status!='active':fail('FORBIDDEN','Новые заказы недоступны для неодобренного или архивного клиента',403)
     if data['payment_mode']=='deferred' and not client.deferred_approved: fail('FORBIDDEN','Отсрочка не одобрена',403)
     from .services import overdue_amount,financial_amounts
@@ -146,7 +149,7 @@ def place_order(user,data):
         Reservation.objects.create(order=order,batch=source if isinstance(source,Batch) else None,quota=source if isinstance(source,Quota) else None,quantity=take)
     if data['payment_mode']=='deferred': client.reserved_credit+=total; client.save(update_fields=['reserved_credit'])
     from .services import audit
-    audit(User.objects.get(pk=user.pk),'order.created',order)
+    audit(user,'order.created',order,{'ai_used':True} if ai_used else None)
     return order_data(order),201
 
 def route_request(request,route,data):
@@ -202,6 +205,17 @@ def route_request(request,route,data):
     if route=='auth/me' and request.method=='GET': return me(user),200
     if route=='auth/logout' and request.method=='POST': logout(request); return None,204
     if user.must_change_password:fail('PASSWORD_CHANGE_REQUIRED','Установите новый пароль перед продолжением',403)
+    # Parse is a read-only, nonpersistent operation. Bypass the mutation dispatcher,
+    # which stores idempotency records, and fail closed until a provider is approved.
+    if route in ['ai/order-draft','ai/status']:
+        from .services import require
+        require(user,'admin')
+        if route=='ai/status' and request.method=='GET':
+            return {'enabled':False,'reason':'AI_NOT_CONFIGURED'},200
+        if route=='ai/order-draft' and request.method=='POST':
+            from .ai_drafts import parse_order_message
+            return parse_order_message(user,data),200
+        fail('NOT_FOUND','Ресурс не найден',404)
     from .routes import handle
     if route=='profile' and request.method=='GET':
         return handle(request,route,data)

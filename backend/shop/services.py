@@ -27,7 +27,7 @@ def sanitize_audit(value):
         result={}
         for key,item in value.items():
             normalized=str(key).lower().replace('-','_')
-            if any(secret in normalized for secret in ['password','token','secret','authorization']) or normalized in {'phone','email','username','address','recipient','address_snapshot','file','content_hash'}:continue
+            if (normalized!='must_change_password' and any(secret in normalized for secret in ['password','token','secret','authorization'])) or normalized in {'phone','email','username','address','recipient','address_snapshot','file','content_hash'}:continue
             result[key]=sanitize_audit(item)
         return result
     if isinstance(value,(list,tuple)):return [sanitize_audit(item) for item in value]
@@ -220,11 +220,17 @@ def ensure_cancellation_refund(user,order,reason='Отмена оплаченн�
     """Create one obligation from money still available; no money moves here."""
     client=Client.objects.select_for_update().get(pk=order.client_id)
     reference='cancelled-order:'+str(order.pk)
-    existing=Refund.objects.filter(source_reference=reference).first()
-    if existing:return existing
+    previous=Refund.objects.filter(order=order,source_reference__startswith=reference)
+    existing=previous.filter(status='pending').first()
     pending=Refund.objects.filter(client=client,status='pending').aggregate(total=Sum('amount'))['total'] or ZERO
     amount=min(available_order_prepayment(order),max(ZERO,-client.balance-pending))
-    if amount<=0:return None
+    if amount<=0:return existing
+    if existing:
+        before=snapshot(existing)
+        existing.amount+=amount;existing.save(update_fields=['amount'])
+        audit(user,'refund.revised',existing,{'reason':reason,'automatic':True},before=before)
+        return existing
+    if previous.exists():reference+=':followup:'+str(previous.count()+1)
     obj=Refund.objects.create(client=client,order=order,source_reference=reference,amount=amount,method=order.payment_mode if order.payment_mode in ['cash','kaspi'] else 'kaspi',reason=reason)
     audit(user,'refund.created',obj,{'reason':reason,'automatic':True})
     return obj

@@ -1,5 +1,6 @@
 import { t, locale } from './preferences';
 import { AdminOrder } from './admin-order';
+import { AIOrder } from './ai-order';
 import { OrderPanel } from './order-workspace';
 import React, { useEffect, useState } from 'react';
 import { CakeSlice } from 'lucide-react';
@@ -69,6 +70,7 @@ function Orders({ role, revision }: {
     return <>
     <ErrorBox error={data.error || op.error}/>
     {role === 'admin' && <AdminOrder op={op}/>}
+    {role === 'admin' && <AIOrder op={op}/>}
     <section className="card">
     <h2>
     {t(role === 'courier' ? 'Назначенные доставки' : 'Очередь заказов')}

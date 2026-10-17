@@ -106,11 +106,12 @@ def handle(request,route,data):
         from .photos import handle as photo_handle
         return photo_handle(request,route,data)
     if route=='orders' and method=='POST' and user.role=='admin':
-        from types import SimpleNamespace
-        client=client_for(user,data); body={k:v for k,v in data.items() if k!='client_id'}
-        # The acting admin is retained in the audit after the standard reservation logic.
-        proxy=SimpleNamespace(client=client,client_id=client.pk,id=user.pk,pk=user.pk,role='admin')
-        result,status=place_order(proxy,body); audit(user,'order.admin_created',Order.objects.get(pk=result['id']),{'client_id':str(client.pk)}); return result,status
+        ai_used=data.get('ai_used',False)
+        if type(ai_used) is not bool: fail('VALIDATION_ERROR','ai_used должен быть логическим значением')
+        client=client_for(user,data); body={k:v for k,v in data.items() if k not in {'client_id','ai_used'}}
+        result,status=place_order(user,body,client=client,ai_used=ai_used)
+        audit(user,'order.admin_created',Order.objects.get(pk=result['id']),{'client_id':str(client.pk),'ai_used':ai_used})
+        return result,status
     if route=='delivery-points':
         require(user,'admin','customer'); qs=DeliveryPoint.objects.all() if user.role=='admin' else DeliveryPoint.objects.filter(client=user.client)
         if request.GET.get('client_id'): qs=qs.filter(client_id=request.GET['client_id'])
