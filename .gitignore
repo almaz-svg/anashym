@@ -4,6 +4,10 @@ dist/
 __pycache__/
 *.py[cod]
 .env
+.env.*
+!.env.example
+.vercel/
+.deploy-staging/
 *.sqlite3
 .pytest_cache/
 media/

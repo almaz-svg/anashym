@@ -7,7 +7,9 @@ export async function apiRequest<T=any>(path:string,options:RequestInit={},fetch
  let response:Response;
  try{response=await fetcher('/api/v1'+path,{...options,credentials:'include',headers:{...(!(options.body instanceof FormData)?{'Content-Type':'application/json'}:{}),...(csrf?{'X-CSRFToken':csrf}:{}),...options.headers}})}catch{throw new ApiError(0,'NETWORK_ERROR','Связь с сервером потеряна. Результат операции неизвестен. Повторите запрос с тем же ключом.');}
  if(response.status===204)return undefined as T;
- const data=await response.json().catch(()=>({}));
+ const data=await response.json().catch(()=>null);
+ if(response.status>=500)throw new ApiError(response.status,data?.code||'API_UNAVAILABLE',data?.message||'Сервер приложения недоступен. Вход и регистрация временно не работают. Попробуйте позже.',data?.field_errors);
+ if(data===null||typeof data!=='object')throw new ApiError(502,'INVALID_API_RESPONSE','Сайт не получил ответ от сервера приложения. Проверьте подключение серверной части.');
  if(!response.ok)throw new ApiError(response.status,data.code||'SERVER_ERROR',data.message||'Сервис временно недоступен. Попробуйте ещё раз.',data.field_errors);
  return data;
 }

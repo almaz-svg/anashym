@@ -1,0 +1,17 @@
+[project]
+name = "anashym-backend"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "Django==5.2.7",
+  "djangorestframework==3.16.1",
+  "psycopg[binary]==3.2.12",
+  "Pillow==11.3.0",
+  "waitress==3.0.2",
+]
+
+[tool.vercel]
+entrypoint = "config.wsgi:application"
+
+[tool.vercel.scripts]
+build = "python manage.py bootstrap_cloud"

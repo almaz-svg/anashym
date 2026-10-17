@@ -37,3 +37,24 @@ LOGGING = {
     'handlers':{'safe_server':{'class':'logging.StreamHandler','filters':['sensitive_query']}},
     'loggers':{'django.server':{'handlers':['safe_server'],'level':'INFO','propagate':False}},
 }
+
+WSGI_APPLICATION = 'config.wsgi.application'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+if os.getenv('VERCEL') == '1' or os.getenv('DJANGO_CLOUD') == '1':
+    from django.core.exceptions import ImproperlyConfigured
+    from .cloud import database_from_url
+    DEBUG = False
+    SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', '')
+    if len(SECRET_KEY) < 50:
+        raise ImproperlyConfigured('Set a strong DJANGO_SECRET_KEY for cloud deployment')
+    DATABASES = {'default': database_from_url(os.getenv('DATABASE_URL') or os.getenv('POSTGRES_URL', ''))}
+    ALLOWED_HOSTS = list(filter(None, [os.getenv('VERCEL_URL'), os.getenv('VERCEL_PROJECT_PRODUCTION_URL'), 'anashym-kappa.vercel.app']))
+    CSRF_TRUSTED_ORIGINS = ['https://' + host for host in ALLOWED_HOSTS]
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SUPABASE_URL = os.getenv('SUPABASE_URL', '')
+    SUPABASE_STORAGE_KEY = os.getenv('SUPABASE_SERVICE_ROLE_KEY') or os.getenv('SUPABASE_SECRET_KEY', '')
+    SUPABASE_MEDIA_BUCKET = 'bakery-private-media'
+    STORAGES = {'default': {'BACKEND': 'shop.cloud_storage.SupabasePrivateStorage'},
+                'staticfiles': {'BACKEND': 'django.contrib.staticfiles.storage.StaticFilesStorage'}}
