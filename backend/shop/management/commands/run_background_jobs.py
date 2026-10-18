@@ -26,7 +26,7 @@ def acquire_job_lock():
 
 
 class Command(BaseCommand):
-    help = 'Run periodic business jobs once and exit; safe for Railway cron'
+    help = 'Run periodic business jobs once and exit with a transaction lock'
 
     def handle(self, *args, **options):
         started = monotonic()

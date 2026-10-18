@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+CLOUD_JOB_SECRET = os.getenv('CLOUD_JOB_SECRET', '')
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', os.getenv('SECRET_KEY', 'local-demo-only-change-before-deployment'))
 DEBUG = os.getenv('DJANGO_DEBUG', os.getenv('DEBUG', '1')) == '1'

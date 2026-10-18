@@ -12,8 +12,10 @@
 
 Постоянный worker в Vercel не запускается. Автоматические резервы, уведомления, закрытие периодов и недельные отчёты требуют отдельного облачного расписания; локальная задача для этого не используется.
 
-Подготовлен перенос существующих данных в [Railway](docs/railway-deployment.md).
-Единая конечная команда для облачного cron — `python manage.py run_background_jobs`.
+Выбранная платформа — Vercel + Supabase с сохранением существующей базы.
+Для Supabase Cron подготовлен защищённый `POST /api/internal/jobs`, запускающий
+`python manage.py run_background_jobs`. Настройка Vault и расписания описана в
+[инструкции фоновых задач](docs/background-jobs.md).
 Проверки пяти направлений: [задачи](docs/background-jobs.md), [роли](docs/role-action-audit.md),
 [цикл заказа](docs/order-cycle-audit.md), [расчёты](docs/finance-audit.md),
 [эксплуатация и восстановление](docs/production-operations.md).

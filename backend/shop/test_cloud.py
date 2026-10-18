@@ -54,12 +54,45 @@ class PrivateStorageTests(SimpleTestCase):
             SupabasePrivateStorage().url('private/photo.jpg')
 
 
+@override_settings(CLOUD_JOB_SECRET='scheduler-test-secret-at-least-32-characters')
 class CloudJobTests(SimpleTestCase):
-    def test_jobs_are_not_exposed_as_a_public_http_trigger(self):
-        # Railway cron runs the finite management command, not the previously
-        # proposed bearer-token HTTP endpoint. Its behavior is covered separately
-        # by test_background_jobs against a real test database.
-        for method in ('get', 'post'):
-            response = getattr(self.client, method)('/api/internal/jobs',
-                HTTP_AUTHORIZATION='Bearer job-secret')
-            self.assertEqual(response.status_code, 404)
+    secret = 'scheduler-test-secret-at-least-32-characters'
+
+    def test_get_cannot_run_jobs(self):
+        response = self.client.get('/api/internal/jobs')
+        self.assertEqual(response.status_code, 405)
+
+    def test_missing_or_wrong_bearer_is_forbidden(self):
+        for header in ('', 'Bearer wrong', self.secret, 'Basic ' + self.secret):
+            response = self.client.post('/api/internal/jobs', HTTP_AUTHORIZATION=header)
+            self.assertEqual(response.status_code, 403)
+
+    def test_unconfigured_or_short_secret_fails_closed(self):
+        for secret in ('', 'short', ' ' * 40):
+            with self.settings(CLOUD_JOB_SECRET=secret):
+                response = self.client.post('/api/internal/jobs', HTTP_AUTHORIZATION='Bearer ' + secret)
+                self.assertEqual(response.status_code, 503)
+
+    def test_authorized_post_runs_without_csrf_cookie(self):
+        from django.test import Client
+        with patch('shop.cloud_jobs.call_command') as execute:
+            response = Client(enforce_csrf_checks=True).post('/api/internal/jobs',
+                HTTP_AUTHORIZATION='Bearer ' + self.secret)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json(), {'status': 'ok'})
+        self.assertEqual(execute.call_args.args, ('run_background_jobs',))
+        self.assertEqual(response.headers['Cache-Control'], 'no-store')
+
+    def test_failure_does_not_expose_exception_or_command_output(self):
+        def fail(*args, **kwargs):
+            kwargs['stderr'].write('private database password')
+            raise RuntimeError('secret provider URL')
+        with patch('shop.cloud_jobs.call_command', side_effect=fail):
+            response = self.client.post('/api/internal/jobs', HTTP_AUTHORIZATION='Bearer ' + self.secret)
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(response.json(), {'status': 'unavailable'})
+
+    def test_ordinary_api_post_still_requires_csrf(self):
+        from django.test import Client
+        response = Client(enforce_csrf_checks=True).post('/api/v1/auth/login', {})
+        self.assertEqual(response.status_code, 403)
