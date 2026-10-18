@@ -260,7 +260,7 @@ function App() {
         <ErrorMessage error={error}/>
         <form key={activate ? 'invitation' : register ? 'register' : 'login'} onSubmit={auth}>
             {activate ? <label>{t("Код приглашения")}<input name="token" required/>
-            </label> : <label>{t("Телефон")}<input name="phone" type="tel" autoComplete="tel" placeholder="+77001234567" pattern="\+[1-9][0-9]{7,14}" required/>
+            </label> : <label>{t(register ? "Телефон" : "Логин или телефон")}<input name="phone" type={register ? 'tel' : 'text'} autoComplete={register ? 'tel' : 'username'} placeholder={register ? '+77001234567' : undefined} pattern={register ? '\\+[1-9][0-9]{7,14}' : undefined} required/>
             </label>}<label>{t("Пароль")}<input name="password" type="password" minLength={activate ? 12 : register ? 8 : 1} autoComplete={register || activate ? 'new-password' : 'current-password'} required/>
         </label>
             {register && <>

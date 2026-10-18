@@ -1,6 +1,7 @@
 const pair = (en: string, kk: string) => ({ en, kk });
 
 const common = {
+    'Логин или телефон': pair('Username or phone', 'Логин немесе телефон'),
     'Сервер приложения недоступен. Вход и регистрация временно не работают. Попробуйте позже.': pair('The application server is unavailable. Sign-in and registration are temporarily unavailable. Please try again later.', 'Қолданба сервері қолжетімсіз. Кіру мен тіркелу уақытша жұмыс істемейді. Кейінірек қайталап көріңіз.'),
     'Сайт не получил ответ от сервера приложения. Проверьте подключение серверной части.': pair('The website did not receive a response from the application server. Check the backend connection.', 'Сайт қолданба серверінен жауап алмады. Серверлік бөліктің қосылымын тексеріңіз.'),
     'Включить тёмную тему': pair('Switch to dark mode', 'Қараңғы тақырыпқа ауысу'),

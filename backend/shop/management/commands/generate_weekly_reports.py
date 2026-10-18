@@ -29,8 +29,8 @@ class Command(BaseCommand):
             if first:
                 first_day=timezone.localtime(first).date()
                 start=min(start,first_day-timedelta(days=first_day.weekday()))
-        actor=User.objects.filter(role='accountant').first() or User.objects.filter(role='admin').first()
-        if not actor: self.stderr.write('No authorized staff account'); return
+        actor=User.objects.filter(role='accountant',is_active=True).first() or User.objects.filter(role='admin',is_active=True).first()
+        if not actor: raise CommandError('No active authorized staff account')
         while start<stop:
             end=start+timedelta(days=7)
             with transaction.atomic():

@@ -8,7 +8,7 @@ import { AccountHeader } from './account-shell';
 function ProfileScreen({onLogout}: {onLogout: () => void}) {
     return <><AccountHeader user={{name: 'Тестовый покупатель'}} logout={onLogout}/><CustomerProfile/></>;
 }
-import { FieldsForm } from './workspace';
+import { FieldsForm, WorkspaceRevision } from './workspace';
 import { setLanguage, usePreferences } from './preferences';
 
 const profileResponse = {
@@ -146,6 +146,16 @@ describe('customer profile', () => {
 });
 
 describe('language changes in account forms', () => {
+    it('preserves draft dates when a background account refresh returns the displayed period', async () => {
+        vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(profileResponse))));
+        const view = render(<WorkspaceRevision.Provider value={0}><CustomerProfile/></WorkspaceRevision.Provider>);
+        await screen.findByRole('article', { name: 'Передано за период' });
+        fireEvent.change(screen.getByLabelText('Начало периода'), { target: { value: '2026-09-01' } });
+        view.rerender(<WorkspaceRevision.Provider value={1}><CustomerProfile/></WorkspaceRevision.Provider>);
+        await screen.findByRole('article', { name: 'Передано за период' });
+        expect(screen.getByLabelText('Начало периода')).toHaveProperty('value', '2026-09-01');
+    });
+
     it('preserves draft profile dates and customer identity when switching the interface language', async () => {
         vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify({ ...profileResponse, profile: { ...profileResponse.profile, name: 'Заказы' } }))));
         function Account() { usePreferences(); return <ProfileScreen onLogout={() => {}}/>; }

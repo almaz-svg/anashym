@@ -225,7 +225,7 @@ function Staff() {
     const op = useOperations(),data=useCollection('/staff',op.revision);
     return <>
     <ErrorBox error={op.error}/>
-    <FieldsForm title={t("Пригласить сотрудника")} fields={[{ name: 'phone', label: 'Телефон +7…', type: 'tel' }, { name: 'name', label: 'Имя' }, { name: 'role', label: 'Роль', options: [['courier', 'Курьер'], ['cashier', 'Кассир'], ['accountant', 'Бухгалтер'], ['admin', 'Администратор']] }]} onSubmit={d => op.act('/staff', d)} busy={op.busy}/>
+    <FieldsForm title={t("Пригласить сотрудника")} fields={[{ name: 'phone', label: 'Логин или телефон', type: 'text' }, { name: 'name', label: 'Имя' }, { name: 'role', label: 'Роль', options: [['courier', 'Курьер'], ['cashier', 'Кассир'], ['accountant', 'Бухгалтер'], ['admin', 'Администратор']] }]} onSubmit={d => op.act('/staff', d)} busy={op.busy}/>
     <ErrorBox error={data.error}/><Records items={data.items} title={t('Сотрудники')}/>{data.items.map(user=><section className="card" key={user.id}><h3>{user.name||user.phone}</h3><p>{status(user.role)} · {user.phone}</p><ResetAccess user={user} op={op}/></section>)}{data.nextCursor&&<button onClick={()=>data.loadMore()}>{t('Показать ещё')}</button>}
     <FieldsForm title={t("Изменить роль сотрудника")} fields={[{ name: 'user_id', label: 'Сотрудник' }, { name: 'role', label: 'Роль', options: [['courier', 'Курьер'], ['cashier', 'Кассир'], ['accountant', 'Бухгалтер'], ['admin', 'Администратор']] }]} onSubmit={d => op.act('/staff/' + d.user_id + '/role', { role: d.role })} busy={op.busy}/>
     </>;

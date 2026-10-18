@@ -113,7 +113,7 @@ def handle(request,route,data):
         audit(user,'order.admin_created',Order.objects.get(pk=result['id']),{'client_id':str(client.pk),'ai_used':ai_used})
         return result,status
     if route=='delivery-points':
-        require(user,'admin','customer'); qs=DeliveryPoint.objects.all() if user.role=='admin' else DeliveryPoint.objects.filter(client=user.client)
+        require(user,'admin','customer'); qs=DeliveryPoint.objects.all() if user.role=='admin' else DeliveryPoint.objects.filter(client=user.client,confirmed=True)
         if request.GET.get('client_id'): qs=qs.filter(client_id=request.GET['client_id'])
         if method=='GET':return rows(qs,request),200
         client=client_for(user,data)
@@ -201,8 +201,11 @@ def handle(request,route,data):
         require(user,'admin','accountant','cashier')
         if method=='GET': return rows(User.objects.exclude(role='customer'),request,lambda u:{'id':str(u.pk),'name':u.get_full_name() or u.username,'phone':u.username,'role':u.role,'must_change_password':u.must_change_password}),200
         require(user,'admin')
-        import re
-        if data.get('role') not in ['admin','courier','cashier','accountant'] or not re.fullmatch(r'\+[1-9]\d{7,14}',str(data.get('phone',''))) or not str(data.get('name','')).strip(): fail('VALIDATION_ERROR','Проверьте телефон, имя и роль')
+        from django.contrib.auth.validators import UnicodeUsernameValidator
+        username=data.get('phone','')
+        if not isinstance(username,str) or not 1<=len(username)<=150: fail('VALIDATION_ERROR','Укажите логин до 150 символов')
+        UnicodeUsernameValidator()(username)
+        if data.get('role') not in ['admin','courier','cashier','accountant'] or not isinstance(data.get('name'),str) or not data['name'].strip(): fail('VALIDATION_ERROR','Проверьте логин, имя и роль')
         staff=User.objects.create_user(username=data['phone'],first_name=data['name'][:150],role=data['role']); token=signing.dumps({'staff':str(staff.pk),'stamp':staff.password},salt='staff-invite')
         audit(user,'staff.invited',staff,{'role':staff.role}); return {'id':str(staff.pk),'phone':staff.username,'role':staff.role,'invitation_token':token,'expires_in':86400},201
     if route=='clients' and method=='GET':

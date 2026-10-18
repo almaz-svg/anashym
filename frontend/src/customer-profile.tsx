@@ -1,5 +1,5 @@
 import { t, locale } from './preferences';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ErrorBox, money, orderFrequency, status, useCollection } from './workspace';
 
 type CustomerProfileData = {
@@ -69,6 +69,7 @@ function currentWeek() {
 
 export function CustomerProfile() {
     const [dates, setDates] = useState(currentWeek);
+    const datesEdited = useRef(false);
     const [query, setQuery] = useState('');
     const [revision, setRevision] = useState(0);
     const [identity, setIdentity] = useState<CustomerProfileData['profile'] | null>(null);
@@ -80,7 +81,7 @@ export function CustomerProfile() {
     useEffect(() => {
         if (summary) {
             setIdentity(summary.profile);
-            setDates({ from: summary.from, to: summary.to });
+            if (!datesEdited.current) setDates({ from: summary.from, to: summary.to });
         }
     }, [summary]);
 
@@ -109,14 +110,15 @@ export function CustomerProfile() {
             <form className="account-period-form" aria-describedby="account-period-help" onSubmit={event => {
                 event.preventDefault();
                 if (invalidDates) return;
+                datesEdited.current = false;
                 setQuery(`?from=${encodeURIComponent(dates.from)}&to=${encodeURIComponent(dates.to)}`);
                 setRevision(r => r + 1);
             }}>
-                <label>{t("Начало периода")}<input type="date" required value={dates.from} disabled={data.loading} onChange={event => setDates(value => ({ ...value, from: event.target.value }))}/></label>
-                <label>{t("Конец периода")}<input type="date" required min={dates.from} value={dates.to} disabled={data.loading} onChange={event => setDates(value => ({ ...value, to: event.target.value }))}/></label>
+                <label>{t("Начало периода")}<input type="date" required value={dates.from} disabled={data.loading} onChange={event => { const from = event.target.value; datesEdited.current = true; setDates(value => ({ ...value, from })); }}/></label>
+                <label>{t("Конец периода")}<input type="date" required min={dates.from} value={dates.to} disabled={data.loading} onChange={event => { const to = event.target.value; datesEdited.current = true; setDates(value => ({ ...value, to })); }}/></label>
                 <div className="account-period-actions">
                     <button className="primary" disabled={data.loading || invalidDates}>{t("Показать период")}</button>
-                    <button type="button" disabled={data.loading} onClick={() => { setDates(currentWeek()); setQuery(''); setRevision(r => r + 1); }}>{t("Текущая неделя")}</button>
+                    <button type="button" disabled={data.loading} onClick={() => { datesEdited.current = false; setDates(currentWeek()); setQuery(''); setRevision(r => r + 1); }}>{t("Текущая неделя")}</button>
                 </div>
             </form>
             {dates.from && dates.to && dates.from > dates.to && <p className="error" role="alert">{t("Конец периода должен быть не раньше начала.")}</p>}

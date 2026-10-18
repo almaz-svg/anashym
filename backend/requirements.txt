@@ -3,3 +3,4 @@ djangorestframework==3.16.1
 psycopg[binary]==3.2.12
 Pillow==11.3.0
 waitress==3.0.2
+whitenoise==6.12.0

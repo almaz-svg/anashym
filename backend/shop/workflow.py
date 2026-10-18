@@ -15,7 +15,10 @@ def transition(user,order,data):
     if target=='dispatched': target='out_for_delivery'
     if user.role=='courier' and (target!='out_for_delivery' or order.courier_id!=user.pk or data.get('courier_id')): fail('FORBIDDEN','Курьер может только выехать по своему назначению',403)
     if target=='assigned': target='ready'
-    allowed={'submitted':['accepted','cancelled'],'accepted':['preparing','cancelled'],'preparing':['ready','cancelled'],'ready':['out_for_delivery','cancelled'],'delivery_failed':['out_for_delivery']}
+    failed_cancellation=target=='cancelled' and order.status=='delivery_failed'
+    if failed_cancellation and (Reservation.objects.filter(order=order).exists() or not order.attempts.filter(outcome='failed').exists()):
+        fail('INVALID_STATE','Сначала примите весь товар у курьера',409)
+    allowed={'submitted':['accepted','cancelled'],'accepted':['preparing','cancelled'],'preparing':['ready','cancelled'],'ready':['out_for_delivery','cancelled'],'delivery_failed':['out_for_delivery','cancelled']}
     assigning=data.get('courier_id') and target==order.status and order.status=='ready'
     if not assigning and target not in allowed.get(order.status,[]): fail('INVALID_STATE','Недопустимый переход статуса',409)
     if data.get('courier_id'):
@@ -30,6 +33,11 @@ def transition(user,order,data):
         if available_order_prepayment(order)<order.total:
             fail('PAYMENT_REQUIRED','Для заказа нужна полная доступная предоплата Kaspi',409)
     if target=='out_for_delivery':
+        if order.status=='delivery_failed':
+            for item in order.items.all():
+                held=Reservation.objects.filter(order=order,batch__product_id=item.product_id,in_transit=True).aggregate(total=Sum('quantity'))['total'] or 0
+                if held!=item.quantity-item.delivered_quantity:
+                    fail('STOCK_UNAVAILABLE','У курьера недостаточно товара для повторного выезда',409)
         for reservation in Reservation.objects.select_for_update().filter(order=order,in_transit=False):
             if not reservation.batch_id: fail('INVALID_STATE','Партии ещё не определены',409)
             batch=Batch.objects.select_for_update().get(pk=reservation.batch_id)
@@ -39,6 +47,11 @@ def transition(user,order,data):
             StockMovement.objects.create(product=batch.product,batch=batch,quantity=-reservation.quantity,disposition='courier',reason='Выезд заказа '+str(order.pk),actor=user)
     if target=='cancelled':
         release_reservations(order)
+        if failed_cancellation and order.payment_mode=='deferred':
+            # Physical receipt removed custody rows; their credit was held until final cancellation.
+            client=Client.objects.select_for_update().get(pk=order.client_id)
+            client.reserved_credit-=order.total-order.delivered_total
+            client.save(update_fields=['reserved_credit'])
         ensure_cancellation_refund(user,order,str(data.get('reason') or 'Отмена администратором'))
     order.status=target; order.version+=1; order.reservation_expires_at=None; order.save(); audit(user,'order.'+target,order,data)
     return order

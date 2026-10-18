@@ -40,7 +40,7 @@ LOGGING = {
 
 WSGI_APPLICATION = 'config.wsgi.application'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-if os.getenv('VERCEL') == '1' or os.getenv('DJANGO_CLOUD') == '1':
+if os.getenv('VERCEL') == '1' or os.getenv('DJANGO_CLOUD') == '1' or os.getenv('RAILWAY_ENVIRONMENT_ID'):
     from django.core.exceptions import ImproperlyConfigured
     from .cloud import database_from_url
     DEBUG = False
@@ -48,8 +48,10 @@ if os.getenv('VERCEL') == '1' or os.getenv('DJANGO_CLOUD') == '1':
     if len(SECRET_KEY) < 50:
         raise ImproperlyConfigured('Set a strong DJANGO_SECRET_KEY for cloud deployment')
     DATABASES = {'default': database_from_url(os.getenv('DATABASE_URL') or os.getenv('POSTGRES_URL', ''))}
-    ALLOWED_HOSTS = list(filter(None, [os.getenv('VERCEL_URL'), os.getenv('VERCEL_PROJECT_PRODUCTION_URL'), 'anashym-kappa.vercel.app']))
+    ALLOWED_HOSTS = list(filter(None, [os.getenv('VERCEL_URL'), os.getenv('VERCEL_PROJECT_PRODUCTION_URL'), os.getenv('RAILWAY_PUBLIC_DOMAIN'), 'anashym-kappa.vercel.app']))
     CSRF_TRUSTED_ORIGINS = ['https://' + host for host in ALLOWED_HOSTS]
+    if os.getenv('RAILWAY_ENVIRONMENT_ID'):
+        ALLOWED_HOSTS.append('healthcheck.railway.app')
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True

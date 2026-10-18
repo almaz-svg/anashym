@@ -153,6 +153,8 @@ def place_order(user,data,*,client=None,ai_used=False):
     return order_data(order),201
 
 def route_request(request,route,data):
+    from .http_methods import require_action_method
+    require_action_method(route, request.method)
     if route.startswith('auth/'):
         from .access_management import handle_access
         handled=handle_access(request,route,data)
