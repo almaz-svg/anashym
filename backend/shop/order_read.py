@@ -4,7 +4,8 @@ from zoneinfo import ZoneInfo
 from django.db.models import OuterRef, Subquery, Sum, Value, DecimalField, Q
 from django.db.models.functions import Coalesce
 from .models import LedgerEntry, PaymentAllocation
-from .services import ZERO, available_order_prepayments, scoped_orders
+from .services import ZERO, scoped_orders
+from .order_payments import prepaid_breakdowns
 
 
 def order_page(user,request,serializer):
@@ -18,6 +19,8 @@ def order_page(user,request,serializer):
     credits=LedgerEntry.objects.filter(order_id=OuterRef('pk'),kind='return').values('order_id').annotate(total=Sum('amount')).values('total')
     qs=scoped_orders(user).select_related('client','courier').prefetch_related('items').annotate(
         _paid_amount=Coalesce(Subquery(payments),Value(ZERO),output_field=DecimalField(max_digits=18,decimal_places=2)),
+        _cash_paid=Coalesce(Subquery(payments.filter(payment__method='cash')),Value(ZERO),output_field=DecimalField(max_digits=18,decimal_places=2)),
+        _kaspi_paid=Coalesce(Subquery(payments.filter(payment__method='kaspi')),Value(ZERO),output_field=DecimalField(max_digits=18,decimal_places=2)),
         _credit_amount=Coalesce(Subquery(credits),Value(ZERO),output_field=DecimalField(max_digits=18,decimal_places=2)),
         _payment_due_at=Subquery(LedgerEntry.objects.filter(order_id=OuterRef('pk'),kind='delivery').order_by('created_at','pk').values('period__end_exclusive')[:1]))
     if user.role=='courier':
@@ -38,6 +41,8 @@ def order_page(user,request,serializer):
     advances={}
     for order in page:
         if not order.delivered_total:
-            if order.client_id not in advances:advances[order.client_id]=available_order_prepayments(order.client_id)
-            order._available_prepayment=advances[order.client_id].get(order.pk,ZERO)
+            if order.client_id not in advances:advances[order.client_id]=prepaid_breakdowns(order.client_id)
+            order._payment_amounts=advances[order.client_id].get(order.pk,{'cash':ZERO,'kaspi':ZERO})
+        else:
+            order._payment_amounts={'cash':order._cash_paid,'kaspi':order._kaspi_paid}
     return {'items':[serializer(order) for order in page],'next_cursor':cursor},200

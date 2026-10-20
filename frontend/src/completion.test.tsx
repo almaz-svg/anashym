@@ -7,7 +7,7 @@ import { StaffWorkspace } from './staff';
 import { ApiError } from './api';
 
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
-beforeEach(()=>{vi.stubGlobal('scrollTo',vi.fn())});
+beforeEach(()=>{history.replaceState(null,'','#');vi.stubGlobal('scrollTo',vi.fn())});
 describe('independent access and inline validation', () => {
  it('submits the explicit deferred approval checkbox as a boolean', async () => {
   const submit = vi.fn(async () => ({}));

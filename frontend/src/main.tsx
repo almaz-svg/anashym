@@ -20,7 +20,12 @@ import { CustomerProfile } from './customer-profile';
 import { AccountHeader, SiteFooter } from './account-shell';
 import { PreferencesControls, usePreferences, t, locale } from './preferences';
 import { OrderEvidence, PasswordChange } from './account-features';
-import { reconcileCart } from './cart';
+import { previewCart, reconcileCart } from './cart';
+import { suggestDeliveryTime } from './delivery-time';
+import { CartSummary, ProductPurchase } from './purchase-controls';
+import { BrandLogo } from './brand-logo';
+import { useLiveRefresh } from './live-refresh';
+import { OrderSummary, OrderRowSummary } from './order-summary';
 type Product = {
     id: string;
     name: string;
@@ -48,13 +53,21 @@ function ErrorMessage({ error }: {
         </small>}
     </div> : null;
 }
-function App() {
+export function App() {
     usePreferences();
     const [user, setUser] = useState<any>(undefined), [error, setError] = useState<unknown>(null), [busy, setBusy] = useState(false), [activate, setActivate] = useState(false), [register, setRegister] = useState(false), [category, setCategory] = useState('');
-    const [page, setPage] = useState(location.hash.slice(1) || 'catalog'), [date, setDate] = useState(today()), [products, setProducts] = useState<Product[]>([]), [points, setPoints] = useState<any[]>([]), [balance, setBalance] = useState<any>(null), [orders, setOrders] = useState<any[]>([]), [detail, setDetail] = useState<any>(null), [qty, setQty] = useState<Record<string, number>>({}), [point, setPoint] = useState(''), [time, setTime] = useState('12:00'), [paymentMode, setPaymentMode] = useState('deferred'), [loading, setLoading] = useState(false), [cursor, setCursor] = useState<string | null>(null),[orderCursor,setOrderCursor]=useState<string|null>(null);
+    const [page, setPage] = useState(location.hash.slice(1) || 'catalog'), [date, setDate] = useState(today()), [products, setProducts] = useState<Product[]>([]), [points, setPoints] = useState<any[]>([]), [balance, setBalance] = useState<any>(null), [orders, setOrders] = useState<any[]>([]), [detail, setDetail] = useState<any>(null), [qty, setQty] = useState<Record<string, number>>({}), [point, setPoint] = useState(''), [time, setTime] = useState(''), [paymentMode, setPaymentMode] = useState('cash'), [loading, setLoading] = useState(false), [cursor, setCursor] = useState<string | null>(null),[orderCursor,setOrderCursor]=useState<string|null>(null);
+    const [timeNotice,setTimeNotice]=useState('');
+    const selectedPoint=points.find(p=>p.id===point);
+    useEffect(()=>{setTime(suggestDeliveryTime(date,selectedPoint||{}));setTimeNotice('');},[date,point,selectedPoint?.window_start,selectedPoint?.window_end]);
     const catalogCache = useRef<Record<string, Product>>({});
+    const [addingCheckoutPoint,setAddingCheckoutPoint]=useState(false);
+    function refreshExpiredDeliveryTime(){const next=suggestDeliveryTime(date,selectedPoint||{});if(date===today()&&time&&(!next||time<next)){setTime(next);setTimeNotice(next?'Предыдущее время уже прошло. Предложено новое — проверьте его перед оформлением.':'На эту дату нет будущего времени в окне доставки. Выберите другую дату или адрес.');return true;}return false;}
+    function goToCheckout(){refreshExpiredDeliveryTime();const checkout=document.getElementById('checkout');checkout?.scrollIntoView({behavior:'smooth',block:'start'});checkout?.focus({preventScroll:true});}
     const [priceReview,setPriceReview]=useState(false),[priceAccepted,setPriceAccepted]=useState(false);
     const loadVersion = useRef(0);
+    const explicitLoads = useRef(0);
+    const loadedOrderPages = useRef(1);
     const attempt = useRef<{
         body: string;
         key: string;
@@ -78,6 +91,7 @@ function App() {
     }
     useEffect(() => { session(); }, []);
     async function load(append = false) {
+        explicitLoads.current++;
         const version = ++loadVersion.current;
         setLoading(true);
         setError(null);
@@ -100,7 +114,7 @@ function App() {
             }
             if (page === 'orders') {
                 const result = await apiRequest('/orders?limit=20'+(append&&orderCursor?'&cursor='+encodeURIComponent(orderCursor):''));
-                if (version === loadVersion.current){setOrders(old=>append?[...old,...result.items.filter((x:any)=>!old.some(y=>y.id===x.id))]:result.items);setOrderCursor(result.next_cursor||null);}
+                if (version === loadVersion.current){loadedOrderPages.current=append?loadedOrderPages.current+1:1;setOrders(old=>append?[...old,...result.items.filter((x:any)=>!old.some(y=>y.id===x.id))]:result.items);setOrderCursor(result.next_cursor||null);}
             }
         }
         catch (e) {
@@ -108,24 +122,51 @@ function App() {
                 setError(e);
         }
         finally {
+            explicitLoads.current--;
             if (version === loadVersion.current)
                 setLoading(false);
         }
     }
     useEffect(() => {
-        if (user && !user.must_change_password && (!user.role || user.role === 'customer') && ['active', 'approved'].includes(user.approval_status))
+        if (user && !user.must_change_password && (!user.role || user.role === 'customer') && ['active', 'approved', 'pending'].includes(user.approval_status))
             load();
     }, [user, page, date]);
+    useLiveRefresh(async live=>{
+        if(explicitLoads.current)return;
+        const version=++loadVersion.current;
+        try{
+            if(page==='orders'){
+                const [first,chosen]=await Promise.all([apiRequest('/orders?limit=20'),detail?.id?apiRequest('/orders/'+detail.id):Promise.resolve(null)]);
+                let fresh=first;
+                const incoming=[...first.items];
+                for(let pageIndex=1;pageIndex<loadedOrderPages.current&&fresh.next_cursor;pageIndex++){
+                    if(!live()||version!==loadVersion.current)return;
+                    fresh=await apiRequest('/orders?limit=20&cursor='+encodeURIComponent(fresh.next_cursor));
+                    incoming.push(...fresh.items);
+                }
+                if(!live()||version!==loadVersion.current)return;
+                setOrders(incoming);
+                setOrderCursor(fresh.next_cursor||null);
+                if(chosen)setDetail(chosen);
+            }else if(page==='debt'){
+                const fresh=await apiRequest('/balance');
+                if(live()&&version===loadVersion.current)setBalance(fresh);
+            }
+        }catch(failure){if(live()&&version===loadVersion.current)setError(failure)}
+        finally{if(live()&&version===loadVersion.current)setLoading(false)}
+    },!!user&&user.role==='customer'&&!user.must_change_password&&['orders','debt'].includes(page),5000,(user?.user_id||'')+':'+page+':'+(detail?.id||''));
     async function loadDetail(id: string) {
-        const version = loadVersion.current;
+        const version = ++loadVersion.current;
+        setDetail((old:any)=>old?.id===id?old:orders.find(order=>order.id===id)||null);
         try {
             const result = await apiRequest('/orders/' + id);
             if (version !== loadVersion.current) return;
             setDetail(result);
             setError(null);
         } catch (e) {
-            if (version === loadVersion.current) setError(e);
+            if (version === loadVersion.current){if(e instanceof ApiError&&[403,404].includes(e.status))setDetail(null);setError(e);}
         }
+        finally{if(version===loadVersion.current)setLoading(false)}
     }
     async function auth(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -213,6 +254,7 @@ function App() {
             setQty({});
             setBalance(null);
             setOrders([]);
+            loadedOrderPages.current=1;
             setProducts([]);
             setPoints([]);
             setPoint('');
@@ -230,6 +272,7 @@ function App() {
     if(user?.must_change_password)return <PasswordChange onChanged={session} logout={logout}/>;
     if (user && user.role && user.role !== 'customer')
         return <StaffWorkspace user={user} logout={logout} busy={busy} sessionError={error}/>;
+    const cartSummary=previewCart(Object.values(catalogCache.current),qty);
     const nav = [['profile', t("Мой профиль"), UserRound], ['catalog', t("Каталог"), ShoppingBasket], ['orders', t("Заказы"), ClipboardList], ['payments', t("Оплаты"), Wallet], ['debt', t("Задолженность"), ChartNoAxesCombined], ['reports', t("Отчёты"), ClipboardList], ['notifications', t("Уведомления"), ClipboardList], ['points', t("Адреса доставки"), ClipboardList]] as const;
     if (user === undefined)
         return <main className="initial" role="status">{t("Подключаемся к кондитерской…")}</main>;
@@ -237,7 +280,7 @@ function App() {
         return <div className="auth-page"><div className="auth-preferences"><PreferencesControls /></div><main className="auth">
         <section className="intro">
         <span className="brand">
-        <CakeSlice />{t("Кондитерская")}</span>
+        <BrandLogo/></span>
         <div>
         <span className="eyebrow">{t("КАБИНЕТ ПАРТНЁРА")}</span>
         <h1>{t("Свежие десерты.")}<br />{t("Простые заказы.")}</h1>
@@ -309,13 +352,13 @@ function App() {
         </button>
         </form>
         <button type="button" className="invitation-link" onClick={() => { setActivate(!activate); setRegister(false); setError(null); }}>{activate ? t('Вернуться ко входу') : t('У меня есть приглашение')}</button>
-        <small>{t("Защищённый кабинет. Доступ к заказам открывается после одобрения.")}</small>
+        <small>{t("Заказы доступны сразу после регистрации.")}</small>
         </section>
         </main><div className="public-footer"><SiteFooter /></div></div>;
     return <div className="shell">
     <aside>
     <a className="brand" href="#catalog">
-    <CakeSlice />{t("Кондитерская")}</a>
+    <BrandLogo/></a>
     <span className="eyebrow">{t("ЛИЧНЫЙ КАБИНЕТ")}</span>
     <nav aria-label={t("Основная навигация")}>
         {nav.map(([id, title, Icon]) => <a href={'#' + id} key={id} className={page === id ? 'active' : ''} aria-current={page === id ? 'page' : undefined}>
@@ -332,7 +375,7 @@ function App() {
     <main className="content">
     <AccountHeader user={user} logout={logout} busy={busy}/>
     <ErrorMessage error={error}/>
-        {['pending', 'rejected'].includes(user.approval_status) && page !== 'profile' ? <section className="card pending">
+        {user.approval_status === 'rejected' && page !== 'profile' ? <section className="card pending">
         <span className="badge">
         {user.approval_status === "rejected" ? t("Заявка отклонена") : t("Заявка на рассмотрении")}
         </span>
@@ -345,7 +388,6 @@ function App() {
         </section> : <>
         <div className="page-title">
         <div>
-        <span className="eyebrow">{t("ВАША КОНДИТЕРСКАЯ, БЛИЖЕ")}</span>
         <h1>
         {nav.find(x => x[0] === page)?.[1] || t("Кабинет")}
         </h1>
@@ -358,20 +400,6 @@ function App() {
         </div>
         {loading && <div role="status" className="loading">{t("Загружаем актуальные данные…")}</div>}
  {page === 'catalog' && <>
-            <section className="welcome">
-            <div>
-            <span className="badge">{t("Отсрочка оплаты")}</span>
-            <h2>{t("Поставка начинается здесь")}</h2>
-            <p>{t("Выберите дату и количество. Стоимость и резерв подтвердит сервер при оформлении.")}</p>
-            </div>
-            <div className="welcome-stat">
-            <small>{t("Доступно по лимиту")}</small>
-            <strong>
-            {balance ? money(balance.available_credit_amount) : '—'}
-            </strong>
-            <small>{t("Резерв ещё не является долгом")}</small>
-            </div>
-            </section>
             <form onSubmit={submit}>
             <div className="toolbar">
             <label>{t("Дата поставки")}<input type="date" min={today()} value={date} onChange={e => { setDate(e.target.value); setQty({});catalogCache.current={};setPriceReview(false);setPriceAccepted(false); }} required/>
@@ -393,13 +421,15 @@ function App() {
                 {p.name}
                 </h3>
                 {p.description&&<p>{p.description}</p>}
+                <p>{t('Доступно: {{count}}', {count: date === today() ? p.available_qty : p.preorder_available_qty})}</p>
+                <details className="product-info"><summary>{t('О товаре')}</summary>
                 {p.shelf_life_hours!=null&&<p>{t('Срок хранения, часов')}: {p.shelf_life_hours}</p>}
-                {!!p.available_dates?.length&&<p className="muted">{t('Доступные даты')}: {p.available_dates.join(', ')}</p>}
-                <p>
-                {t('Доступно порций: {{count}} · {{minutes}} мин', {count: date === today() ? p.available_qty : p.preorder_available_qty, minutes: p.preparation_minutes})}</p>
+                <p>{t('Подготовка, мин')}: {p.preparation_minutes}</p>
+                {!!p.available_dates?.length&&<p className="muted">{t('Доступные даты')}: {p.available_dates.map(day=>new Date(day+'T00:00:00+05:00').toLocaleDateString(locale(),{timeZone:'Asia/Almaty',day:'numeric',month:'short'})).join(', ')}</p>}
+                </details>
                 <div className="product-bottom">
                 <strong>
-                {money(p.price_amount)}<small>{t("/ порция")}</small>
+                {money(p.price_amount)}
                 </strong>
                 <label className="quantity">
                 <span className="sr-only">{t("Количество:")}{" "}{p.name}
@@ -407,6 +437,7 @@ function App() {
                 <input type="number" inputMode="numeric" min="0" max={date === today() ? p.available_qty : p.preorder_available_qty} placeholder="0" value={qty[p.id] || ''} onChange={e => { const raw = e.currentTarget.value; const quantity = Math.max(0, Number(raw)); e.currentTarget.value = raw === '' ? '' : String(quantity); setQty({ ...qty, [p.id]: quantity });setPriceAccepted(false); }}/>
                 </label>
                 </div>
+                <ProductPurchase name={p.name} available={date===today()?p.available_qty:p.preorder_available_qty} quantity={qty[p.id]||0} busy={busy} onAdd={()=>{setQty(old=>({...old,[p.id]:1}));setPriceAccepted(false);}} onCheckout={goToCheckout}/>
                 </div>
                 </article>)}
             </div>
@@ -414,32 +445,34 @@ function App() {
                 <CakeSlice />
                 <h2>{t("На эту дату пока нет продукции")}</h2>
                 <p>{t("Выберите другую дату или обновите каталог.")}</p>
-                </section>}{cursor && <button type="button" onClick={() => load(true)} disabled={loading}>{t("Показать ещё")}</button>}<section className="card checkout">
+                </section>}{cursor && <button type="button" onClick={() => load(true)} disabled={loading}>{t("Показать ещё")}</button>}
+            <CartSummary count={cartSummary.count} total={cartSummary.total} onCheckout={goToCheckout}/>
+            <section className="card checkout" id="checkout" tabIndex={-1}>
                 {sessionStorage.getItem("exchange_id") && <p className="notice">{t("Оформляется новая поставка по одобренному обмену.")}{" "}<button type="button" onClick={() => { sessionStorage.removeItem("exchange_id"); setQty({ ...qty }); }}>{t("Обычный заказ")}</button>
                 </p>}<div>
             <h2>{t("Оформление поставки")}</h2>
             <p>{t('Выбрано позиций: {{count}}. Итоговую сумму рассчитаем при оформлении.', {count: Object.values(qty).filter(x => x > 0).length})}</p>
             </div>
             <div className="form-row">
-            <label>{t("Точка доставки")}<select required value={point} onChange={e => setPoint(e.target.value)}>
-            <option value="">{t("Выберите точку")}</option>
+            <label>{t("Точка доставки")}<select required disabled={!points.length} value={point} onChange={e => setPoint(e.target.value)}>
+            <option value="">{t(points.length?"Выберите точку":"Сначала добавьте адрес доставки")}</option>
                 {points.map(p => <option key={p.id} value={p.id}>
                 {p.address}
                 </option>)}
             </select>
             </label>
-            <label>{t("Время доставки")}<input type="time" required value={time} onChange={e => setTime(e.target.value)}/>
+            <label>{t("Время доставки")}<input type="time" required min={date===today()?(suggestDeliveryTime(date,selectedPoint||{})||undefined):selectedPoint?.window_start?.slice(0,5)} max={selectedPoint?.window_end?.slice(0,5)} value={time} onInvalid={e=>{if(refreshExpiredDeliveryTime())e.preventDefault();}} onChange={e => {setTime(e.target.value);setTimeNotice('');}}/>
             </label>
             </div>
-            {!points.length && <p className="muted">{t("Нет доступных точек доставки. Обратитесь к администратору.")}</p>}<label>{t("Способ оплаты")}<select value={paymentMode} onChange={e => setPaymentMode(e.target.value)}>
-            <option value="deferred">{t("Отсрочка (при одобренном лимите)")}</option>
+            <p>{!points.length&&<span>{t('У вас пока нет адресов доставки.')} </span>}<a href="#points" onClick={()=>setAddingCheckoutPoint(true)}>{t('Добавить адрес доставки')}</a></p>{timeNotice&&<p className="notice" role="status">{t(timeNotice)}</p>}{!timeNotice && !time && selectedPoint && <p className="notice">{t("На эту дату нет будущего времени в окне доставки. Выберите другую дату или адрес.")}</p>}<label>{t("Способ оплаты")}<select value={paymentMode} onChange={e => setPaymentMode(e.target.value)}>
+            <option value="deferred">{t("В долг — без лимита")}</option>
             <option value="kaspi">{t("Предоплата Kaspi")}</option>
             <option value="cash">{t("Наличные при получении")}</option>
             </select>
             </label>
             <p className="muted">{t("Kaspi проверяет кассир. Наличные — полный расчёт за принятое количество.")}</p>
             {priceReview&&<div className="notice" role="alert"><strong>{t('Цены изменились. Каталог и корзина обновлены.')}</strong><p>{t('Проверьте количество и новую сумму перед повторной отправкой. Недоступные позиции удалены.')}</p><p>{t('Новая сумма')}: <strong>{money(String(reconcileCart(Object.values(catalogCache.current),qty,date!==today()).total))}</strong></p><label className="checkbox-label"><input type="checkbox" checked={priceAccepted} onChange={e=>setPriceAccepted(e.target.checked)}/>{t('Подтверждаю новую сумму заказа')}</label></div>}
-            <button className="primary" disabled={busy || !point || !Object.values(qty).some(x => x > 0)||(priceReview&&!priceAccepted)}>
+            <button className="primary" disabled={busy || !point || !time || !Object.values(qty).some(x => x > 0)||(priceReview&&!priceAccepted)}>
             {busy ? t("Оформляем…") : attempt.current ? t("Повторить отправку с прежним ключом") : t("Оформить заказ")}<ArrowRight size={18}/>
             </button>
             </section>
@@ -458,8 +491,7 @@ function App() {
                 {money(detail.total_amount)}
                 </strong>
                 </p>
-                <p>{t("Поставка:")}{" "}{new Date(detail.requested_delivery_at).toLocaleString(locale(), { timeZone: 'Asia/Almaty' })}
-                </p>
+                <OrderSummary order={detail}/>
                     {detail.items.map((i: any) => <div className="order-row" key={i.product_id}>
                     <span>
                     {i.name} × {i.quantity}
@@ -467,15 +499,15 @@ function App() {
                     <strong>
                     {money(i.line_total_amount)}
                     </strong>
-                    </div>)}<p className="muted">{t("Резерв до:")}{" "}{detail.reservation_expires_at ? new Date(detail.reservation_expires_at).toLocaleString(locale(), { timeZone: 'Asia/Almaty' }) : t("не указан")}
-                </p>
-                <p>{status(detail.payment_status||"unpaid")}{t("· К погашению:")}{" "}<strong className={Number(detail.outstanding_amount) > 0 ? 'debt-value positive' : undefined}>{money(detail.outstanding_amount||"0")}</strong></p><OrderEvidence order={detail}/><CustomerOrderActions key={detail.id} order={detail} onChanged={() => { load(); loadDetail(detail.id); }}/>
+                    </div>)}{detail.reservation_expires_at&&<p className="muted">{t("Резерв до:")}{" "}{new Date(detail.reservation_expires_at).toLocaleString(locale(), { timeZone: 'Asia/Almaty' })}</p>}
+                <OrderEvidence order={detail}/><CustomerOrderActions key={detail.id} order={detail} onChanged={() => { load(); loadDetail(detail.id); }}/>
                 </section>}<section className="card">
             <h2>{t("История заказов")}</h2>
             {!orders.length && !loading && <p className="empty">{t("Пока нет заказов. Начните с каталога.")}</p>}{orders.map(o => <button className="order-row order-button" key={o.id} onClick={() => loadDetail(o.id)}>
                 <span>№ {o.id.slice(0, 8)}<small>
                 {new Date(o.created_at).toLocaleDateString(locale(), { timeZone: 'Asia/Almaty' })} · {status(o.status)}
                 </small>
+                <OrderRowSummary order={o}/>
                 </span>
                 <strong>
                 {money(o.total_amount)} →</strong>
@@ -486,7 +518,7 @@ function App() {
  {page === 'orders' && <>{orderCursor&&<button disabled={loading} onClick={()=>load(true)}>{t("Показать ещё заказы")}</button>}<CustomerReturns /></>}
  {page === 'debt' && balance && <>
             <div className="metrics">
-                {[[t("Текущая задолженность"), 'debt_amount'], [t("Зарезервировано"), 'reserved_credit_amount'], [t("Доступная отсрочка"), 'available_credit_amount'], [t("Аванс"), 'advance_amount'],[t('Ожидает возврата'),'reserved_refund_amount']].map(([title, k]) => <section className="card metric" key={k}>
+                {[[t("Зарезервировано"), 'reserved_credit_amount'], [t("Аванс"), 'advance_amount'],[t('Ожидает возврата'),'reserved_refund_amount']].map(([title, k]) => <section className="card metric" key={k}>
                 <p>
                 {title}
                 </p>
@@ -500,7 +532,7 @@ function App() {
             <div className="order-row">
             <span>{t("Лимит отсрочки")}</span>
             <strong>
-            {money(balance.credit_limit_amount)}
+            {t('Без лимита')}
             </strong>
             </div>
             <div className="order-row">
@@ -520,20 +552,20 @@ function App() {
             {money(balance.overdue_amount)}
             </strong>
             </div>
-            <p className="muted">{t("Резерв уменьшает доступный лимит. Начисление долга происходит при передаче товара.")}</p>
+            <p className="muted">{t("Покупки в долг доступны без лимита. Долг начисляется при передаче товара.")}</p>
             </section>
             </>}
  {page === 'payments' && <Payments />}
  {page === 'profile' && <CustomerProfile />}
- {page === 'points' && <DeliveryPoints />}
+ {page === 'points' && <>{addingCheckoutPoint&&<p className="notice">{t('Добавьте адрес — затем вернёмся к вашему заказу.')} <a href="#catalog" onClick={()=>setAddingCheckoutPoint(false)}>{t('Вернуться без добавления адреса')}</a></p>}<DeliveryPoints onCreated={addingCheckoutPoint?created=>{setPoints(old=>[created,...old.filter(p=>p.id!==created.id)]);setPoint(created.id);setAddingCheckoutPoint(false);location.hash='catalog';}:undefined}/></>}
  {page === 'reports' && <Reports />}
  {page === 'notifications' && <Notifications />}
         </>}<SiteFooter customer/>
     </main>
     </div>;
 }
-const appRoot = import.meta.hot?.data.appRoot || createRoot(document.getElementById('root')!);
-if (import.meta.hot) import.meta.hot.data.appRoot = appRoot;
+const appRoot = import.meta.hot?.data?.appRoot || createRoot(document.getElementById('root')!);
+if (import.meta.hot?.data) import.meta.hot.data.appRoot = appRoot;
 appRoot.render(<React.StrictMode>
 <App />
 </React.StrictMode>);

@@ -2,6 +2,7 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.db.models import Q,F
+from django.core.exceptions import ValidationError
 
 class Client(models.Model):
     id=models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
@@ -42,6 +43,19 @@ class DeliveryPoint(models.Model):
     confirmed=models.BooleanField(default=True)
     window_start=models.TimeField(default='09:00')
     window_end=models.TimeField(default='20:00')
+
+    def clean(self):
+        super().clean()
+        try:
+            start=self._meta.get_field('window_start').to_python(self.window_start)
+            end=self._meta.get_field('window_end').to_python(self.window_end)
+        except ValidationError:
+            return  # full_clean reports malformed values on their own fields.
+        if start is not None and end is not None and start>=end:
+            raise ValidationError({
+                'window_start':['Начало доставки должно быть раньше окончания.'],
+                'window_end':['Окончание доставки должно быть позже начала в тот же день.'],
+            })
 
 class Product(models.Model):
     id=models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)

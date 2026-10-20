@@ -1,6 +1,6 @@
 import { t, locale } from './preferences';
 import React, { useState, useEffect } from 'react';
-import { apiRequest } from './api';
+import { apiRequest, ApiError } from './api';
 import { PaymentFinancialSummary } from './customer-profile';
 import { ErrorBox, FieldsForm, Records, useCollection, useOperations, PhotoUpload, money, status, notificationText } from './workspace';
 import { NotificationMessage, ProtectedPhoto } from './account-features';
@@ -23,7 +23,7 @@ export function KaspiPayment({op,order}:{op:ReturnType<typeof useOperations>;ord
  </form></section>;
 }
 export function Payments() {
-    const op = useOperations(), data = useCollection('/payments', op.revision);
+    const op = useOperations(), data = useCollection('/payments', op.revision,5000);
     return <>
     <PaymentFinancialSummary revision={op.revision}/>
     <ErrorBox error={op.error || data.error}/>
@@ -137,11 +137,11 @@ export function CustomerOrderActions({ order, onChanged,returnsOnly=false }: {
     async function act(path: string, body: any) { const r = await op.act(path, body); onChanged(); return r; }
     return <div className="order-actions">
     <ErrorBox error={op.error}/>
-    {!returnsOnly&&order.status === 'submitted' && <button disabled={op.busy} onClick={() => act('/orders/' + order.id + '/transition', { status: 'cancelled', version: order.version, reason: 'Отмена клиентом' }).catch(() => { })}>{t("Отменить заказ")}</button>}{!returnsOnly&&order.proposed_delivery_at && <>
+    {!returnsOnly&&['submitted','accepted'].includes(order.status) && <button disabled={op.busy} onClick={() => act('/orders/' + order.id + '/transition', { status: 'cancelled', version: order.version, reason: 'Отмена клиентом' }).catch(() => { })}>{t("Отменить заказ")}</button>}{!returnsOnly&&order.proposed_delivery_at && <>
         <p>{t("Предложенная дата:")}{' '}{new Date(order.proposed_delivery_at).toLocaleString(locale(), { timeZone: 'Asia/Almaty' })}
         </p>
         <button disabled={op.busy} onClick={() => act('/orders/' + order.id + '/reschedule-confirm', { accept: true, version: order.version }).catch(() => { })}>{t("Подтвердить перенос")}</button><button disabled={op.busy} onClick={()=>act("/orders/"+order.id+"/reschedule-confirm",{accept:false,version:order.version}).catch(()=>{})}>{t("Отказаться от переноса")}</button>
-        </>}{['delivered','partially_delivered'].includes(order.status) && <form onSubmit={async (e) => {
+        </>}{['delivered','partially_delivered'].includes(order.status) && <details><summary>{t('Возврат или обмен')}</summary><form onSubmit={async (e) => {
                 e.preventDefault();
                 const f = new FormData(e.currentTarget);
                 try {
@@ -162,14 +162,26 @@ export function CustomerOrderActions({ order, onChanged,returnsOnly=false }: {
         </label>
         <PhotoUpload orderId={order.id} purpose={kind} onUploaded={id => setPhotos(p => [...p, id])} act={op.act} busy={op.busy}/>
         <button className="primary" disabled={op.busy || !photos.length || !Object.values(qty).some(x => x > 0)}>{t("Отправить заявку")}</button>
-        </form>}
+        </form></details>}
     </div>;
 }
-export function DeliveryPoints() {
+export function DeliveryPoints({onCreated}:{onCreated?:(point:any)=>void} = {}) {
     const op = useOperations(), data = useCollection('/delivery-points', op.revision);
+    const [saved,setSaved]=useState(false);
     return <>
     <ErrorBox error={op.error || data.error}/>
-    <FieldsForm title={t("Добавить точку доставки")} fields={[{ name: 'address', label: 'Адрес' }, { name: 'recipient', label: 'Получатель' }, { name: 'phone', label: 'Телефон', type: 'tel' }, { name: 'window_start', label: 'Доставка с', type: 'time', required: false }, { name: 'window_end', label: 'Доставка до', type: 'time', required: false }]} onSubmit={d => op.act('/delivery-points', { ...d, window_start: d.window_start || undefined, window_end: d.window_end || undefined })} busy={op.busy}/>
+    {saved && <p className="notice" role="status">{t('Адрес сохранён. Теперь его можно выбрать при оформлении заказа.')}</p>}
+    <FieldsForm title={t("Добавить точку доставки")} fields={[{ name: 'address', label: 'Адрес' }, { name: 'recipient', label: 'Получатель' }, { name: 'phone', label: 'Телефон', type: 'tel' }, { name: 'window_start', label: 'Доставка с', type: 'time', required: false }, { name: 'window_end', label: 'Доставка до', type: 'time', required: false }]} onSubmit={async d => {
+        setSaved(false);
+        if ((d.window_start || '09:00') >= (d.window_end || '20:00')) {
+            throw new ApiError(422, 'VALIDATION_ERROR', 'Адрес не сохранён. Исправьте отмеченные поля.', {
+                window_start: ['Начало доставки должно быть раньше окончания.'],
+                window_end: ['Окончание доставки должно быть позже начала в тот же день.'],
+            });
+        }
+        const point=await op.act('/delivery-points', { ...d, window_start: d.window_start || undefined, window_end: d.window_end || undefined });
+        setSaved(true);onCreated?.(point);return point;
+    }} busy={op.busy} submit={onCreated?'Сохранить и вернуться к заказу':'Сохранить'}/>
     <Records items={data.items} title={t("Адреса доставки")}/>
     </>;
 }

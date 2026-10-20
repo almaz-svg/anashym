@@ -90,6 +90,9 @@ from .reporting import report
 def handle(request,route,data):
     from .views import fail,order_data,order_detail,listing,available,place_order
     user=request.user; method=request.method; parts=route.split('/')
+    if route=='debt-summary' and method=='GET':
+        from .debt_summary import debt_summary
+        return debt_summary(user),200
     from .access_management import handle_access
     from .catalog_details import handle_catalog
     for handler in [handle_access,handle_catalog]:
@@ -118,9 +121,25 @@ def handle(request,route,data):
         if method=='GET':return rows(qs,request),200
         client=client_for(user,data)
         import re
-        if not isinstance(data.get('address'),str) or not data['address'].strip() or len(data['address'])>300 or not str(data.get('recipient','')).strip() or not re.fullmatch(r'\+[1-9]\d{7,14}',str(data.get('phone',''))):fail('VALIDATION_ERROR','Проверьте адрес, получателя и телефон')
-        obj=DeliveryPoint.objects.create(client=client,address=data['address'],recipient=data['recipient'][:150],phone=data['phone'],window_start=data.get('window_start','09:00'),window_end=data.get('window_end','20:00'))
-        obj.full_clean(); audit(user,'delivery_point.created',obj);return serialize(obj),201
+        address=data.get('address'); recipient=data.get('recipient'); phone=data.get('phone')
+        errors={}
+        if not isinstance(address,str) or not address.strip() or len(address)>300:
+            errors['address']=['Укажите адрес длиной до 300 символов']
+        if not isinstance(recipient,str) or not recipient.strip() or len(recipient)>150:
+            errors['recipient']=['Укажите имя получателя длиной до 150 символов']
+        if isinstance(phone,str):
+            phone=re.sub(r'[\s()\-]', '', phone)
+            if re.fullmatch(r'8[0-9]{10}',phone):phone='+7'+phone[1:]
+            elif re.fullmatch(r'7[0-9]{10}',phone):phone='+'+phone
+        if not isinstance(phone,str) or not re.fullmatch(r'\+[1-9][0-9]{7,14}',phone):
+            errors['phone']=['Укажите полный номер, например +7 707 123 45 67 или 8 707 123 45 67']
+        if errors:fail('VALIDATION_ERROR','Адрес не сохранён. Исправьте отмеченные поля.',fields=errors)
+        obj=DeliveryPoint(client=client,address=address.strip(),recipient=recipient.strip(),phone=phone,window_start=data.get('window_start') or '09:00',window_end=data.get('window_end') or '20:00')
+        from django.core.exceptions import ValidationError
+        try:obj.full_clean()
+        except ValidationError as exc:
+            fail('VALIDATION_ERROR','Адрес не сохранён. Исправьте отмеченные поля.',fields=exc.message_dict)
+        obj.save(); audit(user,'delivery_point.created',obj);return serialize(obj),201
     if route=='catalog' and method=='GET' and user.role!='customer':
         require(user,'admin','cashier','accountant'); now=timezone.now()
         try: day=date.fromisoformat(request.GET.get('delivery_date',timezone.localdate().isoformat()))
@@ -144,7 +163,7 @@ def handle(request,route,data):
         action=parts[2] if len(parts)>2 else ''
         if action=='transition':
             if user.role=='customer':
-                if data.get('status')!='cancelled' or order.status!='submitted': fail('FORBIDDEN','Отмена уже недоступна',403)
+                if data.get('status')!='cancelled' or order.status not in ['submitted','accepted']: fail('FORBIDDEN','Отмена уже недоступна',403)
                 version_check(order,data); release_reservations(order); order.status='cancelled'; order.version+=1; order.reservation_expires_at=None; order.save(); ensure_cancellation_refund(user,order,str(data.get('reason') or 'Отмена клиентом')); audit(user,'order.cancelled',order,data)
             else: transition(user,order,data)
         elif action=='fulfill': fulfill(user,order,data)
@@ -175,7 +194,7 @@ def handle(request,route,data):
         elif action=='payment-mode':
             require(user,'admin'); version_check(order,data); client=Client.objects.select_for_update().get(pk=order.client_id)
             if order.status not in ['submitted','accepted','preparing','ready','out_for_delivery','delivery_failed'] or order.payment_mode=='deferred' or data.get('payment_mode')!='deferred' or not str(data.get('reason','')).strip(): fail('INVALID_STATE','Режим оплаты нельзя изменить',409)
-            if client.archived or client.approval_status!='active' or not client.deferred_approved or overdue_amount(client)>0 or client.credit_limit-financial_amounts(client)['debt']-client.reserved_credit<order.total: fail('CREDIT_LIMIT_EXCEEDED','Отсрочка недоступна',409)
+            if client.archived or client.approval_status=='rejected': fail('CREDIT_LIMIT_EXCEEDED','Отсрочка недоступна',409)
             client.reserved_credit+=order.total; client.save(); order.payment_mode='deferred'; order.version+=1; order.save(); audit(user,'order.payment_mode',order,data)
         elif action=='assign-collection':
             require(user,'admin')

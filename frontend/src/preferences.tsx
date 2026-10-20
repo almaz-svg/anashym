@@ -22,7 +22,7 @@ function applyDocument() {
     document.documentElement.lang = language;
     document.documentElement.style.colorScheme = theme;
     document.title = t('Кондитерская — личный кабинет');
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#111a16' : '#f6faf7');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#161719' : '#f7f7f8');
 }
 function emit() { applyDocument(); if (typeof window !== 'undefined') window.dispatchEvent(new Event(eventName)); }
 export function setLanguage(value: Language) {

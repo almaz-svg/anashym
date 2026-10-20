@@ -5,12 +5,14 @@ from decimal import Decimal
 from django.test import TestCase
 from django.utils import timezone
 from rest_framework.test import APIClient
+from .test_clock import freeze_order_morning
 from .models import (Batch, Client, DeliveryPoint, LedgerEntry, Order, Photo,
                      Product, Reservation, ReturnRequest, StockMovement, User)
 
 
 class OrderCycleAuditTests(TestCase):
     def setUp(self):
+        freeze_order_morning(self)
         self.api = APIClient()
         self.client = Client.objects.create(name='Cycle', approval_status='active',
             deferred_approved=True, credit_limit=100000, period_start=timezone.localdate())
@@ -43,7 +45,7 @@ class OrderCycleAuditTests(TestCase):
 
     def dispatch(self, order):
         self.api.force_authenticate(self.admin)
-        for status in ['accepted', 'preparing', 'ready']:
+        for status in ['preparing', 'ready']:
             order = self.transition(order, status)
         order = self.transition(order, 'ready', courier_id=str(self.courier.pk))
         self.api.force_authenticate(self.courier)
@@ -106,7 +108,7 @@ class OrderCycleAuditTests(TestCase):
     def test_cancel_before_dispatch_releases_both_fefo_reserves_once(self):
         order = self.create()
         self.api.force_authenticate(self.admin)
-        order = self.transition(order, 'accepted')
+        self.assertEqual(order['status'], 'accepted')
         body = dict(status='cancelled', reason='Cancelled', version=order['version'])
         key = str(uuid.uuid4())
         self.post('orders/'+order['id']+'/transition', body, key=key)

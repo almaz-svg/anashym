@@ -28,7 +28,7 @@ def transition(user,order,data):
         if order.proposed_delivery_at: fail('INVALID_STATE','Клиент ещё не подтвердил перенос',409)
         if Reservation.objects.filter(order=order,quota__isnull=False).exists(): fail('INVALID_STATE','Предзаказ ещё не обеспечен готовыми партиями',409)
     if target=='out_for_delivery' and not order.courier_id: fail('INVALID_STATE','Сначала назначьте курьера',409)
-    if target in ['accepted','out_for_delivery'] and order.payment_mode=='kaspi':
+    if target in ['accepted','preparing','out_for_delivery'] and order.payment_mode=='kaspi':
         Client.objects.select_for_update().get(pk=order.client_id)
         if available_order_prepayment(order)<order.total:
             fail('PAYMENT_REQUIRED','Для заказа нужна полная доступная предоплата Kaspi',409)

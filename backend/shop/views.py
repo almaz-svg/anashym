@@ -36,16 +36,17 @@ def me(user):
 
 def order_data(order):
     from .models import PaymentAllocation, LedgerEntry
-    paid=order._paid_amount if hasattr(order,'_paid_amount') else PaymentAllocation.objects.filter(order=order).aggregate(total=Sum('amount'))['total'] or Decimal('0')
+    from .order_payments import order_payment_amounts
+    payment_amounts=order_payment_amounts(order)
+    paid=sum(payment_amounts.values(),Decimal('0'))
     credit=order._credit_amount if hasattr(order,'_credit_amount') else LedgerEntry.objects.filter(order=order,kind='return').aggregate(total=Sum('amount'))['total'] or Decimal('0')
     settlement=max(Decimal('0'),order.delivered_total+credit)
-    if not order.delivered_total:
-        from .services import available_order_prepayment
-        paid=order._available_prepayment if hasattr(order,'_available_prepayment') else available_order_prepayment(order)
     payment_status=('settled' if settlement==0 else 'paid' if paid>=settlement else 'partial' if paid else 'unpaid') if order.delivered_total else ('paid' if paid>=order.total else 'partial' if paid else 'unpaid')
     partial=order.status=='delivered' and any(i.delivered_quantity<i.quantity for i in order.items.all())
     result={'cash_collection_assigned':order.cash_collection_assigned,'partial':partial,'delivered_amount':str(order.delivered_total),'outstanding_amount':str(max(Decimal('0'),settlement-paid)),'return_credit_amount':str(-credit),'settlement_amount':str(settlement),'exchange_id':str(order.exchange_return_id) if order.exchange_return_id else None,'id':str(order.id),'client_id':str(order.client_id),'client_name':order.client.name,'kind':order.kind,'status':order.status,'payment_mode':order.payment_mode,'currency':'KZT','total_amount':f'{order.total:.2f}','delivered_total_amount':str(order.delivered_total),'paid_amount':str(paid),'payment_status':payment_status,'courier_id':str(order.courier_id) if order.courier_id else None,'address_snapshot':json.loads(order.address_snapshot),'proposed_delivery_at':order.proposed_delivery_at.isoformat() if order.proposed_delivery_at else None,'created_at':order.created_at.isoformat(),'requested_delivery_at':order.requested_delivery_at.isoformat(),'reservation_expires_at':order.reservation_expires_at.isoformat() if order.reservation_expires_at else None,'delivery_point_id':str(order.delivery_point_id),'items':[{'product_id':str(i.product_id),'name':i.name,'unit':'portion','quantity':i.quantity,'delivered_quantity':i.delivered_quantity,'returned_quantity':i.returned_quantity,'unit_price_amount':f'{i.unit_price:.2f}','line_total_amount':f'{i.unit_price*i.quantity:.2f}'} for i in order.items.all()],'version':order.version}
     due=order._payment_due_at if hasattr(order,'_payment_due_at') else LedgerEntry.objects.filter(order=order,kind='delivery').order_by('created_at','id').values_list('period__end_exclusive',flat=True).first()
+    result.update(courier_name=(order.courier.get_full_name() or order.courier.username) if order.courier_id else None,
+                  cash_paid_amount=f'{payment_amounts["cash"]:.2f}',kaspi_paid_amount=f'{payment_amounts["kaspi"]:.2f}')
     result['payment_due_at']=due.isoformat() if due else (order.reservation_expires_at.isoformat() if order.payment_mode=='kaspi' and order.reservation_expires_at else None)
     return result
 
@@ -92,7 +93,8 @@ def place_order(user,data,*,client=None,ai_used=False):
     if data['kind'] not in ['regular','preorder'] or data['payment_mode'] not in ['deferred','cash','kaspi']: fail('VALIDATION_ERROR','Недопустимый вид заказа или оплаты')
     requested=parse_datetime(str(data['requested_delivery_at']))
     if requested is None or timezone.is_naive(requested): fail('VALIDATION_ERROR','Укажите дату со смещением часового пояса')
-    local=timezone.localtime(requested); today=timezone.localdate(); now=timezone.now()
+    now=timezone.now(); local=timezone.localtime(requested); today=timezone.localdate(now)
+    if requested<=now: fail('VALIDATION_ERROR','Выберите будущее время доставки',fields={'requested_delivery_at':['Время доставки должно быть в будущем']})
     if (data['kind']=='regular' and local.date()!=today) or (data['kind']=='preorder' and not today<local.date()<=today+timedelta(days=90)): fail('VALIDATION_ERROR','Недопустимая дата доставки')
     try: point=DeliveryPoint.objects.get(id=data['delivery_point_id'],client_id=target_client_id,confirmed=True)
     except (DeliveryPoint.DoesNotExist,ValueError): fail('NOT_FOUND','Точка доставки не найдена',404)
@@ -102,10 +104,8 @@ def place_order(user,data,*,client=None,ai_used=False):
     products=[]; seen=set(); total=Decimal('0')
     # Every order locks its organization before stock; deterministic product order prevents deadlocks.
     client=Client.objects.select_for_update().get(id=target_client_id)
-    if client.archived or client.approval_status!='active':fail('FORBIDDEN','Новые заказы недоступны для неодобренного или архивного клиента',403)
-    if data['payment_mode']=='deferred' and not client.deferred_approved: fail('FORBIDDEN','Отсрочка не одобрена',403)
+    if client.archived or client.approval_status=='rejected':fail('FORBIDDEN','Новые заказы недоступны для неодобренного или архивного клиента',403)
     from .services import overdue_amount,financial_amounts
-    if data['payment_mode']=='deferred' and overdue_amount(client)>0: fail('CREDIT_OVERDUE','Есть просроченная задолженность',409)
     for row in rows:
         validate(row,['product_id','quantity','expected_unit_price'])
         qty=row['quantity']
@@ -122,7 +122,6 @@ def place_order(user,data,*,client=None,ai_used=False):
         except (InvalidOperation,ValueError,Product.DoesNotExist): fail('VALIDATION_ERROR','Некорректный товар или цена')
         if price!=product.price: fail('PRICE_CHANGED','Цена товара изменилась',409)
         products.append((product,qty)); total+=product.price*qty
-    if data['payment_mode']=='deferred' and total>client.credit_limit-financial_amounts(client)['debt']-client.reserved_credit: fail('CREDIT_LIMIT_EXCEEDED','Недостаточно свободного лимита',409)
     allocations=[]
     for product,qty in sorted(products,key=lambda v:str(v[0].id)):
         if data['kind']=='regular':
@@ -142,7 +141,7 @@ def place_order(user,data,*,client=None,ai_used=False):
         try: exchange=ReturnRequest.objects.select_for_update().get(pk=data['exchange_id'],order__client=client,status='approved',kind='exchange')
         except ReturnRequest.DoesNotExist: fail('VALIDATION_ERROR','Одобренный обмен не найден')
         if exchange.exchange_orders.exists(): fail('INVALID_STATE','Заказ обмена уже создан',409)
-    order=Order.objects.create(client=client,delivery_point=point,address_snapshot=json.dumps({'address':point.address,'recipient':point.recipient,'phone':point.phone}),kind=data['kind'],payment_mode=data['payment_mode'],total=total,requested_delivery_at=requested,reservation_expires_at=now+timedelta(minutes=30 if data['payment_mode']=='kaspi' else 60),exchange_return=exchange)
+    order=Order.objects.create(client=client,status='accepted',delivery_point=point,address_snapshot=json.dumps({'address':point.address,'recipient':point.recipient,'phone':point.phone}),kind=data['kind'],payment_mode=data['payment_mode'],total=total,requested_delivery_at=requested,reservation_expires_at=now+timedelta(minutes=30 if data['payment_mode']=='kaspi' else 60),exchange_return=exchange)
     for product,qty in products: OrderItem.objects.create(order=order,product=product,name=product.name,quantity=qty,unit_price=product.price)
     for source,take in allocations:
         source.reserved+=take; source.save(update_fields=['reserved'])
@@ -199,8 +198,10 @@ def route_request(request,route,data):
         if not isinstance(data.get('category_other',''),str) or len(data.get('category_other',''))>200: fail('VALIDATION_ERROR','Категория: максимум 200 символов')
         with transaction.atomic():
             if User.objects.filter(username=data['phone']).exists(): fail('VALIDATION_ERROR','Телефон уже зарегистрирован')
-            client=Client.objects.create(**{k:data[k] for k in ['name','category','description','expected_order_quantity','expected_order_frequency']},category_other=data.get('category_other',''),preferred_payment_mode=data.get('preferred_payment_mode','deferred'),requested_period_days=data.get('requested_period_days',14))
+            client=Client.objects.create(approval_status='active',deferred_approved=True,**{k:data[k] for k in ['name','category','description','expected_order_quantity','expected_order_frequency']},category_other=data.get('category_other',''),preferred_payment_mode=data.get('preferred_payment_mode','deferred'),requested_period_days=data.get('requested_period_days',14))
             user=User.objects.create_user(username=data['phone'],password=data['password'],first_name=data['name'][:150],client=client)
+            from .services import audit
+            audit(user,'client.registration_requested',client)
         return me(user),201
     user=request.user
     if not user.is_authenticated: fail('UNAUTHENTICATED','Требуется вход',401)
@@ -221,7 +222,7 @@ def route_request(request,route,data):
     from .routes import handle
     if route=='profile' and request.method=='GET':
         return handle(request,route,data)
-    if user.role!='customer' or (user.client_id and user.client.approval_status=='active'):
+    if user.role!='customer' or (user.client_id and user.client.approval_status in ['active','pending']):
         if request.method=='POST' and (route!='orders' or user.role=='admin') and not route.startswith('files'):
             with transaction.atomic():
                 User.objects.select_for_update().get(pk=user.pk)
@@ -242,7 +243,7 @@ def route_request(request,route,data):
         else:
             result=handle(request,route,data)
             if result is not None: return result
-    if not user.client_id or user.role!='customer' or user.client.approval_status!='active': fail('FORBIDDEN','Доступ ожидает одобрения администратора',403)
+    if not user.client_id or user.role!='customer' or user.client.approval_status not in ['active','pending']: fail('FORBIDDEN','Доступ ожидает одобрения администратора',403)
     if route=='delivery-points' and request.method=='GET':
         return listing(request,[{'id':str(p.id),'address':p.address,'recipient':p.recipient,'phone':p.phone,'window_start':p.window_start.isoformat(),'window_end':p.window_end.isoformat()} for p in DeliveryPoint.objects.filter(client=user.client,confirmed=True).order_by('id')]),200
     if route=='catalog' and request.method=='GET':

@@ -11,10 +11,14 @@ class WorkflowTests(TestCase):
     create=slice_tests.SliceTests.create
     def test_staff_order_visibility_and_transition(self):
         order=self.create().json()
+        self.assertEqual(order['status'],'accepted')
         self.api.force_authenticate(User.objects.get(role='admin'))
-        result=self.api.post('/api/v1/orders/'+order['id']+'/transition',{'status':'accepted','version':1},format='json',HTTP_IDEMPOTENCY_KEY=str(uuid.uuid4()))
+        visible=self.api.get('/api/v1/orders/'+order['id'])
+        self.assertEqual(visible.status_code,200,visible.content)
+        self.assertEqual(visible.json()['status'],'accepted')
+        result=self.api.post('/api/v1/orders/'+order['id']+'/transition',{'status':'preparing','version':order['version']},format='json',HTTP_IDEMPOTENCY_KEY=str(uuid.uuid4()))
         self.assertEqual(result.status_code,200,result.content)
-        self.assertEqual(result.json()['status'],'accepted')
+        self.assertEqual(result.json()['status'],'preparing')
 
     def test_kaspi_pending_does_not_change_balance(self):
         order=self.create().json()
@@ -31,7 +35,7 @@ class WorkflowTests(TestCase):
         response=self.create(body); self.assertEqual(response.status_code,201,response.content); order=response.json()
         admin=User.objects.get(role='admin'); courier=User.objects.get(role='courier')
         self.api.force_authenticate(admin)
-        for status in ['accepted','preparing','ready','dispatched']:
+        for status in ['preparing','ready','dispatched']:
             r=self.post('orders/'+order['id']+'/transition',{'status':status,'courier_id':str(courier.pk),'version':order['version']}); self.assertEqual(r.status_code,200,r.content); order=r.json()
         self.api.force_authenticate(courier)
         photo=Photo.objects.create(order_id=order['id'],uploaded_by=courier,purpose='delivery',file=ContentFile(b'test',name='image.png'),content_hash='x'*64,mime='image/png',size=4)
@@ -78,7 +82,7 @@ class WorkflowTests(TestCase):
         self.api.force_authenticate(User.objects.get(role='customer'))
         response=self.create(self.body(2)); order=response.json()
         self.api.force_authenticate(User.objects.get(role='admin')); courier=User.objects.get(role='courier')
-        for status in ['accepted','preparing','ready','out_for_delivery']:
+        for status in ['preparing','ready','out_for_delivery']:
             order=self.post('orders/'+order['id']+'/transition',{'status':status,'courier_id':str(courier.pk),'version':order['version']}).json()
         self.api.force_authenticate(courier); photo=Photo.objects.create(order_id=order['id'],uploaded_by=courier,purpose='delivery',file=ContentFile(b'x',name='x.png'),content_hash='y'*64,mime='image/png',size=1)
         r=self.post('orders/'+order['id']+'/delivery',{'version':order['version'],'photo_ids':[str(photo.pk)],'items':[{'product_id':order['items'][0]['product_id'],'quantity':1}],'reason':'Отказ от одной порции'})

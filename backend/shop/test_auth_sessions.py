@@ -31,7 +31,7 @@ class AuthSessionTests(TestCase):
                 self.assertEqual(api.post('/api/v1/auth/logout', {}, format='json', **self.csrf(api)).status_code, 204)
                 self.assertEqual(api.get('/api/v1/auth/me').status_code, 401)
 
-    def test_registered_customer_can_sign_in_while_waiting_for_approval(self):
+    def test_registered_customer_can_sign_in_with_immediate_access(self):
         api = APIClient(enforce_csrf_checks=True)
         account = {'phone': '+77010000999', 'password': 'RegistrationTest2026!',
                    'name': 'Registration test', 'category': 'individual',
@@ -43,5 +43,5 @@ class AuthSessionTests(TestCase):
                             format='json', **self.csrf(api))
         self.assertEqual(response.status_code, 200, response.content)
         current = api.get('/api/v1/auth/me').json()
-        self.assertEqual(current['approval_status'], 'pending')
+        self.assertEqual(current['approval_status'], 'active')
         self.assertEqual(current['role'], 'customer')

@@ -27,16 +27,15 @@ const profileResponse = {
 afterEach(() => { cleanup(); setLanguage('ru'); vi.unstubAllGlobals(); });
 
 describe('customer payment summary', () => {
-    it('shows full debt independently of unconfirmed payments above the form', async () => {
+    it('shows payment details without duplicating the shared debt tile', async () => {
         vi.stubGlobal('fetch', vi.fn(async (url: string) => new Response(JSON.stringify(url.endsWith('/profile') ? profileResponse : { items: [] }))));
         render(<Payments />);
-        const debt = await screen.findByRole('article', { name: 'Общая задолженность' });
-        expect(debt.textContent?.replace(/\s/g, '')).toContain('12500');
-        expect(debt.querySelector('strong')?.classList.contains('positive')).toBe(true);
+        const pending = await screen.findByRole('article', { name: 'Ожидает подтверждения' });
+        expect(screen.queryByRole('article', { name: 'Общая задолженность' })).toBeNull();
         expect(screen.getByRole('article', { name: 'Ожидает подтверждения' }).textContent?.replace(/\s/g, '')).toContain('4000');
         expect(screen.getByRole('article', { name: 'Подтверждённые оплаты за неделю' }).textContent?.replace(/\s/g, '')).toContain('7500');
         const formHeading = screen.getByRole('heading', { name: 'Оплата продавцу через Kaspi' });
-        expect(debt.compareDocumentPosition(formHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+        expect(pending.compareDocumentPosition(formHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
         expect(screen.getByText(/12\.10\.2026.*18\.10\.2026/)).toBeTruthy();
     });
 
@@ -50,7 +49,7 @@ describe('customer payment summary', () => {
         expect(screen.queryByRole('article', { name: 'Общая задолженность' })).toBeNull();
         failed = false;
         fireEvent.click(screen.getByRole('button', { name: 'Повторить загрузку сводки' }));
-        expect(await screen.findByRole('article', { name: 'Общая задолженность' })).toBeTruthy();
+        expect(await screen.findByRole('article', { name: 'Аванс' })).toBeTruthy();
     });
 
     it('refreshes the unconfirmed amount after submitting a payment while debt remains unchanged', async () => {
@@ -80,7 +79,7 @@ describe('customer payment summary', () => {
         await waitFor(()=>expect(screen.getByRole('button',{name:'Отправить на проверку'})).toHaveProperty('disabled',false));
         fireEvent.click(screen.getByRole('button', { name: 'Отправить на проверку' }));
         await waitFor(() => expect(screen.getByRole('article', { name: 'Ожидает подтверждения' }).textContent?.replace(/\s/g, '')).toContain('5000'));
-        expect(screen.getByRole('article', { name: 'Общая задолженность' }).textContent?.replace(/\s/g, '')).toContain('12500');
+        expect(screen.queryByRole('article', { name: 'Общая задолженность' })).toBeNull();
     });
 });
 
@@ -122,14 +121,14 @@ describe('customer profile', () => {
         expect(urls.at(-1)).toBe('/api/v1/profile');
     });
 
-    it('keeps zero debt neutral while showing an advance', async () => {
+    it('does not render a zero debt tile while showing an advance', async () => {
         vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify({
             ...profileResponse,
             balance: { debt_amount: '0.00', advance_amount: '1800.00', overdue_amount: '0.00', unconfirmed_payment_amount: '0.00' },
         }))));
         render(<ProfileScreen onLogout={() => {}}/>);
-        const debt = await screen.findByRole('article', { name: 'Общая задолженность' });
-        expect(debt.querySelector('strong')?.classList.contains('positive')).toBe(false);
+        await screen.findByRole('article', { name: 'Аванс' });
+        expect(screen.queryByRole('article', { name: 'Общая задолженность' })).toBeNull();
         expect(screen.getByRole('article', { name: 'Аванс' }).textContent?.replace(/\s/g, '')).toContain('1800');
     });
 
@@ -167,7 +166,7 @@ describe('language changes in account forms', () => {
         expect(screen.getByRole('heading', { name: 'Заказы' })).toBeTruthy();
         expect(screen.getByRole('button', { name: 'Sign out' })).toBeTruthy();
         expect(from).toHaveProperty('value', '2026-09-01');
-        expect(document.querySelector('.debt-value')?.textContent).toContain('12,500');
+        expect(document.querySelector('.debt-value')?.textContent).toContain('11,500');
     });
 
     it('translates form controls without translating resource names or changing submitted values', async () => {

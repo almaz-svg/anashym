@@ -4,6 +4,46 @@ import {act,renderHook,waitFor,render,screen,fireEvent,cleanup} from '@testing-l
 import {useCollection,FieldsForm} from './workspace';
 afterEach(()=>{cleanup();vi.unstubAllGlobals()});
 describe('cursor collection',()=>{
+ it('refreshes all visible pages and removes assignments that left a filtered queue',async()=>{
+  let changed=false;
+  vi.stubGlobal('fetch',vi.fn(async(url:string)=>new Response(JSON.stringify(url.includes('cursor=')?{items:changed?[{id:'second',status:'out_for_delivery'}]:[{id:'second',status:'ready'},{id:'reassigned',status:'ready'}],next_cursor:null}:{items:[{id:'first',status:changed?'out_for_delivery':'ready'}],next_cursor:'page-two'}))));
+  const {result}=renderHook(()=>useCollection('/orders?history=active',0,5000));
+  await waitFor(()=>expect(result.current.items).toHaveLength(1));
+  await act(async()=>{await result.current.loadMore()});expect(result.current.items).toHaveLength(3);
+  changed=true;await act(async()=>{window.dispatchEvent(new Event('focus'))});
+  await waitFor(()=>expect(result.current.items.map(x=>x.id)).toEqual(['first','second']));
+  expect(result.current.items.every(x=>x.status==='out_for_delivery')).toBe(true);
+ });
+ it('keeps older pages and their cursor while refreshing new registrations',async()=>{
+  let fresh=false;
+  vi.stubGlobal('fetch',vi.fn(async(url:string)=>new Response(JSON.stringify(url.includes('cursor=')?{items:[{id:'older'}],next_cursor:'page-three'}:{items:fresh?[{id:'new-pending'},{id:'existing'}]:[{id:'existing'}],next_cursor:'page-two'}))));
+  vi.useFakeTimers();
+  try {
+   const {result}=renderHook(()=>useCollection('/clients',0,10000));
+   await act(async()=>{await vi.advanceTimersByTimeAsync(0)});
+   await act(async()=>{await result.current.loadMore()});
+   fresh=true;
+   await act(async()=>{await vi.advanceTimersByTimeAsync(10000)});
+   expect(result.current.items.map(x=>x.id)).toEqual(['new-pending','existing','older']);
+   expect(result.current.nextCursor).toBe('page-three');
+  } finally {cleanup();vi.useRealTimers()}
+ });
+ it('refreshes an open client queue and stops polling when unmounted',async()=>{
+  let clients=[{id:'existing'}];
+  vi.stubGlobal('fetch',vi.fn(async()=>new Response(JSON.stringify({items:clients,next_cursor:null}))));
+  vi.useFakeTimers();
+  try {
+   const {result,unmount}=renderHook(()=>useCollection('/clients',0,10000));
+   await act(async()=>{await vi.advanceTimersByTimeAsync(0)});
+   expect(result.current.items).toEqual([{id:'existing'}]);
+   clients=[{id:'new-pending'},{id:'existing'}];
+   await act(async()=>{await vi.advanceTimersByTimeAsync(10000)});
+   expect(result.current.items.map(x=>x.id)).toEqual(['new-pending','existing']);
+   unmount();clients=[{id:'after-unmount'}];
+   await act(async()=>{await vi.advanceTimersByTimeAsync(20000)});
+   expect(vi.getTimerCount()).toBe(0);
+  } finally {vi.useRealTimers()}
+ });
  it('keeps page one on a page-two error, retries its cursor and resets on revision',async()=>{
   const urls:string[]=[];let failed=false;
   vi.stubGlobal('fetch',vi.fn(async(url:string)=>{urls.push(url);if(url.includes('cursor=')){if(!failed){failed=true;return new Response(JSON.stringify({message:'Temporary gateway failure'}),{status:502})}return new Response(JSON.stringify({items:[{id:'old-order'}],next_cursor:null}))}return new Response(JSON.stringify({items:[{id:'new-order'}],next_cursor:'opaque + cursor'}))}));

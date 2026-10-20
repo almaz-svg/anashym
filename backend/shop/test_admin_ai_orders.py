@@ -5,12 +5,14 @@ from decimal import Decimal
 from django.test import TestCase
 from django.utils import timezone
 from rest_framework.test import APIClient
+from .test_clock import freeze_order_morning
 
 from .models import AuditEvent, Batch, Client, DeliveryPoint, Idempotency, Order, Product, Reservation, User
 
 
 class AdminAIOrderTests(TestCase):
     def setUp(self):
+        freeze_order_morning(self)
         self.customer = Client.objects.create(name='Test customer', approval_status='active', deferred_approved=True, credit_limit='50000', period_start=timezone.localdate())
         self.customer_user = User.objects.create_user(username='+77012221111', client=self.customer)
         self.admin = User.objects.create_user(username='+77012221112', role='admin')
@@ -62,8 +64,8 @@ class AdminAIOrderTests(TestCase):
             self.assertEqual(response.status_code, 422)
         self.assertFalse(Order.objects.exists())
 
-    def test_unapproved_archived_or_unknown_customer_cannot_order(self):
-        for field, value in [('approval_status', 'pending'), ('archived', True)]:
+    def test_rejected_archived_or_unknown_customer_cannot_order(self):
+        for field, value in [('approval_status', 'rejected'), ('archived', True)]:
             setattr(self.customer, field, value); self.customer.save()
             self.assertEqual(self.post().status_code, 403)
             setattr(self.customer, field, 'active' if field == 'approval_status' else False)
@@ -87,8 +89,6 @@ class AdminAIOrderTests(TestCase):
     def test_shortages_leave_no_partial_reserve(self):
         for change in ({'items': [{**self.body['items'][0], 'quantity': 21}]}, {'items': [{**self.body['items'][0], 'expected_unit_price': '1.00'}]}):
             self.assertEqual(self.post({**self.body, **change, 'ai_used': True}).status_code, 409)
-        self.customer.credit_limit = 1; self.customer.save()
-        self.assertEqual(self.post({**self.body, 'ai_used': True}).status_code, 409)
         self.assertFalse(Order.objects.exists())
         self.assertFalse(Reservation.objects.exists())
         self.customer.refresh_from_db(); self.batch.refresh_from_db()

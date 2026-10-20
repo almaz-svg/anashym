@@ -1,16 +1,18 @@
 import React from 'react';
-import { CakeSlice, LogOut, Mail } from 'lucide-react';
+import { LogOut, Mail } from 'lucide-react';
+import { BrandLogo } from './brand-logo';
 import { PreferencesControls, t } from './preferences';
 import { NotificationBell } from './account-features';
+import { DebtIndicator } from './debt-indicator';
 
-export function AccountHeader({ user, logout, busy = false, staffRole, onNotifications }: {
-    user: any; logout: () => void; busy?: boolean; staffRole?: string; onNotifications?:()=>void;
+export function AccountHeader({ user, logout, busy = false, staffRole, onNotifications, onDebt }: {
+    user: any; logout: () => void; busy?: boolean; staffRole?: string; onNotifications?:()=>void; onDebt?:()=>void;
 }) {
     const identity = <>
         <span className="avatar" aria-hidden="true">{(user.client_name || user.name || user.phone || '?')[0]}</span>
         <span><strong>{user.client_name || user.name || user.phone}</strong><small>{staffRole ? t(staffRole) : t('Кабинет заказчика')}</small></span>
     </>;
-    return <header className="account-header">
+    return <><header className="account-header">
         {staffRole ? <div className="account-identity">{identity}</div> : <a className="account-identity" href="#profile" title={t('Мой профиль')} aria-label={t('Мой профиль')}>{identity}</a>}
         <div className="account-controls">
             {!user.must_change_password && <NotificationBell onOpen={onNotifications}/>}
@@ -19,14 +21,14 @@ export function AccountHeader({ user, logout, busy = false, staffRole, onNotific
                 <button type="button" className="account-logout" onClick={logout} disabled={busy}><LogOut size={16} aria-hidden="true"/>{t('Выйти')}</button>
             </div>
         </div>
-    </header>;
+    </header><DebtIndicator user={user} onOpen={onDebt}/></>;
 }
 
 export function SiteFooter({ customer = false }: { customer?: boolean }) {
     return <footer className="site-footer" aria-label={t('О кондитерской')}>
         <div className="footer-grid">
             <section>
-                <div className="brand"><CakeSlice size={22} aria-hidden="true"/>{t('Кондитерская')}</div>
+                <div className="brand"><BrandLogo/></div>
                 <h2>{t('О нас')}</h2>
                 <p>{t('Готовим десерты для постоянных покупателей: кофеен, магазинов, ресторанов, компаний и частных клиентов.')}</p>
                 <p>{t('В личном кабинете можно планировать поставки, оформлять заказы и следить за оплатами.')}</p>

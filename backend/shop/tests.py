@@ -4,9 +4,11 @@ from django.test import TestCase
 from django.core.management import call_command
 from django.utils import timezone
 from rest_framework.test import APIClient
+from .test_clock import freeze_order_morning
 
 class SliceTests(TestCase):
     def setUp(self):
+        freeze_order_morning(self)
         call_command('seed_demo', verbosity=0)
         self.api = APIClient()
         self.api.post('/api/v1/auth/login', {'phone':'+77010000001','password':'DemoClient2026!'}, format='json')
@@ -45,11 +47,11 @@ class SliceTests(TestCase):
         from shop.models import Batch
         self.assertEqual(sum(Batch.objects.values_list('reserved',flat=True)),0)
 
-    def test_credit_shortage_is_atomic(self):
+    def test_credit_limit_does_not_block_purchase(self):
         from shop.models import Client, Batch
         Client.objects.update(credit_limit='1000.00')
-        self.assertEqual(self.create().json()['code'],'CREDIT_LIMIT_EXCEEDED')
-        self.assertEqual(sum(Batch.objects.values_list('reserved',flat=True)),0)
+        self.assertEqual(self.create().status_code,201)
+        self.assertEqual(sum(Batch.objects.values_list('reserved',flat=True)),10)
 
     def test_foreign_order_returns_404(self):
         order=self.create().json()
@@ -59,12 +61,12 @@ class SliceTests(TestCase):
         self.api.force_authenticate(user)
         self.assertEqual(self.api.get('/api/v1/orders/'+order['id']).status_code,404)
 
-    def test_pending_registration_cannot_read_catalog(self):
+    def test_registration_can_read_catalog_immediately(self):
         self.api.logout()
         result=self.api.post('/api/v1/auth/register',{'phone':'+77010000009','password':'Password123!','name':'Coffee','category':'coffee_shop','description':'Cafe','expected_order_quantity':10,'expected_order_frequency':'weekly'},format='json')
         self.assertEqual(result.status_code,201,result.json())
         self.api.post('/api/v1/auth/login',{'phone':'+77010000009','password':'Password123!'},format='json')
-        self.assertEqual(self.api.get('/api/v1/catalog',{'delivery_date':timezone.localdate().isoformat()}).status_code,403)
+        self.assertEqual(self.api.get('/api/v1/catalog',{'delivery_date':timezone.localdate().isoformat()}).status_code,200)
 
     def test_anonymous_is_401(self):
         self.api.logout()
@@ -73,7 +75,7 @@ class SliceTests(TestCase):
     def test_expiration_releases_stock_and_credit_once(self):
         from shop.models import Order,Batch
         self.create()
-        Order.objects.update(reservation_expires_at=timezone.now()-timedelta(seconds=1))
+        Order.objects.update(status='submitted',reservation_expires_at=timezone.now()-timedelta(seconds=1))
         call_command('expire_reservations')
         call_command('expire_reservations')
         self.assertEqual(self.api.get('/api/v1/balance').json()['reserved_credit_amount'],'0.00')

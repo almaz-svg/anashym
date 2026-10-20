@@ -88,14 +88,14 @@ class CustomerProfileTests(TestCase):
         self.api.force_authenticate(None)
         self.assertEqual(self.api.get('/api/v1/profile').status_code, 401)
 
-    def test_unapproved_customer_can_view_profile_without_unlocking_catalog(self):
+    def test_pending_customer_has_catalog_access_but_rejected_customer_does_not(self):
         for status in ('pending', 'rejected'):
             with self.subTest(status=status):
                 Client.objects.filter(pk=self.customer.pk).update(approval_status=status)
                 self.user = User.objects.get(pk=self.user.pk)
                 self.api.force_authenticate(self.user)
                 self.assertEqual(self.profile()['profile']['approval_status'], status)
-                self.assertEqual(self.api.get('/api/v1/catalog', {'delivery_date': '2026-10-15'}).status_code, 403)
+                self.assertEqual(self.api.get('/api/v1/catalog', {'delivery_date': timezone.localdate().isoformat()}).status_code, 200 if status=='pending' else 403)
 
     def test_default_week_uses_almaty_date_even_before_utc_monday(self):
         now = datetime(2026, 10, 11, 20, tzinfo=datetime_timezone.utc)

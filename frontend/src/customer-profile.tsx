@@ -27,9 +27,6 @@ function FinancialCard({ title, amount, debt = false, children }: { title: strin
 
 function CurrentBalance({ data }: { data: CustomerProfileData }) {
     return <>
-        <FinancialCard title={t("Общая задолженность")} amount={data.balance.debt_amount} debt>
-            {Number(data.balance.overdue_amount) > 0 ? <>{t("Из неё просрочено:")}{' '}<span className="debt-value positive">{money(data.balance.overdue_amount)}</span></> : t('За все поставки на текущий момент')}
-        </FinancialCard>
         <FinancialCard title={t("Аванс")} amount={data.balance.advance_amount}>{t("Доступен для следующих поставок")}</FinancialCard>
         <FinancialCard title={t("Ожидает подтверждения")} amount={data.balance.unconfirmed_payment_amount}>{t("Пока не уменьшает задолженность")}</FinancialCard>
         {Number(data.balance.reserved_refund_amount)>0&&<FinancialCard title={t('Ожидает возврата')} amount={data.balance.reserved_refund_amount!}>{t('Зарезервировано для возврата денег')}</FinancialCard>}
@@ -38,7 +35,7 @@ function CurrentBalance({ data }: { data: CustomerProfileData }) {
 
 export function PaymentFinancialSummary({ revision }: { revision: number }) {
     const [retry, setRetry] = useState(0);
-    const data = useCollection('/profile', revision + retry);
+    const data = useCollection('/profile', revision + retry,5000);
     const summary = data.payload as CustomerProfileData | null;
     return <section aria-labelledby="payment-summary-title" className="period-summary">
         <div className="financial-summary-header">
@@ -73,7 +70,7 @@ export function CustomerProfile() {
     const [query, setQuery] = useState('');
     const [revision, setRevision] = useState(0);
     const [identity, setIdentity] = useState<CustomerProfileData['profile'] | null>(null);
-    const data = useCollection('/profile' + query, revision);
+    const data = useCollection('/profile' + query, revision,5000);
     const summary = data.payload as CustomerProfileData | null;
     const profile = summary?.profile || identity;
     const invalidDates = !dates.from || !dates.to || dates.from > dates.to;
@@ -96,7 +93,7 @@ export function CustomerProfile() {
                     <div><dt>{t("Телефон")}</dt><dd>{profile.phone || t('Не указан')}</dd></div>
                     <div><dt>{t("Способ оплаты")}</dt><dd>{status(profile.preferred_payment_mode)}</dd></div>
                     <div><dt>{t("Период отсрочки")}</dt><dd>{t('{{count}} дней', { count: profile.period_days })}</dd></div>
-                    <div><dt>{t("Лимит отсрочки")}</dt><dd>{money(profile.credit_limit_amount)}</dd></div>
+                    <div><dt>{t("Лимит отсрочки")}</dt><dd>{t('Без лимита')}</dd></div>
                     <div><dt>{t("Порций за заказ")}</dt><dd>{profile.expected_order_quantity || t('Не указано')}</dd></div>
                     <div><dt>{t("Частота заказов")}</dt><dd>{orderFrequency(profile.expected_order_frequency)}</dd></div>
                 </dl>

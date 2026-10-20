@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ErrorBox, FieldsForm, PhotoUpload, useCollection, useOperations, money, status } from './workspace';
 import { OrderEvidence } from './account-features';
 import { CustomerOrderActions } from './customer';
+import { OrderSummary } from './order-summary';
 export function OrderPanel({ order: o, role, op, close }: {
     order: any;
     role: string;
@@ -20,9 +21,8 @@ export function OrderPanel({ order: o, role, op, close }: {
     <p>
     {status(o.status)} · {status(o.payment_mode)} · {money(o.total_amount)}{o.payment_status&&<> · {status(o.payment_status)}</>}
     </p>
-    {o.status==="delivered"||Number(o.delivered_total_amount||0)>0?<p>{t("К погашению:")}{' '}<strong className={`debt-value${Number(o.outstanding_amount) > 0 ? ' positive' : ''}`}>{money(o.outstanding_amount)}</strong>{' '}{t("· Стоимость после возвратов:")}{' '}{money(o.settlement_amount??o.total_amount)}</p>:<p className="muted">{t("Задолженность начисляется после передачи товара.")}</p>}<p>
-    {typeof o.address_snapshot === 'object' ? Object.values(o.address_snapshot || {}).filter(x => typeof x === 'string').join(', ') : o.address_snapshot || o.delivery_address || o.delivery_point?.address || ''}
-    </p>
+    <ErrorBox error={op.error}/><OrderSummary order={o}/>
+    {o.address_snapshot?.recipient&&<p>{o.address_snapshot.recipient}{o.address_snapshot.phone&&<> · <a href={'tel:'+o.address_snapshot.phone}>{o.address_snapshot.phone}</a></>}</p>}
         {o.items?.map((i: any) => <div className="order-row" key={i.product_id}>
         <span>
         {i.name || i.product_id} × {i.quantity}
@@ -31,9 +31,14 @@ export function OrderPanel({ order: o, role, op, close }: {
         {money(i.line_total_amount)}
         </strong>
         </div>)}<OrderEvidence order={o}/>{role==='courier'&&['delivered','partially_delivered'].includes(o.status)&&<CustomerOrderActions order={o} onChanged={op.refresh} returnsOnly/>}{role === 'admin' && <>
-        <FieldsForm title={t("Изменить состояние")} fields={[{ name: 'status', label: 'Следующий этап', options: Object.entries(transitions).filter(([s]) => s === o.status).map(([, s]) => [s, status(s)]).concat([['cancelled', 'Отменить']]) }, { name: 'courier_id', label: 'Курьер (для выезда)', required: false }, { name: 'reason', label: 'Причина / комментарий', required: false }]} onSubmit={d => op.act('/orders/' + o.id + '/transition', { ...d, courier_id: d.courier_id || undefined, version: o.version })} busy={op.busy}/>
-        {o.kind === 'preorder' && <Fulfill order={o} op={op}/>}<FieldsForm title={t("Одобрить отсрочку вместо наличных")} fields={[{ name: "reason", label: "Основание изменения способа расчёта" }]} onSubmit={d => op.act("/orders/" + o.id + "/payment-mode", { ...d, payment_mode: "deferred", version: o.version })} busy={op.busy}/>
+        {['submitted','accepted','preparing'].includes(o.status)&&<button className="primary" disabled={op.busy} onClick={()=>op.act('/orders/'+o.id+'/transition',{status:transitions[o.status],version:o.version}).catch(()=>{})}>{t(o.status==='preparing'?'Заказ готов':o.status==='accepted'?'Начать подготовку':'Принять заказ')}</button>}
+        {o.status==='ready'&&<FieldsForm title={t('Назначить курьера')} fields={[{name:'courier_id',label:'Курьер',value:o.courier_id||''}]} onSubmit={d=>op.act('/orders/'+o.id+'/transition',{status:'ready',courier_id:d.courier_id,version:o.version})} busy={op.busy} submit="Назначить доставку"/>}
+        {o.kind === 'preorder' && ['accepted','preparing'].includes(o.status) && <Fulfill order={o} op={op}/>}
+        {!['delivered','cancelled'].includes(o.status)&&<details className="order-extra"><summary>{t('Дополнительные действия с заказом')}</summary>
+        <FieldsForm title={t('Отменить заказ')} fields={[{name:'reason',label:'Причина'}]} onSubmit={d=>op.act('/orders/'+o.id+'/transition',{...d,status:'cancelled',version:o.version})} busy={op.busy} submit="Отменить заказ"/>
+        {o.payment_mode!=='deferred'&&<FieldsForm title={t("Одобрить отсрочку вместо наличных")} fields={[{ name: "reason", label: "Основание изменения способа расчёта" }]} onSubmit={d => op.act("/orders/" + o.id + "/payment-mode", { ...d, payment_mode: "deferred", version: o.version })} busy={op.busy}/>}
         <FieldsForm title={t("Предложить перенос")} fields={[{ name: 'requested_delivery_at', label: 'Дата и время', type: 'datetime-local' }, { name: 'reason', label: 'Причина' }]} onSubmit={d => op.act('/orders/' + o.id + '/reschedule', { ...d, requested_delivery_at: new Date(d.requested_delivery_at).toISOString(), version: o.version })} busy={op.busy}/>
+        </details>}
         </>}{['courier','admin'].includes(role) && ['out_for_delivery', 'dispatched'].includes(o.status) && <form onSubmit={async (e) => {
                 e.preventDefault();
                 try {
@@ -42,27 +47,28 @@ export function OrderPanel({ order: o, role, op, close }: {
                 }
                 catch { }
             }}>
-        <h3>{t("Фактическая передача")}</h3>
+        <h3>{t("Завершить доставку")}</h3>
             {o.items?.map((i: any) => <label key={i.product_id}>
             {i.name || i.product_id}{' '}{t("— принято порций")}<input type="number" min="0" max={i.quantity} value={quantities[i.product_id] ?? i.quantity} onChange={e => setQuantities({ ...quantities, [i.product_id]: Number(e.target.value) })}/>
-            </label>)}<label>{t("Получено наличными, KZT")}<input type="number" min="0" step="0.01" value={cash} onChange={e => setCash(e.target.value)}/>
+            </label>)}{o.payment_mode==='cash'&&<><label>{t("Получено наличными, KZT")}<input type="number" min="0" step="0.01" required value={cash} onChange={e => setCash(e.target.value)}/>
         </label>
+        <details><summary>{t('Сдача и переплата')}</summary>
         <label>{t("Выдана сдача, KZT")}<input type="number" min="0" step="0.01" value={change} onChange={e => setChange(e.target.value)}/>
         </label>
         <label className="checkbox-label">
-        <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)}/>{t("Клиент согласен зачислить переплату в аванс")}</label>
+        <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)}/>{t("Клиент согласен зачислить переплату в аванс")}</label></details></>}
         <label>{t("Комментарий / причина частичной передачи")}<textarea value={reason} onChange={e => setReason(e.target.value)}/>
         </label>
         <PhotoUpload orderId={o.id} purpose="delivery" onUploaded={id => setPhotoIds(p => [...p, id])} act={op.act} busy={op.busy}/>
-        <button className="primary" disabled={op.busy || !photoIds.length || (role==="admin"&&!reason)}>{t("Подтвердить передачу")}</button>
+        <button className="primary" disabled={op.busy || !photoIds.length || (role==="admin"&&!reason)}>{t("Подтвердить доставку")}</button>
         <button type="button" disabled={op.busy || !reason} onClick={() => op.act('/orders/' + o.id + '/delivery-failed', { reason, version: o.version }).then(close).catch(() => { })}>{t("Не удалось вручить")}</button>
         </form>}
     {role === 'admin' && <>
-        <FieldsForm title={t("Назначить сбор оплаты по доставленному заказу")} fields={[{ name: 'courier_id', label: 'Курьер' }, { name: 'reason', label: 'Основание' }]} onSubmit={d => op.act('/orders/' + o.id + '/assign-collection', d)} busy={op.busy}/>
-        {['delivery_failed', 'delivered', 'partially_delivered'].includes(o.status) && <GoodsReturn order={o} op={op}/>}
+        {o.status==='delivered'&&Number(o.outstanding_amount)>0&&<details className="order-extra"><summary>{t("Назначить сбор оплаты по доставленному заказу")}</summary><FieldsForm title={t('Сбор задолженности')} fields={[{ name: 'courier_id', label: 'Курьер' }, { name: 'reason', label: 'Основание' }]} onSubmit={d => op.act('/orders/' + o.id + '/assign-collection', d)} busy={op.busy}/></details>}
+        {['delivery_failed', 'delivered', 'partially_delivered'].includes(o.status) && o.items?.some((item:any)=>item.quantity>(item.delivered_quantity||0)) && <GoodsReturn order={o} op={op}/>}
         </>}
-    {role === 'courier' && o.status === 'ready' && <button className="primary" disabled={op.busy} onClick={() => op.act('/orders/' + o.id + '/transition', { status: 'out_for_delivery', version: o.version }).catch(() => { })}>{t("Выехать на доставку")}</button>}
-    {role === 'courier' && o.status === 'delivered' && <CashCollection order={o} op={op}/>}
+    {role === 'courier' && ['ready','delivery_failed'].includes(o.status) && <button className="primary" disabled={op.busy} onClick={() => op.act('/orders/' + o.id + '/transition', { status: 'out_for_delivery', version: o.version }).catch(() => { })}>{t(o.status==='ready'?"Принять доставку":"Повторить доставку")}</button>}
+    {role === 'courier' && o.status === 'delivered' && o.cash_collection_assigned && Number(o.outstanding_amount)>0 && <CashCollection order={o} op={op}/>}
     </section>;
 }
 function Fulfill({ order, op }: {

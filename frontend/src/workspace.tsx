@@ -1,9 +1,10 @@
 import { t, locale } from './preferences';
 import React, { createContext, useContext, useEffect, useId, useRef, useState } from 'react';
 import { apiRequest, ApiError, isDefinitiveFailure } from './api';
+import { useLiveRefresh } from './live-refresh';
 export const money = (v: any) => new Intl.NumberFormat(locale(), { style: 'currency', currency: 'KZT', maximumFractionDigits: 2 }).format(Number(v || 0));
 export const WorkspaceRevision = createContext(0);
-const fieldLabels: Record<string, string> = { amount: 'Сумма', reason: 'Причина', phone: 'Телефон', password: 'Пароль', name: 'Название', description: 'Описание', category: 'Категория', category_other: 'Уточнение категории', expected_order_quantity: 'Порций за заказ', expected_order_frequency: 'Частота заказов', items: 'Позиции заказа', delivery_point_id: 'Адрес доставки', requested_delivery_at: 'Дата доставки', client_id: 'Клиент', order_id: 'Заказ', product_id: 'Товар', courier_id: 'Курьер', batch_id: 'Партия', quantity: 'Количество', reference: 'Номер перевода / комментарий', photo_ids: 'Фото подтверждения', from: 'Начало периода', to: 'Конец периода', credit_limit: 'Лимит отсрочки', credit_limit_amount: 'Лимит отсрочки', period_days: 'Период отсрочки', non_field_errors: 'Проверьте данные' };
+const fieldLabels: Record<string, string> = { window_start: 'Доставка с', window_end: 'Доставка до', address: 'Адрес', recipient: 'Получатель', amount: 'Сумма', reason: 'Причина', phone: 'Телефон', password: 'Пароль', name: 'Название', description: 'Описание', category: 'Категория', category_other: 'Уточнение категории', expected_order_quantity: 'Порций за заказ', expected_order_frequency: 'Частота заказов', items: 'Позиции заказа', delivery_point_id: 'Адрес доставки', requested_delivery_at: 'Дата доставки', client_id: 'Клиент', order_id: 'Заказ', product_id: 'Товар', courier_id: 'Курьер', batch_id: 'Партия', quantity: 'Количество', reference: 'Номер перевода / комментарий', photo_ids: 'Фото подтверждения', from: 'Начало периода', to: 'Конец периода', credit_limit: 'Лимит отсрочки', credit_limit_amount: 'Лимит отсрочки', period_days: 'Период отсрочки', non_field_errors: 'Проверьте данные' };
 export function ErrorBox({ error }: {
     error: unknown;
 }) {
@@ -44,15 +45,34 @@ export function useOperations() {
     }
     return { error, setError, busy, revision, act, refresh: () => setRevision(r => r + 1) };
 }
-export function useCollection(path:string,revision=0){
+export function useCollection(path:string,revision=0,pollInterval=0){
  const workspaceRevision=useContext(WorkspaceRevision);
  const [items,setItems]=useState<any[]>([]),[error,setError]=useState<unknown>(null),[loading,setLoading]=useState(true),[payload,setPayload]=useState<any>(null),[nextCursor,setNextCursor]=useState<string|null>(null);
  const generation=useRef(0),inFlight=useRef(false);
- async function requestPage(append:boolean,version:number,cursor?:string|null){
-  if(append&&inFlight.current)return;inFlight.current=true;setLoading(true);setError(null);
-  try{const r=await apiRequest(path+(append&&cursor?(path.includes('?')?'&':'?')+'cursor='+encodeURIComponent(cursor):''));if(version!==generation.current)return;setItems(old=>append?[...old,...(r.items||[]).filter((x:any)=>!old.some(y=>y.id&&y.id===x.id))]:r.items||[]);setPayload(r);setNextCursor(r.next_cursor||null)}catch(e){if(version===generation.current)setError(e)}finally{if(version===generation.current){inFlight.current=false;setLoading(false)}}
+ const loadedPages=useRef(1);
+ async function requestPage(append:boolean,version:number,cursor?:string|null,refresh=false){
+  if(append&&inFlight.current)return;inFlight.current=true;if(!refresh)setLoading(true);setError(null);
+  try{
+   let r=await apiRequest(path+(append&&cursor?(path.includes('?')?'&':'?')+'cursor='+encodeURIComponent(cursor):''));
+   if(refresh){
+    const incoming=[...(r.items||[])];
+    for(let page=1;page<loadedPages.current&&r.next_cursor;page++){
+     if(version!==generation.current)return;
+     r=await apiRequest(path+(path.includes('?')?'&':'?')+'cursor='+encodeURIComponent(r.next_cursor));
+     incoming.push(...(r.items||[]));
+    }
+    r={...r,items:incoming};
+   }
+   if(version!==generation.current)return;
+   if(append)loadedPages.current++;
+   const incoming=r.items||[];
+   setItems(old=>append?[...old,...incoming.filter((x:any)=>!old.some(y=>y.id&&y.id===x.id))]:incoming);
+   setPayload(r);
+   setNextCursor(r.next_cursor||null);
+  }catch(e){if(version===generation.current)setError(e)}finally{if(version===generation.current){inFlight.current=false;setLoading(false)}}
  }
- useEffect(()=>{const version=++generation.current;inFlight.current=false;setItems([]);setPayload(null);setNextCursor(null);if(path)void requestPage(false,version);else setLoading(false);return()=>{generation.current++;inFlight.current=false}},[path,revision,workspaceRevision]);
+ useEffect(()=>{const version=++generation.current;inFlight.current=false;loadedPages.current=1;setItems([]);setPayload(null);setNextCursor(null);if(path)void requestPage(false,version);else setLoading(false);return()=>{generation.current++;inFlight.current=false}},[path,revision,workspaceRevision]);
+ useLiveRefresh(()=>{if(!inFlight.current)return requestPage(false,generation.current,null,true)},!!path&&pollInterval>0,pollInterval||5000,path+':'+revision+':'+workspaceRevision);
  return {items,error,loading,payload,nextCursor,loadMore:()=>requestPage(true,generation.current,nextCursor)};
 }
 export function FieldsForm({ title, fields, onSubmit, busy, submit = 'Сохранить' }: {
@@ -201,4 +221,5 @@ export function PhotoUpload({ orderId, purpose, onUploaded, act, busy }: {
 }
 const notificationLabels: Record<string, string> = { 'order.created': 'Заказ создан', 'order.accepted': 'Заказ принят', 'order.preparing': 'Заказ готовится', 'order.ready': 'Заказ готов к доставке', 'order.out_for_delivery': 'Курьер выехал', 'order.dispatched': 'Курьер выехал', 'order.delivery': 'Передача товара подтверждена', 'order.delivered': 'Заказ передан', 'order.cancelled': 'Заказ отменён', 'order.expired': 'Резерв истёк, заказ отменён', 'order.delivery_failed': 'Доставка не состоялась', 'order.fulfilled': 'Предзаказ обеспечен продукцией', 'order.reschedule_requested': 'Предложен перенос доставки', 'order.rescheduled': 'Перенос доставки подтверждён', 'payment.created': 'Заявка на оплату отправлена', 'payment.confirmed': 'Оплата подтверждена', 'payment.rejected': 'Заявка на оплату отклонена', 'ledger.delivery': 'Начислена стоимость переданного товара', 'ledger.payment': 'Поступила оплата', 'ledger.return': 'Зачтена стоимость возврата', 'ledger.refund': 'Оформлен возврат денег', 'return.requested': 'Запрошен возврат или обмен', 'return.received': 'Возврат физически принят', 'return.approved': 'Возврат одобрен', 'return.rejected': 'Возврат отклонён', 'refund.created': 'Создано обязательство возврата денег', 'refund.confirmed': 'Возврат денег подтверждён', 'client.approved': 'Условия клиента обновлены' };
 Object.assign(notificationLabels,{'debt.overdue':'Задолженность просрочена','payment.reversed':'Оплата сторнирована'});
+Object.assign(notificationLabels,{'client.registration_requested':'Новая заявка на регистрацию — проверьте раздел «Клиенты»'});
 export const notificationText = (code: string) => notificationLabels[code] ? t(notificationLabels[code]) : (/^[a-z_]+\.[a-z_]+$/.test(code) ? t('Обновлены данные операции') : code);
